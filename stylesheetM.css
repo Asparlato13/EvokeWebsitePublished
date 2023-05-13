@@ -1,0 +1,872 @@
+html,
+body {
+  height: 100hv;
+  background-color: rgb(245, 246, 237);
+  padding: 1% 1% 1% 1%;
+}
+
+.h1 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 65px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+  position: static;
+}
+
+.h1Fit {
+  font-family: "Lucida Handwriting";
+  font-size: 70px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  padding-left: 60px;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+
+#h1Wel {
+  font-family: "Lucida Handwriting";
+  font-size: 50px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  padding-left: 60px;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+#h1WelM {
+  font-family: "Lucida Handwriting";
+  font-size: 50px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  padding-left: 60px;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+#h1WelH {
+  font-family: "Lucida Handwriting";
+  font-size: 50px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  padding-left: 60px;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+#h1WelS {
+  font-family: "Lucida Handwriting";
+  font-size: 50px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  padding-left: 60px;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+#TofC {
+  padding-right: 40px;
+}
+
+.h3Wel {
+  font-family: "Lucida Handwriting";
+  font-size: 37px;
+  padding-left: 20px;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+.h6Wel {
+  font-family: "Lucida Handwriting";
+  font-size: 28px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  padding-left: 60px;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+.journalQ {
+  padding-left: 50px;
+  font-size: 18px;
+}
+.FitTips {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  height: 100%;
+  font-size: 35px;
+  margin: 4px;
+}
+
+.fitTipsSection {
+  padding-top: 30px;
+}
+.FitTips2 {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  height: 100%;
+  font-size: 20px;
+  margin: 4px;
+  padding-top: 5px;
+}
+.FitTips3 {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  height: 100%;
+  font-size: 20px;
+  margin: 4px;
+  padding-top: 10px;
+  padding-right: 800px;
+}
+
+.FitTipsList {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  height: 100%;
+  font-size: 24px;
+  margin: 4px;
+}
+.img6 {
+  border-radius: 3%;
+  height: 47%;
+  width: 47%;
+}
+.h1B {
+  font-family: "Brush Script MT", cursive;
+  font-size: 400%;
+  font-weight: bolder;
+  color: #4c2828;
+  position: static;
+}
+
+.h2 {
+  font-family: "Lucida Handwriting", cursive;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  color: rgb(76, 40, 24);
+  font-weight: bolder;
+}
+.img1 {
+  border-radius: 50%;
+  position: relative;
+  margin-right: 2%;
+}
+.img2 {
+  border-radius: 5%;
+  margin-right: 2%;
+  position: static;
+  height: 400px;
+}
+
+.imgPancakes {
+  width: 33.33;
+  height: 250px;
+  width: 250px;
+  border-radius: 2%;
+  position: relative;
+}
+.img4 {
+  border-radius: 3%;
+  height: 300px;
+  width: 500px;
+  position: relative;
+}
+.img14 {
+  border-radius: 3%;
+  height: 35%;
+  width: 40%;
+  position: relative;
+}
+.img5 {
+  border-radius: 3%;
+  height: 40%;
+  width: 45%;
+  position: relative;
+}
+.imgPasta {
+  border-radius: 3%;
+  height: 50%;
+  width: 50%;
+  position: relative;
+}
+#recommendationsTofC {
+  float: left;
+  padding: 4px;
+}
+
+.bottomNav .h1B {
+  padding: auto;
+}
+.column div {
+  position: static;
+  bottom: 0;
+  right: 0;
+  background: rgb(76, 40, 24);
+  color: white;
+  margin-bottom: 40px;
+  font-family: "Lucida Handwriting";
+  font-size: larger;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.column:hover {
+  cursor: pointer;
+}
+.column:hover div {
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.Rcolumn {
+  padding: 1%;
+}
+
+.Rcolumn div {
+  position: relative;
+  background: rgb(76, 40, 24);
+  color: white;
+  margin-bottom: 40px;
+  font-family: "Lucida Handwriting";
+  font-size: medium;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.Rcolumn:hover {
+  cursor: pointer;
+}
+.Rcolumn:hover div {
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.Rrow {
+  display: flex;
+  padding-left: 6%;
+}
+
+.Rrow0 {
+  display: flex;
+}
+.oatRow {
+  display: list-item;
+}
+
+.table-of-contents {
+  float: left;
+  padding-top: 3em;
+  color: #4c2828;
+}
+
+.table-of-contents:link {
+  color: rgb(76, 40, 24);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.table-of-contents:hover {
+  color: rgb(76, 40, 24);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#what {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
+}
+#why {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
+}
+
+#assessment {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
+}
+
+#how {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
+}
+.h3R {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bolder;
+
+  padding-top: 2%;
+  color: rgb(76, 40, 24);
+}
+.h3F {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bolder;
+  color: rgb(76, 40, 24);
+}
+
+.h3 {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
+}
+
+.h3F2 {
+  font-family: "Lucida Handwriting";
+  font-weight: bold;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
+}
+.h3B {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-top: 10%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
+}
+h4 {
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-left: 4.5%;
+  color: rgb(76, 40, 24);
+}
+
+aside {
+  float: right;
+  width: 30%;
+  padding-right: 2em;
+  padding-left: 10%;
+  padding-top: 3em;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  padding: 15px;
+  padding-bottom: 2%;
+  color: rgb(76, 40, 24);
+}
+
+.bfastTitle {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  height: 100%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+ul li {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  height: 100%;
+  font-size: 1.2em;
+  margin: 7px;
+}
+
+ol li {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  height: 100%;
+  font-size: 1.2em;
+  margin: 4px;
+}
+
+.toServe {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  font-size: 0.7em;
+}
+.listwithin {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  margin: 10px;
+}
+
+p {
+  color: rgb(76, 40, 24);
+  font-family: "Lucida Handwriting";
+  font-size: large;
+  padding-left: 3.5%;
+}
+
+table {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid rgb(173, 123, 76);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f4e1cd;
+}
+
+#Oats {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  width: 100%;
+  border: none;
+}
+
+
+#Oats .img3 {
+  border-radius: 6.5%;
+  height: 300px;
+  width: 400px;
+  padding: 4%;
+  position: relative;
+}
+#Pancakes .img3 {
+  border-radius: 6.5%;
+  height: 300px;
+  width: 400px;
+  padding: 4%;
+  position: relative;
+}
+
+#Smoothies .img3 {
+  border-radius: 6.5%;
+  height: 300px;
+  width: 400px;
+  padding: 4%;
+  position: relative;
+}
+#Chia .img3 {
+  border-radius: 6.5%;
+  height: 300px;
+  width: 400px;
+  padding: 4%;
+  position: relative;
+}
+.imgAbout {
+  border-radius: 3%;
+  height: 450px;
+  width: 450px;
+  position: relative;
+}
+
+#wraps .img3 {
+
+  border-radius: 3%;
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+
+#Salads .img3 {
+
+  border-radius: 3%;
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+
+#Books .img3 {
+  border-radius: 4.5%;
+  height: 200px;
+  width: 400px;
+  padding: 1%;
+  position: relative;;
+  
+}
+
+#Podcasts .img3 {
+  border-radius: 4.5%;
+  height: 150px;
+  width: 300px;
+  padding: 1%;
+  position: relative;;
+  
+}
+#videos .img3 {
+  border-radius: 4.5%;
+  height: 150px;
+  width: 300px;
+  padding: 1%;
+  position: relative;;
+  
+}
+
+
+#mentors .img3 {
+  border-radius: 4.5%;
+  height: 150px;
+  width: 300px;
+  padding: 1%;
+  position: relative;;
+  
+}
+
+
+
+.aboutP {
+  font-size: 23px;
+  padding: 2em;
+}
+.WelP {
+  font-size: 20px;
+}
+.lost50,
+.walkMore {
+  padding-top: 13px;
+  padding-left: 60px;
+}
+
+.walkMore {
+  padding-top: 200px;
+}
+.img6 {
+  border-radius: 1%;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+.img7 {
+  border-radius: 1%;
+  height: 200px;
+  width: 400px;
+  position: relative;
+}
+
+.img8 {
+  border-radius: 2%;
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+.img9 {
+  border-radius: 2%;
+  height: 500%;
+  width: 500%;
+  float: left;
+  position: relative;
+}
+
+.Sources {
+  background-color: rgba(253, 220, 193, 0.521);
+  width: 45%;
+  height: 100%;
+  border-radius: 1%;
+  padding: 15px;
+}
+#ContactInfo {
+  background-color: rgba(253, 220, 193, 0.521);
+  width: 100%;
+  height: 100%;
+  border-radius: 1%;
+  padding: 15px;
+  position: fill-content;
+}
+
+#Desserts .img3 {
+  border-radius: 6.5%;
+  height: 400px;
+  width: 550px;
+  padding: 4%;
+}
+
+#Drinks .img3 {
+  border-radius: 6.5%;
+  height: 350px;
+  width: 500px;
+  padding: 4%;
+  position: relative;
+}
+#Granola .img3 {
+  border-radius: 6.5%;
+  height: 400px;
+  width: 550px;
+  padding: 4%;
+}
+
+#TofCBfast {
+  float: left;
+  padding: 0.3%;
+}
+.panInfo {
+  width: 33.33%;
+  border: none;
+  background-color: rgb(245, 246, 237);
+}
+
+.OatsIdeas,
+.bfastTitle {
+  border: none;
+  text-align: center;
+}
+.OatsIdeas,
+.img3 {
+  border: none;
+}
+
+.OatsIdeas {
+  border: none;
+  background-color: rgb(245, 246, 237);
+}
+.bfastTitle {
+  border: none;
+  background-color: rgb(245, 246, 237);
+}
+
+.OatInfo {
+  border: none;
+
+  background-color: rgb(245, 246, 237);
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(76, 40, 24);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.nav-link {
+  font-size: x-large;
+  font-family: "Lucida Handwriting";
+  font-weight: bolder;
+  padding-bottom: 1em;
+}
+
+ul {
+  white-space: initial;
+  width: 100%;
+  line-height: 100%;
+}
+
+.list {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+}
+
+.container-expand-lg input[type="text"] {
+  float: left;
+  padding: 8px;
+  border: none;
+}
+
+.container-expand-lg a.active {
+  background-color: #4c2828;
+  color: white;
+}
+
+.search-container {
+  float: right;
+}
+
+.nav-item {
+  padding-right: 1em;
+}
+
+.container-expand-lg .search-container button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+}
+
+.author {
+  display: block;
+  width: 30%;
+  padding: 5% 5% 5% 3%;
+}
+
+.container-expand-lg .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 500px) {
+  .author {
+    width: 14em;
+  }
+  .list {
+    line-height: 100px;
+  }
+  .container-expand-lg .search-container {
+    float: none;
+  }
+
+  .container-expand-lg .search-container input[type="text"] {
+    float: right;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+  }
+  .container-expand-lg input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.column {
+  flex: 33.33%;
+  padding: 15px;
+}
+
+.column1 {
+  flex: 33.33%;
+  padding: 5em;
+}
+
+.bottomNav {
+  font-family: "Lucida Handwriting";
+  padding-top: 3%;
+
+  color: rgb(76, 40, 24);
+}
+
+.atomic {
+  white-space: nowrap;
+  line-height: 100px;
+}
+
+form.searchsubmit {
+  display: inline-block;
+}
+#demo {
+  float: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.fitImg {
+  border-radius: 4%;
+  height: 400px;
+  width: 400px;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  margin-bottom: 3em;
+}

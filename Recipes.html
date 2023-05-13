@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <!--required meta tags-->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style> img { max-width: 100%; } 
+        
+      
+        
+        .bottomNav {
+            column-count: 5;
+            column-gap: 20px;
+            column-rule-style: solid;
+            column-width: 150px;
+          
+            max-height: max-content;
+            overflow-y: auto;
+            font-size: 15px;
+            white-space: nowrap;
+            page-break-inside: avoid;
+
+            list-style-position: outside;
+            margin-bottom: 3em;
+        
+        }
+      ul li {
+        height: 20px;
+      }
+
+        </style>
+         <!--bootstrap CSS-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>Tips & Tricks</title>
+        <link rel="stylesheet" href="stylesheetM.css">
+
+    
+
+        <center><h1 class="h1">Evoke</h1></center>
+    </head>
+
+    
+    <body>
+      
+        
+    <nav class="navbar-expand-sm navbar-light" style="background-color: #81685D;">
+        <div class="container-expand-lg" role="navigation" style = "position:relative; left: 3vh; top: 1vh;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <form>
+                <input type="button" value="<" onclick="history.back()">
+               </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tips&tricks.html">Tips & Tricks </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Recipes.html">Recipes</a>
+            </li>
+           
+              <li class="nav-item">
+                <a class="nav-link" href="recommendations.html">Recommendations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+              </li>
+              <div class="search-container" >
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search" > 
+                  <button type="submit">Submit</button>
+               </form>
+              </div>
+            </div>
+        
+          </ul>
+        </div>
+      </nav>
+
+      <center><h2 class="h2">Recipes</h2></center>
+
+    
+
+    <main>
+      <div class="row">
+      <div class="column">
+        <a href="breakfast.html">
+    <center><img class="img2" src="photos/bfast.webp" alt="breakfast"  style="width:600px" height="600px"></center> 
+      <center> <div>Breakfast</div> </center>
+        </a>
+      </div>
+      
+      <div class="column">
+        <a href="Snacks.html">
+          <center> <img class="img2" src="photos/breakfast.webp" alt="snacks" style="width:600px" height="600px"></center> 
+          <center> <div>Snacks</div> </center>
+      </a>
+      </div>
+      
+      </div>
+        <div class="row">
+          <div class="column">
+            <a href="lunch.html">
+            <center><img class="img2" src="photos/lunch.jpg" alt="lunch" style="width:600px" height="600px"></center> 
+            <center> <div>Lunch</div> </center>
+          </a>
+          </div>
+        <div class="column">
+          <a href="dinners.html">
+         <center><img class="img2" src="photos/dinners.jpeg" alt="dinner" style="width:600px" height="600px"></center> 
+         <center> <div>Dinner</div> </center>
+        </a>
+        </div>
+
+ 
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="dropdown-divider"></div>
+
+<div class="bottomNav">
+    <div class="column 0" style="height: 150px;">
+      <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
+        <p>       
+              
+        
+        </p>
+    </div>
+    <div class="column 1" >
+      <a href="tips&tricks.html"> <Center><h3 class="h3">Tips & Tricks</h3></Center> </a>
+        <ul>
+          <a href="mindset.html"> <li>Mindset </li> </a>
+          <a href="wellness.html"> <li>Wellness </li> </a>
+          <a href="fitness.html"> <li>Fitness</li> </a>
+       
+        </ul>
+    </div>
+
+    <div class="column 2" >
+      <a href="Recipes.html">  <Center> <h3 class="h3">Recipes</h3> </Center> </a>
+        
+        <ul>
+          <a href="breakfast.html"> <li>Breakfast</li>  </a>
+          <a href="lunch.html"> <li>Lunch</li>  </a>
+            <a href="dinners.html"> <li>Dinner</li> </a>
+              <a href="Snacks.html"> <li>Healthy Snacks</li> </a>
+          
+            
+         </ul>
+    </div>
+
+    <div class="column">
+      <a href="recommendations.html"> <Center><h3 class="h3B">Recommendations</h3> </Center> </a>
+      <ul>
+        <a href="recommendations.html"><li>Podcasts</li></a>
+        <a href="recommendations.html"> <li>Books</li></a>
+        <a href="recommendations.html"> <li>Videos</li></a>
+        <a href="recommendations.html"> <li>Mentors</li></a>
+       </ul>
+  </div>
+  <div class="column" >
+      <a href="about.html"><Center> <h3 class="h3B">About</h3> </Center></a>
+      <ul>
+        <a href="about.html">   <li>Meet Adrianna</li></a>
+        <a href="about.html">    <li>Contact</li> </a>
+       </ul>
+  </div>
+
+</div>
+
+
+</main>
+
+
+
+    <footer>
+        <div class="right"></div>
+        <p id="date"></p>
+      <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d.toDateString();
+            </script>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

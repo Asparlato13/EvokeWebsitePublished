@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <!--required meta tags-->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style> img { max-width: 100%; } 
+        
+      
+        
+        .bottomNav {
+            column-count: 5;
+            column-gap: 20px;
+            column-rule-style: solid;
+            column-width: 150px;
+          
+            max-height: max-content;
+            overflow-y: auto;
+            font-size: 15px;
+            white-space: nowrap;
+            page-break-inside: avoid;
+
+            list-style-position: outside;
+            margin-bottom: 0em;
+            padding-top: 15px;
+        
+        }
+      ul li {
+        height: 20px;
+      }
+
+
+        </style>
+         <!--bootstrap CSS-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>Home Page</title>
+        <link rel="stylesheet" href="stylesheetM.css">
+
+    
+
+        <center><h1 class="h1">Evoke</h1></center>
+    </head>
+
+    
+
+
+
+    <body>
+      
+        
+    <nav class="navbar-expand-sm navbar-light" style="background-color: #81685D;">
+        <div class="container-expand-lg" role="navigation" style = "position:relative; left: 3vh; top: 1vh;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <form>
+                <input type="button" value="<" onclick="history.back()">
+               </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tips&tricks.html">Tips & Tricks </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Recipes.html">Recipes</a>
+            </li>
+           
+              <li class="nav-item">
+                <a class="nav-link" href="recommendations.html">Recommendations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+              </li>
+              <div class="search-container" >
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search" > 
+                  <button type="submit">Submit</button>
+               </form>
+              </div>
+            </div>
+        
+          </ul>
+        </div>
+      </nav>
+
+      <center><h2 class="h2">Fitness</h2>
+        <h3 class="h3F">Move your Body!</h3>
+    </center>
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img class="fitImg" src="photos/fit2.JPG" style="width:100%">
+        <div class="text">Yoga</div>
+       
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img class="fitImg" src="photos/fit4.JPG" style="width:100%">
+        <div class="text">Weight Training</div>
+      
+      </div>
+   
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img class="fitImg"  src="photos/walking.JPG" style="width:100%">
+        <div class="text">Walking</div>
+
+      </div>
+      
+  
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img class="fitImg" src="photos/crunch.png" style="width:100%">
+        <div class="text">Core</div>
+      
+      </div>
+   
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img class="fitImg" src="photos/golf.jpg" style="width:100%">
+        <div class="text">Golf</div>
+       
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img class="fitImg" src="photos/fit3.JPG" style="width:100%">
+        <div class="text">Recovery</div>
+       
+      </div>
+   
+     
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+ <h1 class="h1Fit">How I lost 50+ lbs!</h1>
+
+  
+ <center>
+  <img class="img6" src="photos/img45.png" >  
+ 
+  </center>
+  
+
+ 
+ <section class="lost50">
+ <ol>
+  <li class="FitTips">
+    Focus
+  </li>
+ <ul>
+  <li class="FitTipsList">
+    Eliminating everything that does not align with nor aid to acheiving the main goal (to be healthy). 
+  </li>
+
+ </ul>
+   <li class="FitTips">
+     Movement
+   </li>
+  <ul>
+   <li class="FitTipsList">
+     Non-negotionable 60 mins of daily movement. 
+   </li>
+   <li class="FitTipsList">
+    Yoga, walking, weight lifting, jump roping, golf, and pickleball are my go-to exercises.
+  </li>
+ 
+  </ul>
+   <li class="FitTips">
+     Nutrition
+   </li>
+   <ul>
+     <li class="FitTipsList">
+       Garbage in, garbage out.
+     </li>
+     <li class="FitTipsList">
+       You cannot 'out run' a bad diet. 
+     </li>
+   </ul>
+   <li class="FitTips">
+     Listening to my body
+   </li>
+   <ul>
+     <li class="FitTipsList">
+       Find what feels good, each day may look different. Gage where you're at today and make adjustments from there.
+     </li>
+     <li class="FitTipsList">
+       Meeting my appropriate edge.
+     </li>
+     <li class="FitTipsList">
+      Prioritizing rest and recovery.
+    </li>
+   </ul>
+   <li class="FitTips">
+     Time
+   </li>
+   <ul>
+     <li class="FitTipsList">
+       It is a life style change.
+     </li>
+     <li class="FitTipsList">
+       Diets and temporary effort will work long-term.
+     </li>
+     <li class="FitTipsList">
+       Results will <b>not</b> come over night.
+     </li>
+   </ul>
+   <li class="FitTips">
+     Consistency
+   </li>
+   <ul>
+     <li class="FitTipsList">
+       Showing up is the hardest part.
+     </l>
+     <li class="FitTipsList">
+      Motivation is unreliable, it comes and goes. Discipline is the key to success.
+    </l>
+   </ul>
+   <li class="FitTips">
+     Tracking progress 
+   </li>
+   <ul>
+     <li class="FitTipsList">
+       * You cannot manage what you do not measure.
+     </li>
+     <li class="FitTipsList">
+       Track your moods, physique, foods, what went well, what did not go well, and what you will improve.
+     </li>
+   </ul>
+ </ol>
+ </section>
+ </section>
+ 
+
+
+
+
+
+<section class="walkMore">
+  <h1 class="h1Fit">Why You Should Start Walking More:</h1>
+
+
+<center>
+  <img class="img7" src="photos/walk4.jpeg" >
+<img class="img7" src="photos/walk3.jpeg" >
+<img class="img7" src="photos/IMG_6867.jpeg" >
+</center>
+<aside>
+<center>
+
+  <img class="img8" src="photos/winterwalk.png" >
+</center>
+
+<center>
+
+  <img class="img8" src="photos/springNature.JPG" >
+</center>
+
+<center>
+
+  <img class="img8" src="photos/winterPath.JPG" >
+</center>
+
+<center>
+
+  <img class="img8" src="photos/walk113.jpeg" >
+</center>
+<center>
+
+  <img class="img8" src="photos/summerPath.JPG" >
+</center>
+
+</aside>
+
+
+
+<ol class="fitTipsSection">
+  <li class="FitTips2">
+    Increases cardiovascular and pulmonary (heart and lung) fitness
+  </li>
+
+  <li class="FitTips2">
+    Stronger bones and improved balance
+  </li>
+
+  <li class="FitTips2">
+    Increases muscle strength and endurance
+  </li>
+  <li class="FitTips2">
+    Reduces body fat and tones your legs
+  </li>
+  <li class="FitTips2">
+    Reduces risk of heart disease and stroke
+  </li>
+  <li class="FitTips2">
+    Boosts immune function
+  </li>
+
+  <li class="FitTips2">
+    Eases joint pain
+  </li>
+
+  <li class="FitTips2">
+    It is free
+  </li>
+  <li class="FitTips2">
+    Requires no equipment 
+  </li>
+  <li class="FitTips2">
+    Can be done any where, any time, with anyone
+  </li>
+  <li class="FitTips2">
+    Improves your mood
+  </li>
+  <li class="FitTips2">
+    May help clear your head and help you think creatively
+  </li>
+  <li class="FitTips2">
+    Lowers stress
+  </li>
+  <li class="FitTips2">
+    Delays the onset of varicose veins
+  </li><li class="FitTips2">
+    Stimulates your digestive system
+  </li>
+</li><li class="FitTips2">
+  Improves your sleep
+</li>
+<li class="FitTips2">
+  Extends your life
+</li>
+
+<li class="FitTips2">
+  A theraputic nature bath
+</li>
+</ol>
+  
+
+<p class="FitTips"> *Your Goal:</p>
+<ul>
+  <li class="FitTips2">Walk for 30 mins daily. </l>
+    <li class="FitTips3">Work up to 10,000 steps a day. </l>
+</ul>
+
+
+<h3 class="h3F2"> How to Make Walking an Everday Habit:
+</h3>
+
+<ul>
+  <li class="FitTips3">
+    Park further away when running errands
+  </li>
+  <li class="FitTips3">
+    Take the stairs instead of the elevator
+  </li>
+  <li class="FitTips3">
+    Walk around the house while your coffee brews
+  </li>
+  <li class="FitTips3">
+    Take a "walking meeting" instead of sitting at your desk
+  </li>
+  <li class="FitTips3">
+    Burn calories and maintain a healthy weight
+  </li>
+
+  <li class="FitTips3">
+    Get off public transport one stop earlier and walk to work or home
+  </li>
+  <li class="FitTips3">
+    Walk (don’t drive) to the local shops
+  </li>
+  <li class="FitTips3">
+    Making walking a pleasure by
+  </li>
+  <ul>
+    <li class="FitTipsList3">
+      walking with friends
+    </li>
+    <li class="FitTipsList3">
+      varying where and when you walk
+    </li>
+
+    <li class="FitTipsList3">
+      walking the dog
+    </li>
+    <li class="FitTipsList3">
+      Invest in an at-home treadmill
+    </li>
+  </ul>
+
+
+  
+
+</ul>
+
+
+
+</section>
+  
+  <section class="Sources"> 
+    <h3 class="h3F2">Want more information? Check out these sources:</h3>
+
+<ul>
+    <a href="https://www.nbcnews.com/better/health/why-walking-most-underrated-form-exercise-ncna797271"> <li>Why Walking is The Most Underrated Form of Exercise (NBC) </li> </a>
+ 
+    <a href="https://www.health.harvard.edu/staying-healthy/5-surprising-benefits-of-walking"> <li>5 Surprising Benefits of Walking (Harvard.edu) </li> </a>
+    <a href="https://www.betterhealth.vic.gov.au/health/healthyliving/walking-for-good-health"> <li>Walking for Good Health (BetterHealth.gov) </li> </a>
+
+</ul>
+  </section>
+
+
+
+
+
+
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#"></a>
+
+</div>
+      </main>
+
+<div class="bottomNav">
+    <div class="column0" style="height: 150px;">
+      <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
+   
+    </div>
+    <div class="column" >
+        <a href="tips&tricks.html">  <Center><h3 class="h3B">Tips & Tricks</h3></Center> </a>
+        <ul>
+            <a href="mindset.html"> <li>Mindset </li> </a>
+            <a href="wellness.html"> <li>Wellness </li> </a>
+            <a href="fitness.html"> <li>Fitness</li> </a>
+        </ul>
+    </div>
+
+    <div class="column" >
+        <a href="Recipes.html">  <Center> <h3 class="h3B">Recipes</h3> </Center> </a>
+        
+        <ul>
+          <a href="breakfast.html"> <li>Breakfast</li>  </a>
+          <a href="lunch.html"> <li>Lunch</li>  </a>
+            <a href="dinners.html"> <li>Dinner</li> </a>
+              <a href="Snacks.html"> <li>Healthy Snacks</li> </a>
+          
+         </ul>
+    </div>
+
+    <div class="column">
+      <a href="recommendations.html"> <Center><h3 class="h3B">Recommendations</h3> </Center> </a>
+      <ul>
+        <a href="recommendations.html"><li>Podcasts</li></a>
+        <a href="recommendations.html"> <li>Books</li></a>
+        <a href="recommendations.html"> <li>Videos</li></a>
+        <a href="recommendations.html"> <li>Mentors</li></a>
+       </ul>
+  </div>
+  <div class="column" >
+      <a href="about.html"><Center> <h3 class="h3B">About</h3> </Center></a>
+      <ul>
+        <a href="about.html">   <li>Meet Adrianna</li></a>
+        <a href="about.html">    <li>Contact</li> </a>
+       </ul>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="right"></div>
+        <p id="date"></p>
+      <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d.toDateString();
+            </script>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
