@@ -29,34 +29,70 @@ html, body {
     color: rgb(76,40,24)
 }
 
-
-
-.nav-item {
-    padding-right: 1em;
-    padding-bottom: 3.5em;
-    
-
-    
-  }
-
-
-  .search-container{
-    float: right;
+.navbar {
+  overflow: hidden;
+  background-color: rgb(76,40,24); 
+  font-family: 'Lucida Handwriting', cursive;
 }
-.container-expand-lg .search-container button {
-    float: left;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  .container-expand-lg .search-container button:hover {
-    background: #ccc;
-  }
-  
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #81685D;
+}
+
+
+.subnav-content {
+  display: none;
+  position: relative;
+  left: 0;
+ 
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+.subnav-content a:hover {
+  background-color: #81685D;
+  color: #251914;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+
+
+
+
 
 ul li {
     font-family: 'Lucida Handwriting';
