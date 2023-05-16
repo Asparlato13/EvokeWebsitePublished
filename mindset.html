@@ -42,55 +42,62 @@
 
         <center><h1 class="h1">Evoke</h1></center>
     </head>
-
-    
     <body>
       
         
-    <nav class="navbar-expand-sm navbar-light" style="background-color: #81685D;">
-        <div class="container-expand-lg" role="navigation" style = "position:relative; left: 3vh; top: 1vh;">
-          <ul class="navbar-nav">
-
-            <li class="nav-item">
-              <form>
-                <input type="button" value="<" onclick="history.back()">
-               </form>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tips&tricks.html">Tips & Tricks </a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Recipes.html">Recipes</a>
-            </li>
-           
-              <li class="nav-item">
-                <a class="nav-link" href="recommendations.html">Recommendations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-              </li>
-              <div class="search-container" >
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="search" > 
-                  <button type="submit">Submit</button>
-               </form>
-              </div>
+   
+      <nav>
+    
+        <div class="navbar">
+          <button class="backButton" onclick="history.back()"> <
+          </button>
+    
+          <a href="index.html">Home</a>
+          <div class="subnav">
+             <button id="T&TButton" class="subnavbtn"></a>Tips & Tricks<i class="fa fa-caret-down"></i></button>
+             <script type="text/javascript">
+              document.getElementById("T&TButton").onclick = function () {
+                  location.href = "tips&tricks.html";
+              };
+          </script>
+            <div class="subnav-content">
+              <a href="mindset.html">Mindest</a>
+              <a href="fitness.html">Fitness</a>
+              <a href="wellness.html">Wellness</a>
             </div>
-         
-        
-          </ul>
+          </div> 
+          <div class="subnav">
+            <button id="RecipeButton" class="subnavbtn">Recipes <i class="fa fa-caret-down"></i></button>
+            <script type="text/javascript">
+              document.getElementById("RecipeButton").onclick = function () {
+                  location.href = "Recipes.html";
+              };
+            </script>
+            <div class="subnav-content">
+              <a href="breakfast.html">Breakfast</a>
+              <a href="lunch.html">Lunch</a>
+              <a href="Snacks.html">Snacks</a>
+              <a href="dinners.html">Dinner</a>
+            </div>
+          </div> 
+          <div class="subnav">
+            <button id="RecButton" class="subnavbtn">Recommendations <i class="fa fa-caret-down"></i></button>
+            <script type="text/javascript">
+              document.getElementById("RecButton").onclick = function () {
+                  location.href = "recommendations.html";
+              };
+            </script>
+            <div class="subnav-content">
+              <a href="#Books">Books</a>
+              <a href="#Podcasts">Podcasts</a>
+              <a href="#Videos">Videos</a>
+              <a href="#Mentors">Mentors</a>
+            </div>
+          </div>
+          <a href="about.html">About</a>
         </div>
-      </nav>
-
+  
+        </nav>
    
 
 

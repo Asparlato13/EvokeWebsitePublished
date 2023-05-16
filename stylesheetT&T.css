@@ -1,43 +1,42 @@
-
-html, body {
-    height: 100vh;
-    background-color: rgb(245,246,237);
-    padding: 1% 1% 1% 1%;
+html,
+body {
+  height: 100vh;
+  background-color: rgb(245, 246, 237);
+  padding: 1% 1% 1% 1%;
 }
 
-
 .h1 {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 65px;
-    padding-top: 1.5%;
-    padding-bottom: 0.5%;
-    font-weight: bolder;
-    color: #4c2828;
+  font-family: "Brush Script MT", cursive;
+  font-size: 65px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  font-weight: bolder;
+  color: #4c2828;
 }
 
 .h2 {
-    font-family: 'Lucida Handwriting', cursive;
-    padding-top: 3%;
-    padding-bottom: 1%;
-    color: rgb(76,40,24)
+  font-family: "Lucida Handwriting", cursive;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  color: rgb(76, 40, 24);
 }
 .h3 {
-    font-family: 'Lucida Handwriting', cursive;
-    font-weight: bold;
-    padding-top: 2.5%;
-    padding-left: 2%;
-    color: rgb(76,40,24)
+  font-family: "Lucida Handwriting", cursive;
+  font-weight: bold;
+  padding-top: 2.5%;
+  padding-left: 2%;
+  color: rgb(76, 40, 24);
 }
 
 .navbar {
   overflow: hidden;
-  background-color: rgb(76,40,24); 
-  font-family: 'Lucida Handwriting', cursive;
+  background-color: rgb(76, 40, 24);
+  font-family: "Lucida Handwriting", cursive;
 }
 
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 22px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -49,10 +48,8 @@ html, body {
   overflow: hidden;
 }
 
-
-
 .subnav .subnavbtn {
-  font-size: 16px;  
+  font-size: 22px;
   border: none;
   outline: none;
   color: white;
@@ -61,16 +58,16 @@ html, body {
   font-family: inherit;
   margin: 0;
 }
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: #81685D;
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: #81685d;
 }
-
 
 .subnav-content {
   display: none;
   position: relative;
   left: 0;
- 
+
   width: 100%;
   z-index: 1;
 }
@@ -80,8 +77,9 @@ html, body {
   color: white;
   text-decoration: none;
 }
-.subnav-content a:hover {
-  background-color: #81685D;
+.subnav-content,
+.subnavbtn a:hover {
+  background-color: #81685d;
   color: #251914;
 }
 .subnav:hover .subnav-content {
@@ -90,135 +88,120 @@ html, body {
 
 
 
-
-
-
-
 ul li {
-    font-family: 'Lucida Handwriting';
-    font-size: larger;
-    color: rgb(76,40,24)
-    
+  font-family: "Lucida Handwriting";
+  font-size: larger;
+  color: rgb(76, 40, 24);
 }
 @media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-    .container-expand-lg .search-container {
-        float: none;
-    }
-
-    .container-expand-lg .search-container input[type=text] {
-        float: right;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 2px;
-
-    }
-    .container-expand-lg input[type=text] {
-        border: 1px solid #ccc;  
-      }
+  .column {
+    width: 100%;
+  }
+  .container-expand-lg .search-container {
+    float: none;
   }
 
-  .container-expand-lg input[type=text] {
-    float: left;
-    padding: 8px;
-    border: none;
-   
-   
-  
+  .container-expand-lg .search-container input[type="text"] {
+    float: right;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 2px;
   }
-  .container-expand-lg a.active {
-    background-color: #4c2828;
-    color: white;
+  .container-expand-lg input[type="text"] {
+    border: 1px solid #ccc;
   }
-
-
-
-  img {
-    border-radius: 50%;
-    position: relative;
-    margin-right: 2%;
 }
 
+.container-expand-lg input[type="text"] {
+  float: left;
+  padding: 8px;
+  border: none;
+}
+.container-expand-lg a.active {
+  background-color: #4c2828;
+  color: white;
+}
+
+img {
+  border-radius: 50%;
+  position: relative;
+  margin-right: 2%;
+}
 
 .column div {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    background: rgb(76,40,24);
-    color: white;
-    margin-bottom: 40px;
-    font-family: 'Lucida Handwriting';
-    font-size: larger;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  background: rgb(76, 40, 24);
+  color: white;
+  margin-bottom: 40px;
+  font-family: "Lucida Handwriting";
+  font-size: larger;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
-.column:hover{
-    cursor: pointer;
+.column:hover {
+  cursor: pointer;
 }
 .column:hover div {
-    padding: 8px 15px;
-    visibility: visible;
-    opacity: 0.7;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
 }
-  .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    padding: 15px;
-  }
+.row {
+  display: flex;
+}
 
+.column {
+  flex: 33.33%;
+  padding: 15px;
+}
 
-  .column1 {
-    flex: 33.33%;
-    padding: 5em ;
-  }
+.column1 {
+  flex: 33.33%;
+  padding: 5em;
+}
 
 .right {
-    position: absolute;
-    right: 0px;
-    padding: 15px;
-    padding-bottom: 2%;
-    color: rgb(76,40,24)
-  }
-  a:link {
-
-    background-color: transparent;
-    text-decoration: none;
+  position: absolute;
+  right: 0px;
+  padding: 15px;
+  padding-bottom: 2%;
+  color: rgb(76, 40, 24);
+}
+a:link {
+  background-color: transparent;
+  text-decoration: none;
 }
 a:hover {
-    color: rgb(76,40,24);
-    background-color: transparent;
-    text-decoration: underline;
+  color: rgb(76, 40, 24);
+  background-color: transparent;
+  text-decoration: underline;
 }
 p {
-    color: rgb(76,40,24)
+  color: rgb(76, 40, 24);
 }
 
 .nav-link {
-    font-size: x-large;
-    font-family: 'Lucida Handwriting';
-    font-weight: bolder;
-    padding-bottom: 1em;
+  font-size: x-large;
+  font-family: "Lucida Handwriting";
+  font-weight: bolder;
+  padding-bottom: 1em;
 }
 
-form.searchsubmit{
-    display: inline-block;
-    
+form.searchsubmit {
+  display: inline-block;
 }
 
 #demo {
-    float: right;
+  float: right;
 }
 
 footer {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
