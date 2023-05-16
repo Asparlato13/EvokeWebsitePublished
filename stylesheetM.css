@@ -75,7 +75,7 @@ body {
 }
 
 #homePhoto {
-  border-radius: 50%;
+  border-radius: 53%;
 }
 
 .backButton {
@@ -229,7 +229,7 @@ body {
   font-weight: bolder;
 }
 .img1 {
-  border-radius: 50%;
+  border-radius: 45%;
   position: relative;
   margin-right: 2%;
 }
