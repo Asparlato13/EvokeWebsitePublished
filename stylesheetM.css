@@ -94,12 +94,22 @@ body {
   background-color: #81685d;
 }
 
-.h1Fit {
+.h1Fit1 {
   font-family: "Lucida Handwriting";
-  font-size: 70px;
+  font-size: 50px;
   padding-top: 1.5%;
   padding-bottom: 0.5%;
-  padding-left: 60px;
+  padding-left: 37%;
+  bottom: 50%;
+  font-weight: bolder;
+  color: #4c2828;
+}
+.h1Fit {
+  font-family: "Lucida Handwriting";
+  font-size: 50px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  padding-left: 15%;
   bottom: 50%;
   font-weight: bolder;
   color: #4c2828;
@@ -186,7 +196,7 @@ body {
   font-family: "Lucida Handwriting";
   color: rgb(76, 40, 24);
   height: 100%;
-  font-size: 20px;
+  font-size: 30px;
   margin: 4px;
   padding-top: 5px;
 }
@@ -194,8 +204,8 @@ body {
   font-family: "Lucida Handwriting";
   color: rgb(76, 40, 24);
   height: 100%;
-  font-size: 20px;
-  margin: 4px;
+  font-size: 30px;
+  margin: 1em;
   padding-top: 10px;
   padding-right: 800px;
 }
@@ -205,10 +215,18 @@ body {
   color: rgb(76, 40, 24);
   height: 100%;
   font-size: 24px;
-  margin: 4px;
+  margin: 1em;
+  overflow-wrap: break-word;
+}
+
+.FitTipsList3 {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  font-size: 24px;
+  margin: 1em;
 }
 .img6 {
-  border-radius: 3%;
+  border-radius: 10%;
   height: 47%;
   width: 47%;
 }
@@ -367,6 +385,7 @@ body {
 .table-of-contents ul li a {
   color: #008b8bbd;
   font-size: 25px;
+  padding-top: 2em;
 }
 
 .table-of-contents:link {
@@ -437,6 +456,7 @@ body {
 .h3F2 {
   font-family: "Lucida Handwriting";
   font-weight: bold;
+
   padding-top: 2.5%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
@@ -665,8 +685,8 @@ tr:nth-child(even) {
 
 .img8 {
   border-radius: 2%;
-  height: 300px;
-  width: 300px;
+  height: 400%;
+  width: 400%;
   position: relative;
 }
 .img9 {
