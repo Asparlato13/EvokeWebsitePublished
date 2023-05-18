@@ -220,6 +220,13 @@ body {
   position: static;
 }
 
+.ToCHeader {
+  font-family: "Lucida Handwriting";
+  padding-top: 3%;
+  padding-bottom: 1%;
+  color: rgba(51, 16, 0, 0.473);
+  font-weight: bolder;
+}
 .h2 {
   font-family: "Lucida Handwriting", cursive;
   padding-top: 3%;
@@ -237,6 +244,15 @@ body {
   margin-right: 2%;
   position: static;
   height: 400px;
+}
+
+#mindsetPhoto {
+  width: 33.33;
+  height: 425px;
+  width: 425px;
+  border-radius: 5%;
+  position: relative;
+  padding-bottom: 2em;
 }
 
 .imgPancakes {
@@ -342,22 +358,20 @@ body {
 
 .table-of-contents {
   float: left;
-  padding-top: 3em;
-  color: #4c2828;
+  padding: 2em;
 }
 
-.table-of-contents ul li {
-  color: rgb(76, 40, 24);
+.table-of-contents ul li a {
+  color: #008b8bbd;
+  font-size: 25px;
 }
 
 .table-of-contents:link {
-  color: rgb(76, 40, 24);
   background-color: transparent;
   text-decoration: underline;
 }
 
 .table-of-contents:hover {
-  color: rgb(76, 40, 24);
   background-color: transparent;
   text-decoration: none;
 }
@@ -365,6 +379,7 @@ body {
 #what {
   font-family: "Lucida Handwriting", cursive;
   font-weight: bold;
+  font-size: 50px;
   padding-top: 2.5%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
@@ -372,6 +387,7 @@ body {
 #why {
   font-family: "Lucida Handwriting", cursive;
   font-weight: bold;
+  font-size: 50px;
   padding-top: 2.5%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
@@ -380,6 +396,7 @@ body {
 #assessment {
   font-family: "Lucida Handwriting", cursive;
   font-weight: bold;
+  font-size: 50px;
   padding-top: 2.5%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
@@ -388,6 +405,7 @@ body {
 #how {
   font-family: "Lucida Handwriting", cursive;
   font-weight: bold;
+  font-size: 50px;
   padding-top: 2.5%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
@@ -488,7 +506,7 @@ ol li {
 p {
   color: rgb(76, 40, 24);
   font-family: "Lucida Handwriting";
-  font-size: large;
+  font-size: larger;
   padding-left: 3.5%;
 }
 
