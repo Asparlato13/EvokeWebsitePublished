@@ -696,6 +696,15 @@ tr:nth-child(even) {
   width: 400%;
   position: relative;
 }
+.imgJournal {
+  border-radius: 5%;
+  height: 45%;
+  width: 45%;
+  float: right;
+  padding: 1em;
+  padding-right: 4em;
+ 
+}
 .img9 {
   border-radius: 2%;
   height: 500%;
