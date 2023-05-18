@@ -358,7 +358,10 @@ body {
 
 .table-of-contents {
   float: left;
-  padding: 2em;
+  overflow: scroll;
+}
+.mindsetP {
+  overflow-x: auto;
 }
 
 .table-of-contents ul li a {
@@ -498,7 +501,7 @@ ol li {
   font-size: 0.7em;
 }
 
-.Bookimg{
+.Bookimg {
   width: 1000%;
   height: 900%;
 }
@@ -513,8 +516,6 @@ ol li {
   color: rgb(76, 40, 24);
   margin: 10px;
   font-size: 20px;
-  
-
 }
 .listwithin .points {
   padding: 0.3em;
@@ -541,7 +542,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #cefcfc1e	;
+  background-color: #cefcfc1e;
 }
 
 #Oats {
@@ -639,10 +640,10 @@ tr:nth-child(even) {
 .WelP {
   font-size: 20px;
 }
-.lost50,
+#lost50,
 .walkMore {
   padding-top: 13px;
-  padding-left: 60px;
+  padding-left: 7em;
 }
 
 .walkMore {
@@ -650,9 +651,9 @@ tr:nth-child(even) {
 }
 .img6 {
   border-radius: 1%;
-  height: 600px;
-  width: 600px;
-  position: relative;
+  height: 50%;
+  width: 50%;
+  position: center;
 }
 
 .img7 {
@@ -854,7 +855,6 @@ ul {
   flex: 33.33%;
   padding: 5em;
 }
-
 
 .bottomNav {
   font-family: "Lucida Handwriting";
