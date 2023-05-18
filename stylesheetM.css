@@ -224,7 +224,7 @@ body {
   font-family: "Lucida Handwriting";
   padding-top: 3%;
   padding-bottom: 1%;
-  color: rgba(51, 16, 0, 0.473);
+  color: rgba(51, 16, 0, 0.651);
   font-weight: bolder;
 }
 .h2 {
@@ -497,10 +497,27 @@ ol li {
   color: rgb(76, 40, 24);
   font-size: 0.7em;
 }
+
+.Bookimg{
+  width: 1000%;
+  height: 900%;
+}
+
+.bookTitle {
+  font-size: 28px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 .listwithin {
   font-family: "Lucida Handwriting";
   color: rgb(76, 40, 24);
   margin: 10px;
+  font-size: 20px;
+  
+
+}
+.listwithin .points {
+  padding: 0.3em;
 }
 
 p {
@@ -518,13 +535,13 @@ table {
 
 td,
 th {
-  border: 1px solid rgb(173, 123, 76);
+  border: 1px solid rgb(211, 166, 124);
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #f4e1cd;
+  background-color: #cefcfc1e	;
 }
 
 #Oats {
@@ -837,6 +854,7 @@ ul {
   flex: 33.33%;
   padding: 5em;
 }
+
 
 .bottomNav {
   font-family: "Lucida Handwriting";
