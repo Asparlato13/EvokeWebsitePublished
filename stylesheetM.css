@@ -109,7 +109,7 @@ body {
   font-size: 50px;
   padding-top: 1.5%;
   padding-bottom: 0.5%;
-  padding-left: 15%;
+  padding-left: 9%;
   bottom: 50%;
   font-weight: bolder;
   color: #4c2828;
@@ -189,6 +189,13 @@ body {
   margin: 4px;
 }
 
+#lost50 p {
+  font-family: "Lucida Handwriting";
+  color: rgb(76, 40, 24);
+  font-size: 25px;
+
+}
+
 .fitTipsSection {
   padding-top: 30px;
 }
@@ -207,7 +214,7 @@ body {
   font-size: 30px;
   margin: 1em;
   padding-top: 10px;
-  padding-right: 800px;
+
 }
 
 .FitTipsList {
