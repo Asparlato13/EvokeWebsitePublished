@@ -89,7 +89,6 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
- 
 }
 .backButton:hover {
   background-color: #81685d;
@@ -347,6 +346,10 @@ body {
   color: #4c2828;
 }
 
+.table-of-contents ul li {
+  color: rgb(76, 40, 24);
+}
+
 .table-of-contents:link {
   color: rgb(76, 40, 24);
   background-color: transparent;
@@ -423,6 +426,7 @@ body {
   padding-top: 10%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
+  position: relative;
 }
 h4 {
   font-family: "Lucida Handwriting", cursive;
@@ -512,7 +516,6 @@ tr:nth-child(even) {
   border: none;
 }
 
-
 #Oats .img3 {
   border-radius: 6.5%;
   height: 300px;
@@ -550,7 +553,6 @@ tr:nth-child(even) {
 }
 
 #wraps .img3 {
-
   border-radius: 3%;
   height: 300px;
   width: 400px;
@@ -558,7 +560,6 @@ tr:nth-child(even) {
 }
 
 #Salads .img3 {
-
   border-radius: 3%;
   height: 300px;
   width: 400px;
@@ -570,8 +571,7 @@ tr:nth-child(even) {
   height: 200px;
   width: 400px;
   padding: 1%;
-  position: relative;;
-  
+  position: relative;
 }
 
 #Podcasts .img3 {
@@ -579,29 +579,23 @@ tr:nth-child(even) {
   height: 150px;
   width: 300px;
   padding: 1%;
-  position: relative;;
-  
+  position: relative;
 }
 #videos .img3 {
   border-radius: 4.5%;
   height: 150px;
   width: 300px;
   padding: 1%;
-  position: relative;;
-  
+  position: relative;
 }
-
 
 #mentors .img3 {
   border-radius: 4.5%;
   height: 150px;
   width: 300px;
   padding: 1%;
-  position: relative;;
-  
+  position: relative;
 }
-
-
 
 .aboutP {
   font-size: 23px;
@@ -736,8 +730,6 @@ a:hover {
   padding-bottom: 1em;
 }
 
-
-
 ul {
   white-space: initial;
   width: 100%;
@@ -820,6 +812,7 @@ ul {
 .column {
   flex: 33.33%;
   padding: 15px;
+  position: relative;
 }
 
 .column1 {
