@@ -270,9 +270,17 @@ body {
 .img2 {
   border-radius: 5%;
   margin-right: 2%;
-  position: static;
-  height: 80%;
-  width: 80%;
+
+width: 40vw;
+height: 40vw;
+}
+
+.img2 {
+object-fit: cover;
+}
+
+.img2 {
+object-fit: contain;
 }
 
 #mindsetPhoto {
