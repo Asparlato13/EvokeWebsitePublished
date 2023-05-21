@@ -97,7 +97,7 @@ body {
 .h1Fit1 {
   font-family: "Lucida Handwriting";
   font-size: 50px;
-  padding-top: 1.5%;
+  padding-top: 5.5%;
   padding-bottom: 0.5%;
   padding-left: 37%;
   bottom: 50%;
@@ -185,8 +185,8 @@ body {
   font-family: "Lucida Handwriting";
   color: rgb(76, 40, 24);
   height: 100%;
-  font-size: 35px;
-  margin: 4px;
+  font-size: 30px;
+
 
 }
 
@@ -207,7 +207,7 @@ body {
   font-family: "Lucida Handwriting";
   color: rgb(76, 40, 24);
   height: 100%;
-  font-size: 30px;
+  font-size: 27px;
   margin: 4px;
   padding-top: 5px;
 }
@@ -467,7 +467,7 @@ body {
   font-family: "Lucida Handwriting";
   font-weight: bold;
   font-weight: 900;
-  padding-top: 2.5%;
+  padding-top: 5.5%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
 }
@@ -723,6 +723,7 @@ tr:nth-child(even) {
   height: 100%;
   border-radius: 1%;
   padding: 15px;
+
 }
 #ContactInfo {
   background-color: rgba(253, 220, 193, 0.521);
