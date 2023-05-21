@@ -187,6 +187,7 @@ body {
   height: 100%;
   font-size: 35px;
   margin: 4px;
+
 }
 
 #lost50 p {
@@ -195,9 +196,12 @@ body {
   font-size: 25px;
 
 }
-
+#lost50{
+  padding-left: 3em;
+}
 .fitTipsSection {
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-left: 5em;
 }
 .FitTips2 {
   font-family: "Lucida Handwriting";
@@ -214,7 +218,6 @@ body {
   font-size: 30px;
   margin: 1em;
   padding-top: 10px;
-
 }
 
 .FitTipsList {
@@ -463,7 +466,7 @@ body {
 .h3F2 {
   font-family: "Lucida Handwriting";
   font-weight: bold;
-
+  font-weight: 900;
   padding-top: 2.5%;
   padding-left: 2%;
   color: rgb(76, 40, 24);
@@ -529,14 +532,16 @@ ol li {
 }
 
 .Bookimg {
-  width: 1000%;
-  height: 900%;
+  width: 40%;
+  height: 40%;
+  padding-top: 3em;
 }
 
 .bookTitle {
   font-size: 28px;
   padding-top: 2em;
   padding-bottom: 2em;
+  font-weight: 900;
 }
 .listwithin {
   font-family: "Lucida Handwriting";
@@ -569,7 +574,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #cefcfc1e;
+  background-color: #fce0ce65;
 }
 
 #Oats {
@@ -670,7 +675,7 @@ tr:nth-child(even) {
 #lost50,
 .walkMore {
   padding-top: 13px;
-  padding-left: 7em;
+  
 }
 
 .walkMore {
@@ -703,7 +708,6 @@ tr:nth-child(even) {
   float: right;
   padding: 1em;
   padding-right: 4em;
- 
 }
 .img9 {
   border-radius: 2%;
