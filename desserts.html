@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <!--required meta tags-->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style> img { max-width: 100%; } 
+        
+      
+        
+        .bottomNav {
+            column-count: 5;
+            column-gap: 20px;
+            column-rule-style: solid;
+            column-width: 150px;
+          
+            max-height: max-content;
+            overflow-y: auto;
+            font-size: 15px;
+            white-space: nowrap;
+            page-break-inside: avoid;
+
+            list-style-position: outside;
+            margin-bottom: 0em;
+            padding-top: 15px;
+        
+        }
+     
+
+
+      ul li {
+        height: 20px;
+      }
+
+        </style>
+         <!--bootstrap CSS-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>Home Page</title>
+        <link rel="stylesheet" href="stylesheetM.css">
+
+    
+
+        <center><h1 class="h1">Evoke</h1></center>
+    </head>
+    <body>
+        <nav>
+    
+            <div class="navbar">
+              <button class="backButton" onclick="history.back()"> <
+              </button>
+        
+              <a href="index.html">Home</a>
+              <div class="subnav">
+                 <button id="T&TButton" class="subnavbtn"></a>Tips & Tricks<i class="fa fa-caret-down"></i></button>
+                 <script type="text/javascript">
+                  document.getElementById("T&TButton").onclick = function () {
+                      location.href = "tips&tricks.html";
+                  };
+              </script>
+                <div class="subnav-content">
+                  <a href="mindset.html">Mindest</a>
+                  <a href="fitness.html">Fitness</a>
+                  <a href="wellness.html">Wellness</a>
+                </div>
+              </div> 
+              <div class="subnav">
+                <button id="RecipeButton" class="subnavbtn">Recipes <i class="fa fa-caret-down"></i></button>
+                <script type="text/javascript">
+                  document.getElementById("RecipeButton").onclick = function () {
+                      location.href = "Recipes.html";
+                  };
+                </script>
+                <div class="subnav-content">
+                  <a href="breakfast.html">Breakfast</a>
+                  <a href="lunch.html">Lunch</a>
+                  <a href="Snacks.html">Snacks</a>
+                  <a href="dinners.html">Dinner</a>
+                </div>
+              </div> 
+              <div class="subnav">
+                <button id="RecButton" class="subnavbtn">Recommendations <i class="fa fa-caret-down"></i></button>
+                <script type="text/javascript">
+                  document.getElementById("RecButton").onclick = function () {
+                      location.href = "recommendations.html";
+                  };
+                </script>
+                <div class="subnav-content">
+                    <a href="recommendations.html">Books</a>
+                    <a href="recommendations.html">Podcasts</a>
+                    <a href="recommendations.html">Videos</a>
+                    <a href="recommendations.html">Mentors</a>
+                </div>
+              </div>
+              <a href="about.html">About</a>
+            </div>
+      
+            </nav>
+    
+
+      <center><h2 class="h2">Desserts</h2>
+    </center>
+
+    <aside id="TofCBfast">
+        <nav role="navigation" class="table-of-contents">
+          <h2 class="h2">Table of Contents:</h2>
+          <ul>
+            <li><a href="#Desserts">Desserts</a></li>
+          </ul>
+        </nav>
+      </aside>
+    <main>
+        
+
+
+
+
+<img class="img4" src="photos/cookies0.JPG" class="d-block w-900" alt="Oats Photo"> 
+ 
+<table id="Desserts">
+<tr class="OatsIdeas">
+  <th class="bfastTitle">Mini Choc Chip Protein Cookies</th>
+  <th class="bfastTitle">Coconut Dragon Fruit Energy Balls</th>
+  <th class="bfastTitle">Chocolate Chip Chai Loaf</th>
+  
+</tr>
+<tr class="OatsIdeas">
+    <td class="panInfo"><center> <img class="img3" src="photos/cookies.png" alt="breakfast" ></center> </td>
+    <td class="panInfo"><center> <img class="img3" src="photos/dragonprotienballs.png" alt="breakfast" ></center> </td>
+    <td class="panInfo"><center> <img class="img3" src="photos/chaiLoaf.png" alt="breakfast" ></center> </td>
+  </tr>
+<tr class="OatsIdeas">
+  <td class="OatInfo"> <ol>
+    <li>
+        2 tbsp room temp water
+    </li>
+    <li>
+        2 tbsp melted coconut oil
+    </li>
+    <li>
+        1 tsp vanilla extract
+    </li>
+    <li>
+        1/2 cup coconut sugar
+    </li>
+    <li>
+        1/4 tsp sea salt
+    </li>
+    <li>
+        1/4 cup Protein Powder
+    </li>
+    <li>
+        1/2 cup flour (GF, buckwheat or plain)
+    </li>
+    <li>
+      <i>1/4 tsp baking soda</i>  
+    </li>
+    <li>
+        1/4 cup vegan choc chips</li>
+    <li>
+        <b>Method:</b>  
+        <ul class="toServe">
+            <li><b>Preheat the oven to 160*C</b>. Line a tray with non-stick baking paper and set aside.</li>
+            <li>In a small bowl, combine the water, coconut oil, vanilla, coconut sugar and see salt and mix well.</li>
+            <li>Add in the protein, buckwheat flour and baking soda and mix until it forms a cookie dough. Fold through the chocolate chips</li>
+            <li>Transfer the dough into the fridge for 30 minutes to harden up slightly.</li>
+            <li>Roll into 9 small cookie dough balls and evenly space out on the tray. Add an extra tiny pinch of choc chips to each and flatten slightly.</li>
+            <li>Bake in the oven for <b>10-12 minutes or until golden</b>. Cool at room temperature slightly before enjoying (fresh cookies out of the oven come out very soft).</li>
+        </ul>
+      </li>
+
+</ol></td>
+  <td class="OatInfo"> <ol>
+   <li>
+    1 packed cup desiccated coconut
+    </li>
+    <li>
+        1/2 packed cup blanched almond flour
+    </li>
+    <li>
+        1/2 tbsp Dragon Fruit (Pink Pitaya) Powder
+    </li>
+    <li>
+        1/3 cup rice malt syrup
+    </li>
+    <li>
+        2 tbsp chilled coconut cream
+    </li>
+    <li>
+        1/2 tsp vanilla
+    </li>
+    <li>
+        <b>Method:</b>  
+        <ul class="toServe">
+            <li>Add the coconut, almond flour and dragon fruit powder into a bowl. Mix well to combine.</li>
+            <li>Add in the remaining ingredients and mix well until you reach a mixture that resembles wet sand. If it’s too dry, add in more coconut cream and if it’s too wet, add in more desiccated coconut.</li>
+            <li>Roll into nine balls then coat in more coconut.</li>
+            <li>Enjoy immediately and keep any leftovers in an airtight container in the fridge.</li>
+        </ul>
+      </li>
+</ol></td>
+  <td class="OatInfo"> <ol>
+    <li>
+        1 cup non-dairy milk
+    </li>
+    <li>
+        1/3 cup neutral oil
+    </li>
+    <li>
+        1/2 tbsp vanilla extract
+    </li>
+    <li>
+        1/2 tbsp apple cider vinegar
+    </li>
+    <li>
+        2 cups plain flour
+    </li>
+    <li>
+        2/3 cup coconut sugar
+    </li>
+    <li>
+        1/3 cup Authentic Chai Powder, plus extra to sprinkle on top
+    </li>
+    <li>
+        pinch of salt
+    </li>
+    <li>
+        3 tsp baking powder
+    </li>
+    <li>
+        3/4 cup vegan choc chips
+    </li>
+    <li>
+        <b>Method:</b>  
+        <ul class="toServe">
+            <li><b>Pre-heat the oven to 180°C.</b> In a large mixing bowl combine the milk, oil, vanilla and vinegar. Whisk well.</li>
+            <li>Add the flour, sugar, Authentic Chai, baking powder and sea salt. Mix until smooth.</li>
+            <li>Fold through the chocolate chips. Transfer into a line to loaf pan, top with extra chocolate chips and Authentic Chai and bake in the oven for <b>15 minutes or until cooked through</b>.</li>
+            <li>
+                Cool on a wire rack before slicing. Leftovers can be stored in an airtight container at room temperature for 2-3 days or in the fridge for 1 week.</li>
+        </ul>
+      </li>
+  
+   
+</ol></td>
+</tr>
+</table>
+
+
+
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"></a>
+        
+      </div>
+
+      </main>
+
+<div class="bottomNav">
+    <div class="column0" style="height: 150px;">
+        <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
+   
+    </div>
+    <div class="column" >
+        <a href="tips&tricks.html">  <Center><h3 class="h3B">Tips & Tricks</h3></Center> </a>
+        <ul>
+            <a href="mindset.html"> <li>Mindset </li> </a>
+            <a href="wellness.html"> <li>Wellness </li> </a>
+            <a href="fitness.html"> <li>Fitness</li> </a>
+        </ul>
+    </div>
+
+    <div class="column" >
+        <a href="Recipes.html">  <Center> <h3 class="h3B">Recipes</h3> </Center> </a>
+        
+        <ul>
+            <a href="breakfast.html"> <li>Breakfast</li>  </a>
+            <a href="lunch.html"> <li>Lunch</li>  </a>
+              <a href="dinners.html"> <li>Dinner</li> </a>
+                <a href="Snacks.html"> <li>Healthy Snacks</li> </a>
+            
+         </ul>
+    </div>
+
+    <div class="column">
+        <a href="recommendations.html"> <Center><h3 class="h3B">Recommendations</h3> </Center> </a>
+        <ul>
+          <a href="recommendations.html"><li>Podcasts</li></a>
+          <a href="recommendations.html"> <li>Books</li></a>
+          <a href="recommendations.html"> <li>Videos</li></a>
+          <a href="recommendations.html"> <li>Mentors</li></a>
+         </ul>
+    </div>
+    <div class="column" >
+        <a href="about.html"><Center> <h3 class="h3B">About</h3> </Center></a>
+        <ul>
+          <a href="about.html">   <li>Meet Adrianna</li></a>
+          <a href="about.html">    <li>Contact</li> </a>
+         </ul>
+    </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="right"></div>
+        <p id="date"></p>
+      <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d.toDateString();
+            </script>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

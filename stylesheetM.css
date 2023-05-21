@@ -271,7 +271,8 @@ body {
   border-radius: 5%;
   margin-right: 2%;
   position: static;
-  height: 400px;
+  height: 80%;
+  width: 80%;
 }
 
 #mindsetPhoto {
