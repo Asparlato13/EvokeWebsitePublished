@@ -620,30 +620,30 @@ tr:nth-child(even) {
 
 #Oats .img3 {
   border-radius: 6.5%;
-  height: 300px;
-  width: 400px;
+  height: 30vw;
+  width: 40vw;
   padding: 4%;
   position: relative;
 }
 #Pancakes .img3 {
   border-radius: 6.5%;
-  height: 300px;
-  width: 400px;
+  height: 30vw;
+  width: 40vw;
   padding: 4%;
   position: relative;
 }
 
 #Smoothies .img3 {
   border-radius: 6.5%;
-  height: 300px;
-  width: 400px;
+  height: 30vw;
+  width: 40vw;
   padding: 4%;
   position: relative;
 }
 #Chia .img3 {
   border-radius: 6.5%;
-  height: 300px;
-  width: 400px;
+  height: 30vw;
+  width: 40vw;
   padding: 4%;
   position: relative;
 }
@@ -656,48 +656,68 @@ tr:nth-child(even) {
 
 #wraps .img3 {
   border-radius: 3%;
-  height: 300px;
-  width: 400px;
+  height: 30vw;
+  width: 40vw;
   position: relative;
 }
 
 #Salads .img3 {
   border-radius: 3%;
-  height: 300px;
-  width: 400px;
+  height: 30vw;
+  width: 40vw;
   position: relative;
 }
 
 #Books .img3 {
   border-radius: 4.5%;
-  height: 200px;
-  width: 400px;
+  height: 30vw;
+  width: 40vw;
   padding: 1%;
   position: relative;
 }
 
 #Podcasts .img3 {
   border-radius: 4.5%;
-  height: 150px;
-  width: 300px;
+  height: 30vw;
+  width: 40vw;
   padding: 1%;
   position: relative;
 }
 #videos .img3 {
   border-radius: 4.5%;
-  height: 150px;
-  width: 300px;
+  height: 30vw;
+  width: 40vw;
   padding: 1%;
   position: relative;
 }
 
 #mentors .img3 {
   border-radius: 4.5%;
-  height: 150px;
-  width: 300px;
+  height: 30vw;
+  width: 40vw;
   padding: 1%;
   position: relative;
 }
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+
+
 
 .aboutP {
   font-size: 23px;
