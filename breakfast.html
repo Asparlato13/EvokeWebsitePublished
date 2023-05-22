@@ -111,11 +111,7 @@
      <center> 
 
 <table id="Oats">
-    <tr class="OatsIdeas">
-      <th class="bfastTitle">Apple & Cinnamon</th>
-      <th class="bfastTitle">Chocolate and Strawberries</th>
-      <th class="bfastTitle">Honey, Orange & Raspberry</th>
-    </tr>
+
     <tr class="OatsIdeas">
         <td class="OatInfo"><center> <img class="img3" src="photos/oat3.jpg" alt="breakfast" ></center> </td>
         <td class="OatInfo"><center> <img class="img3" src="photos/oat9.JPG" alt="breakfast" ></center> </td>
@@ -123,28 +119,41 @@
         
     </tr>
 
-  
+    <tr class="OatsIdeas">
+        <th class="bfastTitle"></th>
+        <th class="bfastTitle">Chocolate and Strawberries</th>
+        <th class="bfastTitle">Honey, Orange & Raspberry</th>
+      </tr>
 
- <tr class="OatsIdeas">
-      <td class="OatInfo"><button id="recipeButton" onclick="myFunction()">Recipe!</button> <ol>
-        <ol id="recipeList"></ol>
-
+        <tr class="OatsIdeas">
+            <td class="OatInfo">
+              <button onmouseover="showRecipe()" onmouseout="hideRecipe()">Apple & Cinnamon</button>
+              <ol id="recipeList"></ol>
+          
         <script>
-          function myFunction() {
-            var recipe = document.getElementById("recipeList");
-            recipe.innerHTML = `
-              <li>1/2 cup oats</li>
-              <li>1 apple</li>
-              <li>2 tbsp of cinnamon</li>
-              <li>1 tbsp chia seeds</li>
-              <li>1 tbsp vanilla extract</li>
-              <li>pinch of salt</li>
-            `;
-          }
-        </script>
+            function showRecipe() {
+              var recipe = document.getElementById("recipeList");
+              recipe.innerHTML = `
+                <li>1/2 cup oats</li>
+                <li>1 apple</li>
+                <li>2 tbsp of cinnamon</li>
+                <li>1 tbsp chia seeds</li>
+                <li>1 tbsp vanilla extract</li>
+                <li>pinch of salt</li>
+              `;
+            }
+      
+            function hideRecipe() {
+              var recipe = document.getElementById("recipeList");
+              recipe.innerHTML = "";
+            }
+          </script>
+
+
       </td>
     </tr>
     </ol></td>
+    
     
 
 
