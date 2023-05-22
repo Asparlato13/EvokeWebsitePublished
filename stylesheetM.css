@@ -299,12 +299,7 @@ object-fit: contain;
   border-radius: 2%;
   position: relative;
 }
-.img4 {
-  border-radius: 3%;
-  height: 30vw;
-  width: 45vw;
 
-}
 .img14 {
   border-radius: 3%;
   height: 35%;
@@ -420,7 +415,8 @@ object-fit: contain;
 
 .table-of-contents {
   float: left;
-  overflow: scroll;
+overflow: scroll;
+width: 45vw;
 }
 .mindsetP {
   overflow-x: auto;
@@ -699,6 +695,9 @@ tr:nth-child(even) {
   position: relative;
 }
 
+
+
+
 .CommunityButton{
   background-color:#e9b4b4;
   color: white;
@@ -711,6 +710,37 @@ tr:nth-child(even) {
   cursor: pointer;
 
 }
+#TofCBfast {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+
+
+
+.ToCButon{
+  background-color:#e9b4b4;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+
+#backToButton:hover {
+  background-color: #ce4949ef;
+}
+
+button:active {
+  background-color: #ce4949e3;
+}
+
 
 
 button {
@@ -719,7 +749,7 @@ button {
   padding: 10px 35px;
   font-size: 20px;
   font-weight: bolder;
-  width: 100%;
+ 
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -815,7 +845,7 @@ button:active {
 
 #Drinks .img3 {
   border-radius: 6.5%;
-  height: 350px;
+  height: 350px;  
   width: 500px;
   padding: 4%;
   position: relative;
@@ -827,10 +857,69 @@ button:active {
   padding: 4%;
 }
 
+
+
 #TofCBfast {
-  float: left;
-  padding: 0.3%;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
 }
+
+.ToCButton {
+  background-color: #e9b4b4;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#backToButton {
+  background-color: #e9b4b4; /* Change the background color to your desired color */
+  display: none; /* Hide the back button initially */
+}
+
+#ToCContent {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  background-color: rgba(244, 245, 240, 0.952);
+  padding: 10px;
+  z-index: 1;
+}
+
+.img4-container {
+  position: relative;
+  margin-left: 60px;
+  max-width: 50%;
+  padding: 3vw;
+}
+
+.img4 {
+  border-radius: 3%;
+  width: 50vw;
+}
+
+@media (max-width: 768px) {
+  .img4-container {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #ToCContent {
+    left: 0;
+    right: 0;
+  }
+}
+
+
+
+
+
 .panInfo {
   width: 33.33%;
   border: none;

@@ -87,25 +87,49 @@
     </center>
 
     <aside id="TofCBfast">
-        <nav role="navigation" class="table-of-contents">
-          <h2 class="h2">Table of Contents:</h2>
-          <ul>
-            <li><a href="#Oats">Oats</a></li>
-            <li><a href="#Pancakes">Pancakes & Waffles</a></li>
-
-            <li><a href="#Chia">Chia Pudding</a></li>
-    
-          </ul>
-        </nav>
+        <div id="ToCContent">
+          <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
+          <nav role="navigation" class="table-of-contents">
+            <h2 class="h2">Table of Contents:</h2>
+            <ul>
+              <li><a href="#Oats">Oats</a></li>
+              <li><a href="#Pancakes">Pancakes & Waffles</a></li>
+              <li><a href="#Chia">Chia Pudding</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button id="showToCButton" class="ToCButton" onclick="displayToC()">&#187;</button>
       </aside>
-    <main>
-        
-
-
-
-
-      <img class="img4" src="photos/oats.jpeg" class="d-block w-900" alt="Oats Photo">
-      <center>  <h3 class="h3R">Oats</h3></center>
+      
+      <main>
+        <div class="img4-container">
+       <img class="img4" src="photos/oats.jpeg" alt="Oats Photo">
+        </div>
+        <center>   <h3 class="h3R">Oats</h3></center>
+      </main>
+      
+      <script>
+      var showToCButton = document.getElementById("showToCButton");
+      var backToButton = document.getElementById("backToButton");
+      var tocContent = document.getElementById("ToCContent");
+      var initialButtonState = showToCButton.outerHTML;
+      
+      function displayToC() {
+        tocContent.style.display = "block";
+        showToCButton.style.display = "none";
+        backToButton.style.display = "inline-block";
+      }
+      
+      function goBackToButton() {
+        tocContent.style.display = "none";
+        showToCButton.style.display = "inline-block";
+        backToButton.style.display = "none";
+      }
+      
+      // Hide the back button initially
+      backToButton.style.display = "none";
+      </script>
+      
 
 
      <center> 
