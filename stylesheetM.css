@@ -702,12 +702,12 @@ tr:nth-child(even) {
 .CommunityButton{
   background-color:#e9b4b4;
   color: white;
-  padding: 10px 35px;
+  padding: 1vw 3vw;
   font-size: 15px;
   font-weight: bolder;
-  width: 15vw;
+  width: 13vw;
   border: none;
-  border-radius: 4px;
+  border-radius: 4vw;
   cursor: pointer;
 
 }
