@@ -104,11 +104,85 @@
 
 
 
-     <img class="img4" src="photos/oats.jpeg" class="d-block w-900" alt="Oats Photo">
-     <center>  <h3 class="h3R">Oats</h3></center>
+      <img class="img4" src="photos/oats.jpeg" class="d-block w-900" alt="Oats Photo">
+      <center>  <h3 class="h3R">Oats</h3></center>
 
 
      <center> 
+
+
+        <table id="Oats">
+            <tbody id="appleRow" class="OatsIdeas">
+              <tr>
+                <td class="OatInfo">
+                  <center> <img class="img3" src="photos/oat3.jpg" alt="breakfast"></center>
+                </td>
+                <td class="OatInfo">
+                  <center> <img class="img3" src="photos/oat9.JPG" alt="breakfast"></center>
+                </td>
+                <td class="OatInfo">
+                  <center> <img class="img3" src="photos/oat7.jpeg" alt="breakfast"></center>
+                </td>
+              </tr>
+              <tr>
+                <td class="OatInfo">
+                  <button onmouseover="showRecipe('recipeList1')" onmouseout="hideRecipe('recipeList1')">Apple & Cinnamon</button>
+                  <ol id="recipeList1"></ol>
+                  <script>
+                    function showRecipe(id) {
+                      var recipe = document.getElementById(id);
+                      recipe.innerHTML = `
+                        <li>1/2 cup oats</li>
+                        <li>1 apple</li>
+                        <li>2 tbsp of cinnamon</li>
+                        <li>1 tbsp chia seeds</li>
+                        <li>1 tbsp vanilla extract</li>
+                        <li>pinch of salt</li>
+                      `;
+                    }
+          
+                    function hideRecipe(id) {
+                      var recipe = document.getElementById(id);
+                      recipe.innerHTML = "";
+                    }
+                  </script>
+                </td>
+              </tr>
+            </tbody>
+          
+            <tbody id="chocolateRow" class="OatsIdeas">
+              <tr>
+                <td class="OatInfo">
+                  <button onmouseover="showRecipe('recipeList2')" onmouseout="hideRecipe('recipeList2')">Chocolate & Strawberries</button>
+                  <ol id="recipeList2"></ol>
+                  <script>
+                    function showRecipe(id) {
+                      var recipe = document.getElementById(id);
+                      recipe.innerHTML = `
+                        <li>1/2 cup oats</li>
+                        <li>1 Banana</li>
+                        <li>3-5 strawberries</li>
+                        <li>1/2 cup milk</li>
+                        <li>1/2 tsp cocoa powder</li>
+                        <li>mini chocolate chips</li>
+                        <li>1 tbsp chia seeds</li>
+                        <li>pinch of salt</li>
+                      `;
+                    }
+          
+                    function hideRecipe(id) {
+                      var recipe = document.getElementById(id);
+                      recipe.innerHTML = "";
+                    }
+                  </script>
+                </td>
+              </tr>
+            </tbody>
+            
+            <!-- Add more tbody elements for additional flavors -->
+            
+          </table>
+          
 
 <table id="Oats">
 
@@ -119,16 +193,13 @@
         
     </tr>
 
-    <tr class="OatsIdeas">
-        <th class="bfastTitle"></th>
-        <th class="bfastTitle">Chocolate and Strawberries</th>
-        <th class="bfastTitle">Honey, Orange & Raspberry</th>
-      </tr>
 
         <tr class="OatsIdeas">
             <td class="OatInfo">
               <button onmouseover="showRecipe()" onmouseout="hideRecipe()">Apple & Cinnamon</button>
+
               <ol id="recipeList"></ol>
+          
           
         <script>
             function showRecipe() {
@@ -148,44 +219,68 @@
               recipe.innerHTML = "";
             }
           </script>
-
-
+      
       </td>
     </tr>
     </ol></td>
-    
-    
 
-
- 
-    <td class="OatInfo"> <ol>
-        <li>
-            1/2 cup oats
-        </li>
-        <li>
-            1 Banana 
-        </li>
-        <li>
-            3-5 strawberries 
-        </li>
-        <li>
-            1/2 cup milk
-        </li>
-        <li>
-            1/2 tsp cocoa powder
-        </li>
-        <li>
-            mini chocolate chips 
-        </li>
-        <li>
-            1 tbsp chia seeds
-        </li>
-        <li>
-            pinch of salt
-        </li>
+    
+        
+    <td class="OatInfo"> 
+        <button onmouseover="showRecipe('recipeList2')" onmouseout="hideRecipe('recipeList2')">Chocolate & Strawberries</button>
+        <ol id="recipeList2"></ol>
+        
+            <script>
+                function showRecipe() {
+                  var recipe = document.getElementById("recipeList2");
+                  recipe.innerHTML = `
+                  <li>
+                    1/2 cup oats
+                </li>
+                <li>
+                    1 Banana 
+                </li>
+                <li>
+                    3-5 strawberries 
+                </li>
+                <li>
+                    1/2 cup milk
+                </li>
+                <li>
+                    1/2 tsp cocoa powder
+                </li>
+                <li>
+                    mini chocolate chips 
+                </li>
+                <li>
+                    1 tbsp chia seeds
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+                  `;
+                }
+          
+                function hideRecipe() {
+                  var recipe = document.getElementById("recipeList2");
+                  recipe.innerHTML = "";
+                }
+              </script>
+        
     </ol></td>
-    <td class="OatInfo"> <ol>
-       
+
+
+
+    <td class="OatInfo"> 
+        <button onmouseover="showRecipe('recipeList3')" onmouseout="hideRecipe('recipeList3')">Honey, Orange & Raspberry</button>
+        <ol id="recipeList3"></ol>
+
+
+        <script>
+            function showRecipe() {
+              var recipe = document.getElementById("recipeList2");
+              recipe.innerHTML = `
+            
         <li>
             1/2 cup oats
         </li>
@@ -219,8 +314,26 @@
         <li>
             pinch of salt
         </li>
+
+              `;
+            }
+      
+            function hideRecipe() {
+              var recipe = document.getElementById("recipeList3");
+              recipe.innerHTML = "";
+            }
+          </script>
+      
+
+
+
     </ol></td>
     </tr>
+
+
+
+
+
 
     <tr class="OatsIdeas">
         <th class="bfastTitle">Banana & Peanut Butter</th>
