@@ -8,27 +8,6 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <style> img { max-width: 100%; } 
         
-      
-        
-        .bottomNav {
-            column-count: 5;
-            column-gap: 20px;
-            column-rule-style: solid;
-            column-width: 150px;
-          
-            max-height: max-content;
-            overflow-y: auto;
-            font-size: 15px;
-            white-space: nowrap;
-            page-break-inside: avoid;
-
-            list-style-position: outside;
-            margin-bottom: 0em;
-            padding-top: 15px;
-        
-        }
-     
-
 
       ul li {
         height: 20px;
@@ -75,10 +54,12 @@
                   };
                 </script>
                 <div class="subnav-content">
-                  <a href="breakfast.html">Breakfast</a>
-                  <a href="lunch.html">Lunch</a>
-                  <a href="Snacks.html">Snacks</a>
-                  <a href="dinners.html">Dinner</a>
+                    <a href="breakfast.html">Breakfast</a>
+                    <a href="Smoothies.html">Smoothies</a>
+                    <a href="lunch.html">Lunch</a>
+                    <a href="Snacks.html">Snacks</a>
+                    <a href="dinners.html">Dinner</a>
+                    <a href="desserts.html">Dessert</a>
                 </div>
               </div> 
               <div class="subnav">
@@ -103,26 +84,52 @@
 
       <center><h2 class="h2">Healthy Snacks</h2>
     </center>
-
     <aside id="TofCBfast">
-        <nav role="navigation" class="table-of-contents">
-          <h2 class="h2">Table of Contents:</h2>
-          <ul>
-            <li><a href="#Granola">Granola</a></li>
-            <li><a href="#Desserts">Desserts</a></li>
-            <li><a href="#Drinks">Drinks</a></li>
-    
-          </ul>
-        </nav>
+        <div id="ToCContent">
+          <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
+          <nav role="navigation" class="table-of-contents">
+            <h2 class="h2TOC">Table of Contents:</h2>
+            <ul>
+              <li><a href="#Granola">Granola</a></li>
+              <li><a href="#Drinks">Drinks</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button id="showToCButton" class="ToCButton" onclick="displayToC()">&#187;</button>
       </aside>
+      
+  
+      
+      <script>
+      var showToCButton = document.getElementById("showToCButton");
+      var backToButton = document.getElementById("backToButton");
+      var tocContent = document.getElementById("ToCContent");
+      var initialButtonState = showToCButton.outerHTML;
+      
+      function displayToC() {
+        tocContent.style.display = "block";
+        showToCButton.style.display = "none";
+        backToButton.style.display = "inline-block";
+      }
+      
+      function goBackToButton() {
+        tocContent.style.display = "none";
+        showToCButton.style.display = "inline-block";
+        backToButton.style.display = "none";
+      }
+      
+      // Hide the back button initially
+      backToButton.style.display = "none";
+      </script>
+      
     <main>
         
 
 
-
+        <center> 
 
      <img class="img14" src="photos/granola0.JPG" class="d-block w-900" alt="Oats Photo">
-     <center>  <h3 class="h3R">Granola</h3></center>
+    <h3 class="h3R">Granola</h3></center>
 
 
 
@@ -130,303 +137,184 @@
 <table id="Granola">
     <tr class="OatsIdeas">
 
-      <th class="bfastTitle">Hazelnut Pecan Chocolate Granola</th>
-      <th class="bfastTitle">Caramel Superfood Granola</th>
-      <th class="bfastTitle">Salted Caramel Protein Granola</th>
-    </tr>
-    <tr class="OatsIdeas">
+        <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/granola2.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Hazelnut Pecan Chocolate Granola</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1.5 cups rolled oats (look for gluten-free variety)
+                    </li>
+                    <li>
+                        3/4 cup hazelnuts, chopped
+                    </li>
+                    <li>
+                        3/4 cup pecans, chopped
+                    </li>
+                    <li>
+                        1 tsp cinnamon
+                    </li>
+                    <li>
+                        1/2 cup shredded coconut
+                    </li>
+            
+                    <li>
+                        2 tbsp melted coconut oil
+                    </li>
+                    <li>
+                        1/3 cup cacao nibs
+                    </li>
+                    <li>
+                        1/4 cup Cacao Powder
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
+                    <li>
+                        1/2 cup rice malt syrup
+                    </li>
+                    <li>
+                        1 tbsp vanilla extract
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
+                    <li>
+                        <b>Method:</b>  
+                        <ul class="toServe">
+                            <li><b>Preheat the oven to 180*C</b>. Line a tray with non-stick baking paper and set aside.</li>
+                            <li>Combine oats, nuts & seeds, coconut, protein, cinnamon and salt into a bowl. Mix well.</li>
+                            <li>Spread onto the baking tray in an even layer and bake for <b>25-30 minutes or until golden</b>, giving it a stir at the halfway mark.</li>
+                            <li>Cool for 10 minutes before giving the granola another stir. Cool completely and transfer into an air-tight jar or container. Store at room temperature for up to 1 month.</li>
+                
+                        </ul>
+                      </li>
+                </ol>
+              </div>
+            </div>
+          </td>
 
-        <td class="OatInfo"><center> <img class="img3" src="photos/granola2.png" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/granola3.png" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/granola1.png" alt="breakfast" ></center> </td>
-    </tr>
-    <tr class="OatsIdeas">
-     
-    <td class="OatInfo"> <ol>
-        <li>
-            1.5 cups rolled oats (look for gluten-free variety)
-        </li>
-        <li>
-            3/4 cup hazelnuts, chopped
-        </li>
-        <li>
-            3/4 cup pecans, chopped
-        </li>
-        <li>
-            1 tsp cinnamon
-        </li>
-        <li>
-            1/2 cup shredded coconut
-        </li>
 
-        <li>
-            2 tbsp melted coconut oil
-        </li>
-        <li>
-            1/3 cup cacao nibs
-        </li>
-        <li>
-            1/4 cup Cacao Powder
-        </li>
-        <li>
-            pinch of salt
-        </li>
-        <li>
-            1/2 cup rice malt syrup
-        </li>
-        <li>
-            1 tbsp vanilla extract
-        </li>
-        <li>
-            pinch of salt
-        </li>
-        <li>
-            <b>Method:</b>  
-            <ul class="toServe">
-                <li><b>Preheat the oven to 180*C</b>. Line a tray with non-stick baking paper and set aside.</li>
-                <li>Combine oats, nuts & seeds, coconut, protein, cinnamon and salt into a bowl. Mix well.</li>
-                <li>Spread onto the baking tray in an even layer and bake for <b>25-30 minutes or until golden</b>, giving it a stir at the halfway mark.</li>
-                <li>Cool for 10 minutes before giving the granola another stir. Cool completely and transfer into an air-tight jar or container. Store at room temperature for up to 1 month.</li>
-    
-            </ul>
-          </li>
-
-    </ol></td>
-    <td class="OatInfo"> <ol>
-       
-        <li>
-            1.5 cups rolled oats (look for gluten-free variety)
-        </li>
-        <li>
-            1/2 cup almonds, roughly chopped
-        </li>
-        <li>
-            1/2 cup shredded coconut
-        </li>
-        <li>
-            1 tbsp almond butter, slightly heated if not runny enough
-        </li>
-        <li>
-            1 tsp cinnamon
-        </li>
-        <li>
-            1/2 cup or 6 large Medjool dates, diced
-        </li>
-        <li>
-            1 tbsp vanilla extract
-        </li>
-        <li>
-            pinch of salt
-        </li>
-
-        <li>
-            1 tsp Maca Powder
-        </li>
-        <li>
-            2 tbsp coconut oil
-        </li>
-        <li>
-            3 tbsp rice malt syrup (ensure the brand is gluten-free)
-        </li>
-        <li>
-            1/2 tbsp Boost Protein Powder
-        </li>
-        <li>
-            <b>Method:</b>  
-            <ul class="toServe">
-                <li><b>Preheat the oven to 160*C</b>. Line a tray with non-stick baking paper and set aside.</li>
-                <li>Combine oats, nuts & seeds, coconut, protein, cinnamon and salt into a bowl. Mix well.</li>
-                <li>Spread onto the baking tray in an even layer and bake for <b>30-35 minutes or until golden</b>, giving it a stir at the halfway mark.</li>
-                <li>Cool for 10 minutes before giving the granola another stir. Cool completely and transfer into an air-tight jar or container. Store at room temperature for up to 1 month.</li>
-    
-            </ul>
-          </li>
-
-    </ol></td>
-    <td class="OatInfo"> <ol>
-        <li>
-            1.5 cups rolled oats (look for gluten-free variety)
-        </li>
-        <li>
-            1 cup mixed nuts & seeds
-        </li>
-        <li>
-            1/2 cup shredded coconut
-        </li>
-        <li>
-            2 tbsp Protein Salted Caramel Powdwer
-        </li>
-        <li>
-            1 tsp cinnamon
-        </li>
-        <li>
-            2/3 cup rice malt syrup
-        </li>
-        <li>
-            1 tbsp vanilla extract
-        </li>
-        <li>
-            2 tbsp melted coconut oil
-        </li>
-        <li>
-            1 tsp chia seeds
-        </li>
-        <li>
-            pinch of salt
-        </li>
-        <li>
-            maple syrup, to taste
-        </li>
-        <li>
-            <b>Method:</b>  
-            <ul class="toServe">
-                <li><b>Preheat the oven to 160*C</b>. Line a tray with non-stick baking paper and set aside.</li>
-                <li>Combine oats, nuts & seeds, coconut, protein, cinnamon and salt into a bowl. Mix well.</li>
-                <li>Spread onto the baking tray in an even layer and bake for <b>30-35 minutes or until golden</b>, giving it a stir at the halfway mark.</li>
-                <li>Cool for 10 minutes before giving the granola another stir. Cool completely and transfer into an air-tight jar or container. Store at room temperature for up to 1 month.</li>
-    
-            </ul>
-          </li>
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/granola3.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Caramel Superfood Granola</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1.5 cups rolled oats (look for gluten-free variety)
+                    </li>
+                    <li>
+                        1/2 cup almonds, roughly chopped
+                    </li>
+                    <li>
+                        1/2 cup shredded coconut
+                    </li>
+                    <li>
+                        1 tbsp almond butter, slightly heated if not runny enough
+                    </li>
+                    <li>
+                        1 tsp cinnamon
+                    </li>
+                    <li>
+                        1/2 cup or 6 large Medjool dates, diced
+                    </li>
+                    <li>
+                        1 tbsp vanilla extract
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
+            
+                    <li>
+                        1 tsp Maca Powder
+                    </li>
+                    <li>
+                        2 tbsp coconut oil
+                    </li>
+                    <li>
+                        3 tbsp rice malt syrup (ensure the brand is gluten-free)
+                    </li>
+                    <li>
+                        1/2 tbsp Boost Protein Powder
+                    </li>
+                    <li>
+                        <b>Method:</b>  
+                        <ul class="toServe">
+                            <li><b>Preheat the oven to 160*C</b>. Line a tray with non-stick baking paper and set aside.</li>
+                            <li>Combine oats, nuts & seeds, coconut, protein, cinnamon and salt into a bowl. Mix well.</li>
+                            <li>Spread onto the baking tray in an even layer and bake for <b>30-35 minutes or until golden</b>, giving it a stir at the halfway mark.</li>
+                            <li>Cool for 10 minutes before giving the granola another stir. Cool completely and transfer into an air-tight jar or container. Store at room temperature for up to 1 month.</li>
+                
+                        </ul>
+                      </li>
+                   
+                </ol>
+              </div>
+            </div>
+          </td>
 
 
 
-
-    </ol></td>
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/granola1.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Salted Caramel Protein Granola</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1.5 cups rolled oats (look for gluten-free variety)
+                    </li>
+                    <li>
+                        1 cup mixed nuts & seeds
+                    </li>
+                    <li>
+                        1/2 cup shredded coconut
+                    </li>
+                    <li>
+                        2 tbsp Protein Salted Caramel Powdwer
+                    </li>
+                    <li>
+                        1 tsp cinnamon
+                    </li>
+                    <li>
+                        2/3 cup rice malt syrup
+                    </li>
+                    <li>
+                        1 tbsp vanilla extract
+                    </li>
+                    <li>
+                        2 tbsp melted coconut oil
+                    </li>
+                    <li>
+                        1 tsp chia seeds
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
+                    <li>
+                        maple syrup, to taste
+                    </li>
+                    <li>
+                        <b>Method:</b>  
+                        <ul class="toServe">
+                            <li><b>Preheat the oven to 160*C</b>. Line a tray with non-stick baking paper and set aside.</li>
+                            <li>Combine oats, nuts & seeds, coconut, protein, cinnamon and salt into a bowl. Mix well.</li>
+                            <li>Spread onto the baking tray in an even layer and bake for <b>30-35 minutes or until golden</b>, giving it a stir at the halfway mark.</li>
+                            <li>Cool for 10 minutes before giving the granola another stir. Cool completely and transfer into an air-tight jar or container. Store at room temperature for up to 1 month.</li>
+                
+                        </ul>
+                      </li>
+                    
+                   
+                </ol>
+              </div>
+            </div>
+          </td>
     </tr>
 
   </table>
-
-<center><img class="img4" src="photos/cookies0.JPG" class="d-block w-900" alt="Oats Photo"> </center>
-  <center> <h3 class="h3R">Desserts</h3></center>
-
-<table id="Desserts">
-<tr class="OatsIdeas">
-  <th class="bfastTitle">Mini Choc Chip Protein Cookies</th>
-  <th class="bfastTitle">Coconut Dragon Fruit Energy Balls</th>
-  <th class="bfastTitle">Chocolate Chip Chai Loaf</th>
-  
-</tr>
-<tr class="OatsIdeas">
-    <td class="panInfo"><center> <img class="img3" src="photos/cookies.png" alt="breakfast" ></center> </td>
-    <td class="panInfo"><center> <img class="img3" src="photos/dragonprotienballs.png" alt="breakfast" ></center> </td>
-    <td class="panInfo"><center> <img class="img3" src="photos/chaiLoaf.png" alt="breakfast" ></center> </td>
-  </tr>
-<tr class="OatsIdeas">
-  <td class="OatInfo"> <ol>
-    <li>
-        2 tbsp room temp water
-    </li>
-    <li>
-        2 tbsp melted coconut oil
-    </li>
-    <li>
-        1 tsp vanilla extract
-    </li>
-    <li>
-        1/2 cup coconut sugar
-    </li>
-    <li>
-        1/4 tsp sea salt
-    </li>
-    <li>
-        1/4 cup Protein Powder
-    </li>
-    <li>
-        1/2 cup flour (GF, buckwheat or plain)
-    </li>
-    <li>
-      <i>1/4 tsp baking soda</i>  
-    </li>
-    <li>
-        1/4 cup vegan choc chips</li>
-    <li>
-        <b>Method:</b>  
-        <ul class="toServe">
-            <li><b>Preheat the oven to 160*C</b>. Line a tray with non-stick baking paper and set aside.</li>
-            <li>In a small bowl, combine the water, coconut oil, vanilla, coconut sugar and see salt and mix well.</li>
-            <li>Add in the protein, buckwheat flour and baking soda and mix until it forms a cookie dough. Fold through the chocolate chips</li>
-            <li>Transfer the dough into the fridge for 30 minutes to harden up slightly.</li>
-            <li>Roll into 9 small cookie dough balls and evenly space out on the tray. Add an extra tiny pinch of choc chips to each and flatten slightly.</li>
-            <li>Bake in the oven for <b>10-12 minutes or until golden</b>. Cool at room temperature slightly before enjoying (fresh cookies out of the oven come out very soft).</li>
-        </ul>
-      </li>
-
-</ol></td>
-  <td class="OatInfo"> <ol>
-   <li>
-    1 packed cup desiccated coconut
-    </li>
-    <li>
-        1/2 packed cup blanched almond flour
-    </li>
-    <li>
-        1/2 tbsp Dragon Fruit (Pink Pitaya) Powder
-    </li>
-    <li>
-        1/3 cup rice malt syrup
-    </li>
-    <li>
-        2 tbsp chilled coconut cream
-    </li>
-    <li>
-        1/2 tsp vanilla
-    </li>
-    <li>
-        <b>Method:</b>  
-        <ul class="toServe">
-            <li>Add the coconut, almond flour and dragon fruit powder into a bowl. Mix well to combine.</li>
-            <li>Add in the remaining ingredients and mix well until you reach a mixture that resembles wet sand. If it’s too dry, add in more coconut cream and if it’s too wet, add in more desiccated coconut.</li>
-            <li>Roll into nine balls then coat in more coconut.</li>
-            <li>Enjoy immediately and keep any leftovers in an airtight container in the fridge.</li>
-        </ul>
-      </li>
-</ol></td>
-  <td class="OatInfo"> <ol>
-    <li>
-        1 cup non-dairy milk
-    </li>
-    <li>
-        1/3 cup neutral oil
-    </li>
-    <li>
-        1/2 tbsp vanilla extract
-    </li>
-    <li>
-        1/2 tbsp apple cider vinegar
-    </li>
-    <li>
-        2 cups plain flour
-    </li>
-    <li>
-        2/3 cup coconut sugar
-    </li>
-    <li>
-        1/3 cup Authentic Chai Powder, plus extra to sprinkle on top
-    </li>
-    <li>
-        pinch of salt
-    </li>
-    <li>
-        3 tsp baking powder
-    </li>
-    <li>
-        3/4 cup vegan choc chips
-    </li>
-    <li>
-        <b>Method:</b>  
-        <ul class="toServe">
-            <li><b>Pre-heat the oven to 180°C.</b> In a large mixing bowl combine the milk, oil, vanilla and vinegar. Whisk well.</li>
-            <li>Add the flour, sugar, Authentic Chai, baking powder and sea salt. Mix until smooth.</li>
-            <li>Fold through the chocolate chips. Transfer into a line to loaf pan, top with extra chocolate chips and Authentic Chai and bake in the oven for <b>15 minutes or until cooked through</b>.</li>
-            <li>
-                Cool on a wire rack before slicing. Leftovers can be stored in an airtight container at room temperature for 2-3 days or in the fridge for 1 week.</li>
-        </ul>
-      </li>
-  
-   
-</ol></td>
-</tr>
-</table>
 
 
 <center>  <img class="img4" src="photos/drinks0.JPG" class="d-block w-900" alt="Oats Photo">
@@ -436,116 +324,123 @@
 
 <table id="Drinks">
     <tr class="OatsIdeas">
-      <th class="bfastTitle">Turmeric Cacao Latte</th>
-      <th class="bfastTitle">Berry & Orange Infused Tea</th>
-      <th class="bfastTitle">Spiced Hot Chocolate</th>
-     
-      
-    </tr>
-    <tr class="OatsIdeas">
-        <td class="panInfo"><center> <img class="img3" src="photos/latte.png" alt="breakfast" ></center> </td>
-        <td class="panInfo"><center> <img class="img3" src="photos/tea.png" alt="breakfast" ></center> </td>
-        <td class="panInfo"><center> <img class="img3" src="photos/hotcoco.png" alt="breakfast" ></center> </td>
 
-       
-       
-        
-    </tr>
-    <tr class="OatsIdeas">
-      <td class="OatInfo"> <ol>
-        <li>
-            1 tbsp cacao powder
-        </li>
-        <li>
-            1 tsp turmeric powder
-        </li>
-        <li>
-           pinch of salt
-        </li>
-        <li>
-            1/2 tsp vanilla extract
-        </li>
-        <li>
-            1 tbsp maple syrup
-        </li>
-        <li>
-            1/4 cup boiling water
-        </li>
-        <li>
-            3/4 cup plant-based milk, warmed & frothed
-          </li>
-      
-          </li>
-    
-
-          <td class="OatInfo"> <ol>
-            <li>
-                1/4 cup Tropeaka Protect Herbal Infusion Tea
-    
-            </li>
-            <li>
-                1 cup frozen mixed berries
-            </li>
-            <li>
-                Zest of half an orange
-            </li>
-            <li>
-                Juice of 1 orange
-            </li>
-            <li>
-                1/4 cup fresh mint leaves
-    
-            </li>
-            <li>
-                Maple syrup, to taste
-    
-            </li>
-            <li>
-                1/2 tbsp Tropeaka Immunity Powder
-              </li>
-           
-              <li>
-                <b>Method:</b>  
-                <ul class="toServe">
-                    <li>Steep the herbal infusion in 750mL (3 cups) boiling water for 10 minutes, or longer depending on how strong you want it to be.</li>
-                    <li>Pour in the tea along with 375mL (1.5 cups) of room temperature water. Sweeten to taste with maple syrup and enjoy while warm. Alternately, chill in the fridge before serving.</li>
-    
-                </ul>
-              </li>
-          
-        </ol></td>
-    
-    </ol></td>
-      <td class="OatInfo"> <ol>
-       <li>
-        1.5 cup non-dairy milk
-        </li>
-        <li>
-            1/2 tsp vanilla extract
-        </li>
-        <li>
-            1.5 tbsp cacao powder
-        </li>
-        <li>
-            2 tbsp coconut sugar
-        </li>
-        <li>
-            1/8 tsp ground nutmeg
-        </li>
-        <li>
-            1 cinnamon stick
-        </li>
-        <li>
-            1 star anise
-        </li>
-        <li>
-            pinch of salt
-        </li>
-          </li>
-    </ol></td>
+        <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/latte.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Turmeric Cacao Latte</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1 tbsp cacao powder
+                    </li>
+                    <li>
+                        1 tsp turmeric powder
+                    </li>
+                    <li>
+                       pinch of salt
+                    </li>
+                    <li>
+                        1/2 tsp vanilla extract
+                    </li>
+                    <li>
+                        1 tbsp maple syrup
+                    </li>
+                    <li>
+                        1/4 cup boiling water
+                    </li>
+                    <li>
+                        3/4 cup plant-based milk, warmed & frothed
+                      </li>
+                  
+                </ol>
+              </div>
+            </div>
+          </td>
 
 
-    
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/tea.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Berry & Orange Infused Tea</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1/4 cup Tropeaka Protect Herbal Infusion Tea
+            
+                    </li>
+                    <li>
+                        1 cup frozen mixed berries
+                    </li>
+                    <li>
+                        Zest of half an orange
+                    </li>
+                    <li>
+                        Juice of 1 orange
+                    </li>
+                    <li>
+                        1/4 cup fresh mint leaves
+            
+                    </li>
+                    <li>
+                        Maple syrup, to taste
+            
+                    </li>
+                    <li>
+                        1/2 tbsp Tropeaka Immunity Powder
+                      </li>
+                   
+                      <li>
+                        <b>Method:</b>  
+                        <ul class="toServe">
+                            <li>Steep the herbal infusion in 750mL (3 cups) boiling water for 10 minutes, or longer depending on how strong you want it to be.</li>
+                            <li>Pour in the tea along with 375mL (1.5 cups) of room temperature water. Sweeten to taste with maple syrup and enjoy while warm. Alternately, chill in the fridge before serving.</li>
+                        </ul>
+                      </li>
+                </ol>
+              </div>
+            </div>
+          </td>
+
+
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/hotcoco.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Spiced Hot Chocolate</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1.5 cup non-dairy milk
+                        </li>
+                        <li>
+                            1/2 tsp vanilla extract
+                        </li>
+                        <li>
+                            1.5 tbsp cacao powder
+                        </li>
+                        <li>
+                            2 tbsp coconut sugar
+                        </li>
+                        <li>
+                            1/8 tsp ground nutmeg
+                        </li>
+                        <li>
+                            1 cinnamon stick
+                        </li>
+                        <li>
+                            1 star anise
+                        </li>
+                        <li>
+                            pinch of salt
+                        </li>
+                </ol>
+              </div>
+            </div>
+          </td>
+
+     <tr>
+
+
     </table>
 
 
@@ -556,50 +451,74 @@
 
       </main>
 
-<div class="bottomNav">
-    <div class="column0" style="height: 150px;">
-        <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
-   
-    </div>
-    <div class="column" >
-        <a href="tips&tricks.html">  <Center><h3 class="h3B">Tips & Tricks</h3></Center> </a>
-        <ul>
-            <a href="mindset.html"> <li>Mindset </li> </a>
-            <a href="wellness.html"> <li>Wellness </li> </a>
-            <a href="fitness.html"> <li>Fitness</li> </a>
-        </ul>
-    </div>
 
-    <div class="column" >
-        <a href="Recipes.html">  <Center> <h3 class="h3B">Recipes</h3> </Center> </a>
-        
-        <ul>
-            <a href="breakfast.html"> <li>Breakfast</li>  </a>
-            <a href="lunch.html"> <li>Lunch</li>  </a>
-              <a href="dinners.html"> <li>Dinner</li> </a>
-                <a href="Snacks.html"> <li>Healthy Snacks</li> </a>
+
+    
+      <div class="bottomNav">
+        <div class="row0">
+          <div class="column0" >
+            <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
+              <br></br>
             
-         </ul>
-    </div>
+            </div>
+          </div>
+          <div class="row0">
+          <div>
+            <a href="tips&tricks.html"> <Center><h3 class="h3">Tips & Tricks</h3></Center> </a>
+              <ul>
+                <a href="mindset.html"> <li>Mindset </li> </a>
+                <a href="fitness.html"> <li>Fitness</li> </a>
+                <a href="wellness.html"> <li>Wellness </li> </a>
+         
+             
+              </ul>
+          </div>
+          </div>
+          <div class="row0">
+          <div class="column0" >
+            <a href="Recipes.html">  <Center> <h3 class="h3">Recipes</h3> </Center> </a>
+              
+              <ul>
+                <a href="breakfast.html"> <li>Breakfast</li>  </a>
+                <a href="Smoothies.html"> <li>Smoothies</li>  </a>
+                <a href="lunch.html"> <li>Lunch</li>  </a>
+                <a href="Snacks.html"> <li>Snacks</li> </a>
+                  <a href="dinners.html"> <li>Dinner</li> </a>
+                  <a href="desserts.html"> <li>Dessert</li> </a>
+               </ul>
+          
+          </div>
+          </div>
+      
+          <div class="row0">
+          <div class="column0">
+            <a href="recommendations.html"> <Center><h3 class="h3">Recommendations</h3> </Center> </a>
+            <ul>
+              <a href="recommendations.html"><li>Podcasts</li></a>
+              <a href="recommendations.html"> <li>Books</li></a>
+              <a href="recommendations.html"> <li>Videos</li></a>
+              <a href="recommendations.html"> <li>Mentors</li></a>
+             </ul>
+            </div>
+        </div>
+        <div class="row0">
+        <div class="column0" >
+            <a href="about.html"><Center> <h3 class="h3">About</h3> </Center></a>
+            <ul>
+              <a href="about.html">   <li>Meet Adrianna</li></a>
+              <a href="about.html">    <li>Contact</li> </a>
+             </ul>
+            </div>
+        </div>
+      
+      </div>
+     
+  
+  
 
-    <div class="column">
-        <a href="recommendations.html"> <Center><h3 class="h3B">Recommendations</h3> </Center> </a>
-        <ul>
-          <a href="recommendations.html"><li>Podcasts</li></a>
-          <a href="recommendations.html"> <li>Books</li></a>
-          <a href="recommendations.html"> <li>Videos</li></a>
-          <a href="recommendations.html"> <li>Mentors</li></a>
-         </ul>
-    </div>
-    <div class="column" >
-        <a href="about.html"><Center> <h3 class="h3B">About</h3> </Center></a>
-        <ul>
-          <a href="about.html">   <li>Meet Adrianna</li></a>
-          <a href="about.html">    <li>Contact</li> </a>
-         </ul>
-    </div>
- 
-</div>
+
+
+
 
 
 

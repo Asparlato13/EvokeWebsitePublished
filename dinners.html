@@ -10,24 +10,7 @@
         
       
         
-        .bottomNav {
-            column-count: 5;
-            column-gap: 20px;
-            column-rule-style: solid;
-            column-width: 150px;
-          
-            max-height: max-content;
-            overflow-y: auto;
-            font-size: 15px;
-            white-space: nowrap;
-            page-break-inside: avoid;
 
-            list-style-position: outside;
-            margin-bottom: 0em;
-            padding-top: 15px;
-        
-        }
-     
 
 
       ul li {
@@ -77,10 +60,12 @@
                   };
                 </script>
                 <div class="subnav-content">
-                  <a href="breakfast.html">Breakfast</a>
-                  <a href="lunch.html">Lunch</a>
-                  <a href="Snacks.html">Snacks</a>
-                  <a href="dinners.html">Dinner</a>
+                    <a href="breakfast.html">Breakfast</a>
+                    <a href="Smoothies.html">Smoothies</a>
+                    <a href="lunch.html">Lunch</a>
+                    <a href="Snacks.html">Snacks</a>
+                    <a href="dinners.html">Dinner</a>
+                    <a href="desserts.html">Dessert</a>
                 </div>
               </div> 
               <div class="subnav">
@@ -105,160 +90,242 @@
       <center><h2 class="h2">Dinner</h2>
     </center>
 
+  
     <aside id="TofCBfast">
-        <nav role="navigation" class="table-of-contents">
-          <h2 class="h2">Table of Contents:</h2>
-          <ul>
-            <li><a href="#Pasta">Pasta</a></li>
-            
-
-    
-          </ul>
-        </nav>
+        <div id="ToCContent">
+          <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
+          <nav role="navigation" class="table-of-contents">
+            <h2 class="h2TOC">Table of Contents:</h2>
+            <ul>
+              <li><a href="#Pasta">Pasta</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button id="showToCButton" class="ToCButton" onclick="displayToC()">&#187;</button>
       </aside>
+      
+  
+      
+      <script>
+      var showToCButton = document.getElementById("showToCButton");
+      var backToButton = document.getElementById("backToButton");
+      var tocContent = document.getElementById("ToCContent");
+      var initialButtonState = showToCButton.outerHTML;
+      
+      function displayToC() {
+        tocContent.style.display = "block";
+        showToCButton.style.display = "none";
+        backToButton.style.display = "inline-block";
+      }
+      
+      function goBackToButton() {
+        tocContent.style.display = "none";
+        showToCButton.style.display = "inline-block";
+        backToButton.style.display = "none";
+      }
+      
+      // Hide the back button initially
+      backToButton.style.display = "none";
+      </script>
+      
     <main>
         
 
-
-
-
+        <center> 
      <img class="img5" src="photos/pasta.png" class="d-block w-900" alt="Oats Photo">
-     <center>  <h3 class="h3R">Pasta</h3></center>
+ <h3 class="h3R">Pasta</h3></center>
 
 
 
 
-<table id="pasta">
+
+
+
+
+<table id="Pasta">
     <tr class="OatsIdeas">
 
-<th class="bfastTitle">Homemade Pasta</th>
- <th class="bfastTitle">Homemade Gnocchi</th> 
-
-
-    </tr>
-    <tr class="OatsIdeas">
-
-        <td class="OatInfo"> <center><img class="imgPasta" src="photos/pasta3.png" alt="dinner" > </td></center>
-        <td class="OatInfo"> <center><img class="imgPasta" src="photos/pasta2.png" alt="dinner" ></td></center>
-
-
-    </tr>
-    <tr class="OatsIdeas">
-     
-    <td class="OatInfo"> <ol>
-        <li>
-            2 cups all-purpose flour, spooned & leveled
-        </li>
-        <li>
-            3 large eggs
-        </li>
-        <li>
-            ½ teaspoon sea salt
-        </li>
-        <li>
-            ½ tablespoon extra-virgin olive oil
-        </li>
-
- 
-            <p><b>Method:</b></p>      
-
-
-
+        <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/pasta3.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Homemade Pasta</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        2 cups all-purpose flour, spooned & leveled
+                    </li>
+                    <li>
+                        3 large eggs
+                    </li>
+                    <li>
+                        ½ teaspoon sea salt
+                    </li>
+                    <li>
+                        ½ tablespoon extra-virgin olive oil
+                    </li>
             
-            <ul class="toServe">
-                <li>Place the flour on a clean work surface and make a nest. </li>
-                <li>Add the eggs, olive oil, and salt to the center and use a fork to gently break up the eggs, keeping the flour walls intact as best as you can.</li>
-                <li>Knead the dough for 8 to 10 minutes and let rest at room temperature for 30 minutes.</li>
-                <li> Dust 2 large baking sheets with flour and set aside.</li>
-                <li>Slice the dough into four pieces. Gently flatten one into an oval disk.</li>
-                <li>Run the dough through the Pasta Roller Attachment three times on level 1 (the widest setting).</li>
-                <li>Set the dough piece onto a countertop or work surface. </li>
-                <li>Fold both short ends in to meet in the center, then fold the dough in half to form a rectangle.</li>
-                <li>Run the dough through the pasta roller three times on level 2, three times on level 3, and one time each on levels 4, 5, and 6.</li>
-                <li>
-                    Lay half of the pasta sheet onto the floured baking sheet and sprinkle with flour before folding the other half on top. 
-                </li>
-                <li>Sprinkle more flour on top of the second half. Every side should be floured so that your final pasta noodles won't stick together.</li>
-                <li>
-                    Repeat with remaining dough
-                </li>
-                <li>
-               
-                    Run the pasta sheets through the Pasta Cutter Attachment (pictured is the fettuccine cutter).</li>
-                    <li>Cook the pasta in a pot of salted boiling water for 1 to 2 minutes.</li>
-            </ul>
-          </li>
+             
+                        <p><b>Method:</b></p>      
+                        
+                        <ul class="toServe">
+                            <li>Place the flour on a clean work surface and make a nest. </li>
+                            <li>Add the eggs, olive oil, and salt to the center and use a fork to gently break up the eggs, keeping the flour walls intact as best as you can.</li>
+                            <li>Knead the dough for 8 to 10 minutes and let rest at room temperature for 30 minutes.</li>
+                            <li> Dust 2 large baking sheets with flour and set aside.</li>
+                            <li>Slice the dough into four pieces. Gently flatten one into an oval disk.</li>
+                            <li>Run the dough through the Pasta Roller Attachment three times on level 1 (the widest setting).</li>
+                            <li>Set the dough piece onto a countertop or work surface. </li>
+                            <li>Fold both short ends in to meet in the center, then fold the dough in half to form a rectangle.</li>
+                            <li>Run the dough through the pasta roller three times on level 2, three times on level 3, and one time each on levels 4, 5, and 6.</li>
+                            <li>
+                                Lay half of the pasta sheet onto the floured baking sheet and sprinkle with flour before folding the other half on top. 
+                            </li>
+                            <li>Sprinkle more flour on top of the second half. Every side should be floured so that your final pasta noodles won't stick together.</li>
+                            <li>
+                                Repeat with remaining dough
+                            </li>
+                            <li>
+                           
+                                Run the pasta sheets through the Pasta Cutter Attachment (pictured is the fettuccine cutter).</li>
+                                <li>Cook the pasta in a pot of salted boiling water for 1 to 2 minutes.</li>
+                        </ul>
+                      </li>
+                </ol>
+              </div>
+            </div>
+          </td>
+
+
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/pasta2.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Homemade Gnocchi</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        Russet Potatoes
+                                </li>
+                                <li>
+                                    1 egg
+                                </li>
+                                <li>
+                                    Tipo 00 Flour
+                                </li>
+                                <li>
+                                    Semolina flour, for dusting
+                                </li>
+                                <li>
+                                    pinch of salt
+                                </li>
+                                <li>
+                                    Potato Ricer
+                        
+                                </li>
+                                <p><b>Method:</b></p>      
+                                <ul class="toServe">
+                        
+                                    <li>
+                                        Cook The Potatoes until tender. (about 25 mins. you want to be able to easily poke a fork into potato.)
+                                    </li>
+                                    <li>
+                                        Once cool enough to handle, but still warm (not hot), remove the skin.
+                                    </li>
+                                    <li>Rice the potatoes directly over a large, wide bowl with a light layer of flour. 
+                                    </li>
+                        <li>
+                            Add egg and pinch of salt.
+                        </li>
+                        <li>
+                            Mix the dough. (Gently bring the dough together to form a cohesive ball)
+                        </li>
+                        <li>
+                            Cut the dough ball into 4 equal pieces.
+                        </li>
+                        <li>
+                            Roll one piece into a 10-12 inch (25-30 cm) log.
+                        </li>
+                        <li>
+                            Cut across into 20-22 gnocchi, about 1/2-inch (1.25 cm) in size to create little “pillows.”
+                        </li>
+                        <li>
+                            Transfer to a sheet pan dusted in semolina flour to prevent sticking. Repeat with the remaining pieces.
+                        </li>
+                        <li>
+                            If you’re going to cook the gnocchi now, have your sauce simmering and ready to go. <b>They take about 1 minute to cook, tops. </b>
+                        </li>
+                        <li>
+                           ** When they float to the top, they’re ready. 
+                        </li>
+                        
+                      
+                </ol>
+              </div>
+            </div>
+          </td>
 
 
 
 
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/pasta4.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Homemade Ravioli</button>
+              <div class="OatInfo">
+                <ol>
+ 
+                    <li>
+                        400 g 00’ Flour (3 cups spooned and levelled)
+                    </li>
+                    <li>
+                        4 large eggs free range
+                    </li>
+                    <li>
+                        1 egg yolk free range
+                    </li>
+                    <li>
+                        ½ teaspoon sea salt
+                    </li>
+                    <p><b>Equipment:</b></p>  
+                    <ul>
+                        <li>Pasta Wheel</li>
+                        <li>Ravioli Stamp</li>
+                        <li>Ravioli Maker</li>
+                    </ul>   
+            
+             
+                        <p><b>Method:</b></p>      
+                        <ul class="toServe">
+                            <li>Place the flour on a clean work surface and make a nest. </li>
+                            <li>Add the eggs, olive oil, and salt to the center and use a fork to gently break up the eggs, keeping the flour walls intact as best as you can.</li>
+                            <li>Knead the dough for 8 to 10 minutes and let rest at room temperature for 30 minutes.</li>
+                            <li> Dust 2 large baking sheets with flour and set aside.</li>
+                            <li>Slice the dough into four pieces. Gently flatten one into an oval disk.</li>
+                            <li>Run the dough through the Pasta Roller Attachment three times on level 1 (the widest setting).</li>
+                            <li>One important tip when using a ravioli maker is to dust it lightly with semolina or 00 flour to stop the pasta sticking to it . </li>
+                            <li>Place your sheet of pasta directly over the ravioli maker making sure there is enough overlap on all of the edges.</li>
+                            <li>Place the plastic dimples over the sheet of pasta and very lightly press to make little pockets for your filling.</li>
+                            <li>
+                                Fill the pockets with your desired filling (1 heaped teaspoon).
+                            </li>
+                            <li>Next, place your second sheet of pasta directly over the first and lightly push down to get rid of any air.</li>
+                            <li>
+                                Use your mini roller to roll over the ravioli maker until the pasta is cut around the edges.
+        
+                            </li>
+        
+                            <li>
+                           
+                                 ARemove the excess pasta dough from around the ravioli maker and turn it over to remove the ravioli.</li>
+                                <li>Top Tip: If your pasta has trouble sticking together then you can dab it very lightly with water to seal.</li>
+                        </ul>
+                      </li>
+             
+                      
+                </ol>
+              </div>
+            </div>
+          </td>
 
-    </ol></td>
-    <td class="OatInfo"> <ol>
-        <li>
-Russet Potatoes
-        </li>
-        <li>
-            1 egg
-        </li>
-        <li>
-            Tipo 00 Flour
-        </li>
-        <li>
-            Semolina flour, for dusting
-        </li>
-        <li>
-            pinch of salt
-        </li>
-        <li>
-            Potato Ricer
-
-        </li>
-        <p><b>Method:</b></p>      
-        <ul class="toServe">
-
-            <li>
-                Cook The Potatoes until tender. (about 25 mins. you want to be able to easily poke a fork into potato.)
-            </li>
-            <li>
-                Once cool enough to handle, but still warm (not hot), remove the skin.
-            </li>
-            <li>Rice the potatoes directly over a large, wide bowl with a light layer of flour. 
-            </li>
-<li>
-    Add egg and pinch of salt.
-</li>
-<li>
-    Mix the dough. (Gently bring the dough together to form a cohesive ball)
-</li>
-<li>
-    Cut the dough ball into 4 equal pieces.
-</li>
-<li>
-    Roll one piece into a 10-12 inch (25-30 cm) log.
-</li>
-<li>
-    Cut across into 20-22 gnocchi, about 1/2-inch (1.25 cm) in size to create little “pillows.”
-</li>
-<li>
-    Transfer to a sheet pan dusted in semolina flour to prevent sticking. Repeat with the remaining pieces.
-</li>
-<li>
-    If you’re going to cook the gnocchi now, have your sauce simmering and ready to go. <b>They take about 1 minute to cook, tops. </b>
-</li>
-<li>
-   ** When they float to the top, they’re ready. 
-</li>
-
-
-
-
-        </ul>
-      </li>
-
-    </ol></td>
-
-    
    
     </tr>
 
@@ -268,139 +335,71 @@ Russet Potatoes
 
 
 
-<center>
-<table id="pasta">
-    <tr class="OatsIdeas">
-
-        <th class="bfastTitle">Homemade Ravioli</th> 
-
-
-    </tr>
-    <tr class="OatsIdeas">
-
-
-        <td class="OatInfo"> <center><img class="imgPasta" src="photos/pasta4.png" alt="dinner" ></td></center>
-
-    </tr>
-
-
-
-
-    <tr class="OatsIdeas">
-     
-        <td class="OatInfo"> <ol>
-            <li>
-                400 g 00’ Flour (3 cups spooned and levelled)
-            </li>
-            <li>
-                4 large eggs free range
-            </li>
-            <li>
-                1 egg yolk free range
-            </li>
-            <li>
-                ½ teaspoon sea salt
-            </li>
-            <p><b>Equipment:</b></p>  
-            <ul>
-                <li>Pasta Wheel</li>
-                <li>Ravioli Stamp</li>
-                <li>Ravioli Maker</li>
-            </ul>   
-    
-     
-                <p><b>Method:</b></p>      
-                <ul class="toServe">
-                    <li>Place the flour on a clean work surface and make a nest. </li>
-                    <li>Add the eggs, olive oil, and salt to the center and use a fork to gently break up the eggs, keeping the flour walls intact as best as you can.</li>
-                    <li>Knead the dough for 8 to 10 minutes and let rest at room temperature for 30 minutes.</li>
-                    <li> Dust 2 large baking sheets with flour and set aside.</li>
-                    <li>Slice the dough into four pieces. Gently flatten one into an oval disk.</li>
-                    <li>Run the dough through the Pasta Roller Attachment three times on level 1 (the widest setting).</li>
-                    <li>One important tip when using a ravioli maker is to dust it lightly with semolina or 00 flour to stop the pasta sticking to it . </li>
-                    <li>Place your sheet of pasta directly over the ravioli maker making sure there is enough overlap on all of the edges.</li>
-                    <li>Place the plastic dimples over the sheet of pasta and very lightly press to make little pockets for your filling.</li>
-                    <li>
-                        Fill the pockets with your desired filling (1 heaped teaspoon).
-                    </li>
-                    <li>Next, place your second sheet of pasta directly over the first and lightly push down to get rid of any air.</li>
-                    <li>
-                        Use your mini roller to roll over the ravioli maker until the pasta is cut around the edges.
-
-                    </li>
-
-                    <li>
-                   
-                         ARemove the excess pasta dough from around the ravioli maker and turn it over to remove the ravioli.</li>
-                        <li>Top Tip: If your pasta has trouble sticking together then you can dab it very lightly with water to seal.</li>
-                </ul>
-              </li>
-    
-    
-    
-    
-    
-        </ol></td>
-</table>
-</center>
-    
-    
 
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#"></a>
         
       </div>
 
-      </main>
-
-<div class="bottomNav">
-    <div class="column0" style="height: 150px;">
-        <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
-   
-    </div>
-    <div class="column" >
-        <a href="tips&tricks.html">  <Center><h3 class="h3B">Tips & Tricks</h3></Center> </a>
-        <ul>
-            <a href="mindset.html"> <li>Mindset </li> </a>
-            <a href="wellness.html"> <li>Wellness </li> </a>
-            <a href="fitness.html"> <li>Fitness</li> </a>
-        </ul>
-    </div>
-
-    <div class="column" >
-        <a href="Recipes.html">  <Center> <h3 class="h3B">Recipes</h3> </Center> </a>
-        
-        <ul>
-            <a href="breakfast.html"> <li>Breakfast</li>  </a>
-            <a href="lunch.html"> <li>Lunch</li>  </a>
-              <a href="dinners.html"> <li>Dinner</li> </a>
-                <a href="Snacks.html"> <li>Healthy Snacks</li> </a>
+      </main>    <div class="bottomNav">
+        <div class="row0">
+          <div class="column0" >
+            <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
+              <br></br>
             
-            
-         </ul>
-    </div>
-
-    <div class="column">
-        <a href="recommendations.html"> <Center><h3 class="h3B">Recommendations</h3> </Center> </a>
-        <ul>
-          <a href="recommendations.html"><li>Podcasts</li></a>
-          <a href="recommendations.html"> <li>Books</li></a>
-          <a href="recommendations.html"> <li>Videos</li></a>
-          <a href="recommendations.html"> <li>Mentors</li></a>
-         </ul>
-    </div>
-    <div class="column" >
-        <a href="about.html"><Center> <h3 class="h3B">About</h3> </Center></a>
-        <ul>
-          <a href="about.html">   <li>Meet Adrianna</li></a>
-          <a href="about.html">    <li>Contact</li> </a>
-         </ul>
-    </div>
-</div>
-
-
-
-
+            </div>
+          </div>
+          <div class="row0">
+          <div>
+            <a href="tips&tricks.html"> <Center><h3 class="h3">Tips & Tricks</h3></Center> </a>
+              <ul>
+                <a href="mindset.html"> <li>Mindset </li> </a>
+                <a href="fitness.html"> <li>Fitness</li> </a>
+                <a href="wellness.html"> <li>Wellness </li> </a>
+         
+             
+              </ul>
+          </div>
+          </div>
+          <div class="row0">
+          <div class="column0" >
+            <a href="Recipes.html">  <Center> <h3 class="h3">Recipes</h3> </Center> </a>
+              
+              <ul>
+                <a href="breakfast.html"> <li>Breakfast</li>  </a>
+                <a href="Smoothies.html"> <li>Smoothies</li>  </a>
+                <a href="lunch.html"> <li>Lunch</li>  </a>
+                <a href="Snacks.html"> <li>Snacks</li> </a>
+                  <a href="dinners.html"> <li>Dinner</li> </a>
+                  <a href="desserts.html"> <li>Dessert</li> </a>
+               </ul>
+          
+          </div>
+          </div>
+      
+          <div class="row0">
+          <div class="column0">
+            <a href="recommendations.html"> <Center><h3 class="h3">Recommendations</h3> </Center> </a>
+            <ul>
+              <a href="recommendations.html"><li>Podcasts</li></a>
+              <a href="recommendations.html"> <li>Books</li></a>
+              <a href="recommendations.html"> <li>Videos</li></a>
+              <a href="recommendations.html"> <li>Mentors</li></a>
+             </ul>
+            </div>
+        </div>
+        <div class="row0">
+        <div class="column0" >
+            <a href="about.html"><Center> <h3 class="h3">About</h3> </Center></a>
+            <ul>
+              <a href="about.html">   <li>Meet Adrianna</li></a>
+              <a href="about.html">    <li>Contact</li> </a>
+             </ul>
+            </div>
+        </div>
+      
+      </div>
+     
 
 
 
