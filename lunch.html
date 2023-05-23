@@ -9,24 +9,7 @@
          <style> img { max-width: 100%; } 
         
       
-        
-        .bottomNav {
-            column-count: 5;
-            column-gap: 20px;
-            column-rule-style: solid;
-            column-width: 150px;
-          
-            max-height: max-content;
-            overflow-y: auto;
-            font-size: 15px;
-            white-space: nowrap;
-            page-break-inside: avoid;
-
-            list-style-position: outside;
-            margin-bottom: 0em;
-            padding-top: 15px;
-        
-        }
+    
      
 
 
@@ -76,10 +59,12 @@
                   };
                 </script>
                 <div class="subnav-content">
-                  <a href="breakfast.html">Breakfast</a>
-                  <a href="lunch.html">Lunch</a>
-                  <a href="Snacks.html">Snacks</a>
-                  <a href="dinners.html">Dinner</a>
+                    <a href="breakfast.html">Breakfast</a>
+                    <a href="Smoothies.html">Smoothies</a>
+                    <a href="lunch.html">Lunch</a>
+                    <a href="Snacks.html">Snacks</a>
+                    <a href="dinners.html">Dinner</a>
+                    <a href="desserts.html">Dessert</a>
                 </div>
               </div> 
               <div class="subnav">
@@ -104,25 +89,55 @@
       <center><h2 class="h2">Lunch</h2>
     </center>
 
-    <aside id="TofCBfast">
-        <nav role="navigation" class="table-of-contents">
-          <h2 class="h2">Table of Contents:</h2>
-          <ul>
-            <li><a href="#Salads">Salads</a></li>
-            <li><a href="#wraps">Sandwhiches & Wraps</a></li>
 
-    
-          </ul>
-        </nav>
+
+    <aside id="TofCBfast">
+        <div id="ToCContent">
+          <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
+          <nav role="navigation" class="table-of-contents">
+            <h2 class="h2TOC">Table of Contents:</h2>
+            <ul>
+              <li><a href="#Salads">Salad</a></li>
+              <li><a href="#wraps">Sandwhiches & Wraps</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button id="showToCButton" class="ToCButton" onclick="displayToC()">&#187;</button>
       </aside>
+      
+  
+      
+      <script>
+      var showToCButton = document.getElementById("showToCButton");
+      var backToButton = document.getElementById("backToButton");
+      var tocContent = document.getElementById("ToCContent");
+      var initialButtonState = showToCButton.outerHTML;
+      
+      function displayToC() {
+        tocContent.style.display = "block";
+        showToCButton.style.display = "none";
+        backToButton.style.display = "inline-block";
+      }
+      
+      function goBackToButton() {
+        tocContent.style.display = "none";
+        showToCButton.style.display = "inline-block";
+        backToButton.style.display = "none";
+      }
+      
+      // Hide the back button initially
+      backToButton.style.display = "none";
+      </script>
+      
+
     <main>
         
 
 
 
-
+        <center>
      <img class="img5" src="photos/salad.png" class="d-block w-900" alt="Oats Photo">
-     <center>  <h3 class="h3R">Salad</h3></center>
+  <h3 class="h3R">Salad</h3></center>
 
 
 
@@ -130,146 +145,162 @@
 <table id="Salads">
     <tr class="OatsIdeas">
 
-      <th class="bfastTitle">Chicken Garden Salad</th>
-      <th class="bfastTitle">Grilled Shrimp Salad</th>
-      <th class="bfastTitle">Vegan Soba Noodle Salad</th>
-    </tr>
-    <tr class="OatsIdeas">
+        <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/salad1.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Chicken Garden Salad</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1 head romaine lettuce, chopped
+                    </li>
+                    <li>
+                        3/4 cup hazelnuts, chopped
+                    </li>
+                    <li>
+                        1 cup purple cabbage, chopped
+                    </li>
+                    <li>
+                        1 cup grape tomatoes, halved
+                    </li>
+                    <li>
+                        3 radishes, thinly sliced
+                    </li>
+            
+                    <li>
+                        1 medium carrot, shredded
+                    </li>
+                    <li>
+                        1 cucumber, sliced
+                    </li>
+                    <li>
+                        ¼ red onion, thinly sliced
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
+                    <li>
+                        1 cooked chicken breast, cut into ½-inch
+                    </li>
+                </ol>
+              </div>
+            </div>
+          </td>
 
-        <td class="OatInfo"><center> <img class="img3" src="photos/salad1.png" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/salad2.png" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/salad3.png" alt="breakfast" ></center> </td>
-    </tr>
-    <tr class="OatsIdeas">
-     
-    <td class="OatInfo"> <ol>
-        <li>
-            1 head romaine lettuce, chopped
-        </li>
-        <li>
-            3/4 cup hazelnuts, chopped
-        </li>
-        <li>
-            1 cup purple cabbage, chopped
-        </li>
-        <li>
-            1 cup grape tomatoes, halved
-        </li>
-        <li>
-            3 radishes, thinly sliced
-        </li>
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/salad2.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Grilled Shrimp Salad</button>
+              <div class="OatInfo">
+                <ol>
+                    <p><b>For the Shrimp:</b></p>
+                    <li>
+                        1 lb. large white shrimp (about 20 pieces), peeled, deveined, and tails removed
+                    </li>
+                    <li>
+                        1 tablespoon olive oil
+                    </li>
+                    <li>
+                        2 tablespoons garlic, minced
+                    </li>
+                    <li>
+                        1 tablespoon lemon juice
+                    </li>
+                    <li>
+                        ½ tablespoon Italian seasoning
+                    </li>
+                    <li>
+                        1 teaspoon paprika
+                    </li>
+                    <li>
+                        ½ teaspoon ground black pepper
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
+            <p><b>For the Salad:</b></p>
+            <li>
+                6 cups mixed greens
+            </li>
+            <li>
+                1 avocado, sliced
+            </li>
+            <li>
+                1 red bell pepper, thinly sliced
+            </li>
+            <li>
+                ½ red onion, thinly sliced
+            </li>
+            <li>
+                ½ teaspoon ground black pepper
+            </li>
+            <li>
+                pinch of salt
+            </li>
+            <li>
+                1 tablespoon lemon juice
+            </li>
+                 
+                </ol>
+              </div>
+            </div>
+          </td>
 
-        <li>
-            1 medium carrot, shredded
-        </li>
-        <li>
-            1 cucumber, sliced
-        </li>
-        <li>
-            ¼ red onion, thinly sliced
-        </li>
-        <li>
-            pinch of salt
-        </li>
-        <li>
-            1 cooked chicken breast, cut into ½-inch
-        </li>
-    
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/salad3.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Vegan Soba Noodle Salad</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        6 oz. buckwheat soba noodles (about 1 ½ cups)
+                    </li>
+                    <li>
+                        1 cup red cabbage, thinly shredded
+                    </li>
+                    <li>
+                        1 cup carrots, peeled and thinly shredded
+                    </li>
+                    <li>
+                        1 cup cucumber, thinly sliced
+                    </li>
+                    <li>
+                        ¼ cup fresh cilantro, finely chopped
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
+                    <li>
+                        1 teaspoon sesame seeds
+                    </li>
+                    
+                    <p><b>For the Dressing:</b></p>
+            <li>
+                1 tablespoon tahini sauce (or peanut butter)
+            </li>
+            <li>
+                1 tablespoon soy sauce
+            </li>
+            <li>
+                1 tablespoon black rice vinegar (or balsamic vinegar)
+            </li>
+            <li>
+                1 teaspoon garlic, minced
+            </li>
+            <li>
+                ½ teaspoon ground black pepper
+            </li>
+            <li>
+                pinch of salt
+            </li>
+                 
+                </ol>
+              </div>
+            </div>
+          </td>
 
-    </ol></td>
-    <td class="OatInfo"> <ol>
-        <p><b>For the Shrimp:</b></p>
-        <li>
-            1 lb. large white shrimp (about 20 pieces), peeled, deveined, and tails removed
-        </li>
-        <li>
-            1 tablespoon olive oil
-        </li>
-        <li>
-            2 tablespoons garlic, minced
-        </li>
-        <li>
-            1 tablespoon lemon juice
-        </li>
-        <li>
-            ½ tablespoon Italian seasoning
-        </li>
-        <li>
-            1 teaspoon paprika
-        </li>
-        <li>
-            ½ teaspoon ground black pepper
-        </li>
-        <li>
-            pinch of salt
-        </li>
-<p><b>For the Salad:</b></p>
-<li>
-    6 cups mixed greens
-</li>
-<li>
-    1 avocado, sliced
-</li>
-<li>
-    1 red bell pepper, thinly sliced
-</li>
-<li>
-    ½ red onion, thinly sliced
-</li>
-<li>
-    ½ teaspoon ground black pepper
-</li>
-<li>
-    pinch of salt
-</li>
-<li>
-    1 tablespoon lemon juice
-</li>
-     
 
-    </ol></td>
-    <td class="OatInfo"> <ol>
-        <li>
-            6 oz. buckwheat soba noodles (about 1 ½ cups)
-        </li>
-        <li>
-            1 cup red cabbage, thinly shredded
-        </li>
-        <li>
-            1 cup carrots, peeled and thinly shredded
-        </li>
-        <li>
-            1 cup cucumber, thinly sliced
-        </li>
-        <li>
-            ¼ cup fresh cilantro, finely chopped
-        </li>
-        <li>
-            pinch of salt
-        </li>
-        <li>
-            1 teaspoon sesame seeds
-        </li>
-        
-        <p><b>For the Dressing:</b></p>
-<li>
-    1 tablespoon tahini sauce (or peanut butter)
-</li>
-<li>
-    1 tablespoon soy sauce
-</li>
-<li>
-    1 tablespoon black rice vinegar (or balsamic vinegar)
-</li>
-<li>
-    1 teaspoon garlic, minced
-</li>
-<li>
-    ½ teaspoon ground black pepper
-</li>
-<li>
-    pinch of salt
-</li>
+
      
 
     </ol></td>
@@ -284,198 +315,200 @@
 <center>
 <table id="wraps">
 <tr class="OatsIdeas">
-  <th class="bfastTitle">Vegan Hummas Wrap</th>
-  <th class="bfastTitle">Vietnamese Summer Rolls with Chicken$</th>
-  <th class="bfastTitle">Grilled Chicken Sandwich</th>
-  
-</tr>
-<tr class="OatsIdeas">
-    <td class="panInfo"><center> <img class="img3" src="photos/wrap2.png" alt="breakfast" ></center> </td>
-    <td class="panInfo"><center> <img class="img3" src="photos/wrap1.png" alt="breakfast" ></center> </td>
-    <td class="panInfo"><center> <img class="img3" src="photos/wrap3.png" alt="breakfast" ></center> </td>
-  </tr>
-<tr class="OatsIdeas">
-    <td class="OatInfo"> <ol>
-        <p><b>For the Summer Rolls:</b></p>
-        <li>
-            1 cup thin rice vermicelli noodles
-        </li>
-        <li>
-            2 tablespoons olive oil
-        </li>
-        <li>
-            6 (8.5 inch) rice wrappers
-        </li>
-        <li>
-            1 medium cucumber, julienned 
-        </li>
-        <li>
-            1 teaspoon garlic powder
-        </li>
-        <li>
-            1 medium carrot, julienned
-        </li>
-        <li>
-            ¼ cup fresh basil or cilantro, chopped
-        </li>
-        <li>
-            pinch of salt
-        </li>
-        <li>
-            1 cup chicken breast, cooked
-        </li>
-        <p><b>For the Sauce:</b></p>
-        <li>
-            2 tablespoons hoisin sauce (or black bean sauce)
-        </li>
-        <li>
-            1 tablespoon peanut butter
-        </li>
-        <li>
-            1 tablespoon water
-        </li>
-        <li>
-            ½ tablespoon fresh lime juice
-        </li>
-        <li>
-            1-2 tablespoons honey or maple syrup
-        </li>
-        <li>
-            1 tablespoon roasted peanuts, chopped
-        </li>
-        <li>
-            pinch of salt
-        </li>
-     
-    </ol></td>
-    
+
+
+    <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/wrap1.png" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Vegan Hummas Wrap</button>
+          <div class="OatInfo">
+            <ol>
+                <p><b>For the Summer Rolls:</b></p>
+                <li>
+                    1 cup thin rice vermicelli noodles
+                </li>
+                <li>
+                    2 tablespoons olive oil
+                </li>
+                <li>
+                    6 (8.5 inch) rice wrappers
+                </li>
+                <li>
+                    1 medium cucumber, julienned 
+                </li>
+                <li>
+                    1 teaspoon garlic powder
+                </li>
+                <li>
+                    1 medium carrot, julienned
+                </li>
+                <li>
+                    ¼ cup fresh basil or cilantro, chopped
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+                <li>
+                    1 cup chicken breast, cooked
+                </li>
+                <p><b>For the Sauce:</b></p>
+                <li>
+                    2 tablespoons hoisin sauce (or black bean sauce)
+                </li>
+                <li>
+                    1 tablespoon peanut butter
+                </li>
+                <li>
+                    1 tablespoon water
+                </li>
+                <li>
+                    ½ tablespoon fresh lime juice
+                </li>
+                <li>
+                    1-2 tablespoons honey or maple syrup
+                </li>
+                <li>
+                    1 tablespoon roasted peanuts, chopped
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+            </ol>
+          </div>
+        </div>
+      </td>
 
 
 
+      <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/wrap2.png" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Vietnamese Summer Rolls with Chicken</button>
+          <div class="OatInfo">
+            <ol>
+                <p>*These are perfect for those in a time crunch!</p>
+                <li>
+                    3 tbsp hummus
+                </li>
+                <li>
+                    tortilla wrap, <i>warmed</i>
+                </li>
+                <li>
+                    cucummbers
+                </li>
+                <li>
+                    tomato
+                </li>
+                <li>
+                   avacado
+                </li>
+                <li>
+                    spinach
+                 </li>
+                <li>
+                    mixed greens
+                 </li>
+                <li>
+                    1/4 tsp sea salt
+                </li>
+                <li>
+                    pinch of black pepper
+                </li>
+                <li>
+                    <b>Method:</b>  
+                    <ul class="toServe">
+                        <li>Lightly warm tortilla shell.</li>
+                        <li>Spread on hummus. Spread the hummus into a long rectangular shape down the centre of the tortilla wrap.</li>
+                        <li>Add veggies. Layer the sliced cucumber, tomato, and avocado on top.</li>
+                        <li>Add greens. Top up with spinach and mixed greens.</li>
+                        <li>Add seasoning. Season with salt and pepper to taste.</li>
+                        <li>Wrap it up. Wrap the tortilla into a burrito shape and fold in the sides. Cut it in the middle and serve.</li>
+                    </ul>
+                  </li>
+            </ol>
+          </div>
+        </div>
+      </td>
 
-
-  <td class="OatInfo"> <ol>
-    <p>*These are perfect for those in a time crunch!</p>
-    <li>
-        3 tbsp hummus
-    </li>
-    <li>
-        tortilla wrap, <i>warmed</i>
-    </li>
-    <li>
-        cucummbers
-    </li>
-    <li>
-        tomato
-    </li>
-    <li>
-       avacado
-    </li>
-    <li>
-        spinach
-     </li>
-    <li>
-        mixed greens
-     </li>
-    <li>
-        1/4 tsp sea salt
-    </li>
-    <li>
-        pinch of black pepper
-    </li>
-    <li>
-        <b>Method:</b>  
-        <ul class="toServe">
-            <li>Lightly warm tortilla shell.</li>
-            <li>Spread on hummus. Spread the hummus into a long rectangular shape down the centre of the tortilla wrap.</li>
-            <li>Add veggies. Layer the sliced cucumber, tomato, and avocado on top.</li>
-            <li>Add greens. Top up with spinach and mixed greens.</li>
-            <li>Add seasoning. Season with salt and pepper to taste.</li>
-            <li>Wrap it up. Wrap the tortilla into a burrito shape and fold in the sides. Cut it in the middle and serve.</li>
-        </ul>
-      </li>
-   
-
-
-</ol></td>
-
-
-  <td class="OatInfo"> <ol>
-
-    <p><b>For the Chicken:</b></p>
-    <li>
-        2.5 oz boneless skinless chicken breast
-    </li>
-    <li>
-        2 tablespoons olive oil
-    </li>
-    <li>
-        1 tablespoon lemon juice
-    </li>
-    <li>
-        1 teaspoon italian seasoning
-    </li>
-    <li>
-        1 teaspoon garlic powder
-    </li>
-    <li>
-        ¼ teaspoon ground black pepper
-    </li>
-    <li>
-        1 teaspoon honey
-    </li>
-    <li>
-        pinch of salt
-    </li>
-    <li>
-        3 tsp baking powder
-    </li>
-    <li>
-        3/4 cup vegan choc chips
-    </li>
-    <li>
-        4 whole wheat burger buns
-    </li>
-    <li>
-        Lettuce
-    </li>
-    <li>
-        Tomato slices
-    </li>
-    <li>
-        Sliced red onion
-    </li>
-
-    <p><b>For the Sauce:</b></p>
-    <li>
-        ½ cup mayonnaise
-    </li>
-    <li>
-        ¼ cup barbecue sauce
-    </li>
-    <li>
-        2 tablespoons dijon mustard
-    </li>
-    <li>
-        1 teaspoon garlic, minced
-    </li>
-    <li>
-        1-2 tablespoons honey or maple syrup
-    </li>
-    <li>
-        1 teaspoon lemon juice
-    </li>
-    <li>
-        ½ teaspoon ground black pepper
-    </li>
-    <li>
-        pinch of salt
-    </li>
- 
- 
-  
-   
-</ol></td>
+      <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/wrap3.png" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Grilled Chicken Sandwich</button>
+          <div class="OatInfo">
+            <ol>
+                <p><b>For the Chicken:</b></p>
+                <li>
+                    2.5 oz boneless skinless chicken breast
+                </li>
+                <li>
+                    2 tablespoons olive oil
+                </li>
+                <li>
+                    1 tablespoon lemon juice
+                </li>
+                <li>
+                    1 teaspoon italian seasoning
+                </li>
+                <li>
+                    1 teaspoon garlic powder
+                </li>
+                <li>
+                    ¼ teaspoon ground black pepper
+                </li>
+                <li>
+                    1 teaspoon honey
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+                <li>
+                    3 tsp baking powder
+                </li>
+                <li>
+                    3/4 cup vegan choc chips
+                </li>
+                <li>
+                    4 whole wheat burger buns
+                </li>
+                <li>
+                    Lettuce
+                </li>
+                <li>
+                    Tomato slices
+                </li>
+                <li>
+                    Sliced red onion
+                </li>
+            
+                <p><b>For the Sauce:</b></p>
+                <li>
+                    ½ cup mayonnaise
+                </li>
+                <li>
+                    ¼ cup barbecue sauce
+                </li>
+                <li>
+                    2 tablespoons dijon mustard
+                </li>
+                <li>
+                    1 teaspoon garlic, minced
+                </li>
+                <li>
+                    1-2 tablespoons honey or maple syrup
+                </li>
+                <li>
+                    1 teaspoon lemon juice
+                </li>
+                <li>
+                    ½ teaspoon ground black pepper
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+            </ol>
+          </div>
+        </div>
+      </td>
 </tr>
 </table>
 
@@ -491,50 +524,67 @@
 
       </main>
 
-<div class="bottomNav">
-    <div class="column0" style="height: 150px;">
-        <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
-   
-    </div>
-    <div class="column" >
-        <a href="tips&tricks.html">  <Center><h3 class="h3B">Tips & Tricks</h3></Center> </a>
-        <ul>
-            <a href="mindset.html"> <li>Mindset </li> </a>
-            <a href="wellness.html"> <li>Wellness </li> </a>
-            <a href="fitness.html"> <li>Fitness</li> </a>
-        </ul>
-    </div>
 
-    <div class="column" >
-        <a href="Recipes.html">  <Center> <h3 class="h3B">Recipes</h3> </Center> </a>
-        
-        <ul>
-            <a href="breakfast.html"> <li>Breakfast</li>  </a>
-            <a href="lunch.html"> <li>Lunch</li>  </a>
-              <a href="dinners.html"> <li>Dinner</li> </a>
-                <a href="Snacks.html"> <li>Healthy Snacks</li> </a>
+
+      <div class="bottomNav">
+        <div class="row0">
+          <div class="column0" >
+            <a href="index.html">   <center> <h1 class="h1B">Evoke</h1></center></a>
+              <br></br>
             
-            
-         </ul>
-    </div>
-    <div class="column">
-        <a href="recommendations.html"> <Center><h3 class="h3B">Recommendations</h3> </Center> </a>
-        <ul>
-          <a href="recommendations.html"><li>Podcasts</li></a>
-          <a href="recommendations.html"> <li>Books</li></a>
-          <a href="recommendations.html"> <li>Videos</li></a>
-          <a href="recommendations.html"> <li>Mentors</li></a>
-         </ul>
-    </div>
-    <div class="column" >
-        <a href="about.html"><Center> <h3 class="h3B">About</h3> </Center></a>
-        <ul>
-          <a href="about.html">   <li>Meet Adrianna</li></a>
-          <a href="about.html">    <li>Contact</li> </a>
-         </ul>
-    </div>
- 
-</div>
+            </div>
+          </div>
+          <div class="row0">
+          <div>
+            <a href="tips&tricks.html"> <Center><h3 class="h3">Tips & Tricks</h3></Center> </a>
+              <ul>
+                <a href="mindset.html"> <li>Mindset </li> </a>
+                <a href="fitness.html"> <li>Fitness</li> </a>
+                <a href="wellness.html"> <li>Wellness </li> </a>
+         
+             
+              </ul>
+          </div>
+          </div>
+          <div class="row0">
+          <div class="column0" >
+            <a href="Recipes.html">  <Center> <h3 class="h3">Recipes</h3> </Center> </a>
+              
+              <ul>
+                <a href="breakfast.html"> <li>Breakfast</li>  </a>
+                <a href="Smoothies.html"> <li>Smoothies</li>  </a>
+                <a href="lunch.html"> <li>Lunch</li>  </a>
+                <a href="Snacks.html"> <li>Snacks</li> </a>
+                  <a href="dinners.html"> <li>Dinner</li> </a>
+                  <a href="desserts.html"> <li>Dessert</li> </a>
+               </ul>
+          
+          </div>
+          </div>
+      
+          <div class="row0">
+          <div class="column0">
+            <a href="recommendations.html"> <Center><h3 class="h3">Recommendations</h3> </Center> </a>
+            <ul>
+              <a href="recommendations.html"><li>Podcasts</li></a>
+              <a href="recommendations.html"> <li>Books</li></a>
+              <a href="recommendations.html"> <li>Videos</li></a>
+              <a href="recommendations.html"> <li>Mentors</li></a>
+             </ul>
+            </div>
+        </div>
+        <div class="row0">
+        <div class="column0" >
+            <a href="about.html"><Center> <h3 class="h3">About</h3> </Center></a>
+            <ul>
+              <a href="about.html">   <li>Meet Adrianna</li></a>
+              <a href="about.html">    <li>Contact</li> </a>
+             </ul>
+            </div>
+        </div>
+      
+      </div>
+     
 
 
 
