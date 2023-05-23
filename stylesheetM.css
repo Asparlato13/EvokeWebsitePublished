@@ -259,6 +259,18 @@ body {
   color: rgb(76, 40, 24);
   font-weight: bolder;
 }
+
+
+.h2TOC 
+  {
+    font-family: "Lucida Handwriting", cursive;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: rgb(76, 40, 24);
+    font-weight: 900;
+  }
+  
+
 .img1 {
   border-radius: 45%;
   position: relative;
@@ -425,7 +437,7 @@ body {
 
 
 .table-of-contents ul li a {
-  color: #008b8bbd;
+  color: rgb(76, 40, 24);
   font-size: 25px;
   padding-top: 2em;
 }
@@ -592,20 +604,20 @@ p {
   padding-left: 3.5%;
 }
 
-table {
+#mindsetTable {
   font-family: "Lucida Handwriting";
   color: rgb(76, 40, 24);
   border-collapse: collapse;
 }
 
-td,
+#mindsetTable td,
 th {
   border: 1px solid rgb(211, 166, 124);
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
+#mindsetTable tr:nth-child(even) {
   background-color: #fce0ce65;
 }
 
@@ -868,7 +880,7 @@ button:active {
 #ToCContent {
   display: none;
   position: absolute;
-  font-weight: bolder;
+  font-weight: bold;
   top: 0;
   width: 45vw;
   left: 50px;
@@ -882,11 +894,13 @@ button:active {
 
   max-width: 60%;
 
+
 }
 
 .img4 {
   border-radius: 3%;
   width: 50vw;
+  height: 40vw;
 }
 
 @media (max-width: 768px) {
@@ -926,6 +940,69 @@ button:active {
   border: none;
   background-color: rgb(245, 246, 237);
 }
+
+.bfastContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: none; /* Added this line to remove the border */
+  background-color: rgba(244, 245, 240, 0.952);
+}
+
+th, td {
+  padding: 10px;
+}
+.bfastTitle {
+  position: top;
+  height: 10vw;
+  bottom: 0;
+  border-color: transparent;
+  background-color: #e9b4b4;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bfastContainer:hover .bfastTitle {
+  opacity: 1;
+  border: none;
+}
+
+.OatInfo {
+  display: none;
+  padding-top: 10px;
+  text-align: center;
+ 
+
+}
+
+.bfastContainer:hover .OatInfo {
+  display: block;
+ 
+}
+
+
+
+
+
+
+
+
+
 
 .OatInfo {
   border: none;

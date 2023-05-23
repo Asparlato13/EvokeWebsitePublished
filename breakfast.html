@@ -90,7 +90,7 @@
         <div id="ToCContent">
           <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
           <nav role="navigation" class="table-of-contents">
-            <h2 class="h2">Table of Contents:</h2>
+            <h2 class="h2TOC">Table of Contents:</h2>
             <ul>
               <li><a href="#Oats">Oats</a></li>
               <li><a href="#Pancakes">Pancakes & Waffles</a></li>
@@ -126,6 +126,8 @@
       </script>
       
       
+
+
         <main>
             <center>
             <div class="img4-container">
@@ -137,146 +139,242 @@
 
 
 
-        <table id="Oats">
-            <tbody id="appleRow" class="OatsIdeas">
-              <tr>
-                <td class="OatInfo">
-                  <center> <img class="img3" src="photos/oat3.jpg" alt="breakfast"></center>
-                </td>
-                <td class="OatInfo">
-                  <center> <img class="img3" src="photos/oat9.JPG" alt="breakfast"></center>
-                </td>
-                <td class="OatInfo">
-                  <center> <img class="img3" src="photos/oat7.jpeg" alt="breakfast"></center>
-                </td>
-              </tr>
-              <tr>
-                <td class="OatInfo">
-                  <button onmouseover="showRecipe('recipeList1')" onmouseout="hideRecipe('recipeList1')">Apple & Cinnamon</button>
-                  <ol id="recipeList1"></ol>
-                  <script>
-                    function showRecipe(id) {
-                      var recipe = document.getElementById(id);
-                      recipe.innerHTML = `
-                        <li>1/2 cup oats</li>
-                        <li>1 apple</li>
-                        <li>2 tbsp of cinnamon</li>
-                        <li>1 tbsp chia seeds</li>
-                        <li>1 tbsp vanilla extract</li>
-                        <li>pinch of salt</li>
-                      `;
-                    }
-          
-                    function hideRecipe(id) {
-                      var recipe = document.getElementById(id);
-                      recipe.innerHTML = "";
-                    }
-                  </script>
-                </td>
-              </tr>
-            </tbody>
-          
-            <tbody id="chocolateRow" class="OatsIdeas">
-              <tr>
-                <td class="OatInfo">
-                  <button onmouseover="showRecipe('recipeList2')" onmouseout="hideRecipe('recipeList2')">Chocolate & Strawberries</button>
-                  <ol id="recipeList2"></ol>
-                  <script>
-                    function showRecipe(id) {
-                      var recipe = document.getElementById(id);
-                      recipe.innerHTML = `
-                        <li>1/2 cup oats</li>
-                        <li>1 Banana</li>
-                        <li>3-5 strawberries</li>
-                        <li>1/2 cup milk</li>
-                        <li>1/2 tsp cocoa powder</li>
-                        <li>mini chocolate chips</li>
-                        <li>1 tbsp chia seeds</li>
-                        <li>pinch of salt</li>
-                      `;
-                    }
-          
-                    function hideRecipe(id) {
-                      var recipe = document.getElementById(id);
-                      recipe.innerHTML = "";
-                    }
-                  </script>
-                </td>
-              </tr>
-            </tbody>
-            
-            <!-- Add more tbody elements for additional flavors -->
-            
-          </table>
-          
 
-<table id="Oats">
-
-    <tr class="OatsIdeas">
-        <td class="OatInfo"><center> <img class="img3" src="photos/oat3.jpg" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/oat9.JPG" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/oat7.jpeg" alt="breakfast" ></center> </td>
-        
-    </tr>
-
-
-        <tr class="OatsIdeas">
-            <td class="OatInfo">
-              <button onmouseover="showRecipe()" onmouseout="hideRecipe()">Apple & Cinnamon</button>
-
-              <ol id="recipeList"></ol>
-          
-          
-        <script>
-            function showRecipe() {
-              var recipe = document.getElementById("recipeList");
-              recipe.innerHTML = `
-                <li>1/2 cup oats</li>
+          <table id="Oats">
+            <tr class="OatsIdeas">
+                <td>
+                    <div class="bfastContainer">
+                      <img class="img4" src="photos/oat3.jpg" alt="breakfast">
+                      <button class="bfastTitle" onclick="toggleOatInfo(this)">Apple & Cinnamon</button>
+                      <div class="OatInfo">
+                        <ol>
+                            <li>1/2 cup oats</li>
                 <li>1 apple</li>
                 <li>2 tbsp of cinnamon</li>
                 <li>1 tbsp chia seeds</li>
                 <li>1 tbsp vanilla extract</li>
                 <li>pinch of salt</li>
-              `;
-            }
-      
-            function hideRecipe() {
-              var recipe = document.getElementById("recipeList");
-              recipe.innerHTML = "";
-            }
-          </script>
-      
-      </td>
-    </tr>
-    </ol></td>
+                          
+                        </ol>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="bfastContainer">
+                      <img class="img4" src="photos/oat9.JPG" alt="breakfast">
+                      <button class="bfastTitle" onclick="toggleOatInfo(this)">Chocolate & Strawberries</button>
+                      <div class="OatInfo">
+                        <ol>
+                            <li>
+                                1/2 cup oats
+                            </li>
+                            <li>
+                                1 Banana 
+                            </li>
+                            <li>
+                                3-5 strawberries 
+                            </li>
+                            <li>
+                                1/2 cup milk
+                            </li>
+                            <li>
+                                1/2 tsp cocoa powder
+                            </li>
+                            <li>
+                                mini chocolate chips 
+                            </li>
+                            <li>
+                                1 tbsp chia seeds
+                            </li>
+                            <li>
+                                pinch of salt
+                            </li>
+                          
+                        </ol>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="bfastContainer">
+                      <img class="img4" src="photos/oat7.jpeg" alt="breakfast">
+                      <button class="bfastTitle" onclick="toggleOatInfo(this)">Honey, Orange & Raspberry</button>
+                      <div class="OatInfo">
+                        <ol>
+                            <li>
+                                1/2 cup oats
+                            </li>
+                            <li>
+                                1 cup milk
+                            </li>
+                            <li>
+                                1/2 tbsp vanilla extract
+                            </li>
+                            <li>
+                                1 tbsp of honey/ pure maple syrup
+                            </li>
+                            <li>
+                                1 tbsp ginger
+                            </li>
+                            <li>
+                                1 tbsp orange zest
+                            </li>
+                            <li>
+                                1 orange
+                            </li>
+                            <li>
+                                1/4 cup of raspberries
+                            </li>
+                            <li>
+                                1/4 walnuts
+                            </li>
+                            <li>
+                                1 tbsp chia seeds
+                            </li>
+                            <li>
+                                pinch of salt
+                            </li>
+                          
+                        </ol>
+                      </div>
+                    </div>
+                  </td>
+            </tr>
 
-    
+
+    <tr class="OatsIdeas">
+       
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/oat1.JPG" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Banana & Peanut Butter</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1/2 cup oats
+                    </li>
+                    <li>
+                        1 Banana 
+                    </li>
+                    <li>
+                        1 tbsp Hemp Seeds
+                    </li>
+                    <li>
+                        1 tbsp peanut butter
+                    </li>
+                    <li>
+                        1 tbsp honey
+                    </li>
+                    <li>
+                        1 tbsp chia seeds
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
         
-    <td class="OatInfo"> 
-        <button onmouseover="showRecipe('recipeList2')" onmouseout="hideRecipe('recipeList2')">Chocolate & Strawberries</button>
-        <ol id="recipeList2"></ol>
+                </ol>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/oat2.jpg" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Lemon & Blueberry</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1/2 cup oats
+                    </li>
+                    <li>
+                        1/2 of squeezed lemon  
+                    </li>
+                    <li>
+                        1 tbsp lemon zest
+                    </li>
+                    <li>
+                        1/4 cup blueberries
+                    </li>
+                    <li>
+                        2 tbsp ginger
+                    </li>
+                    <li>
+                        1 tbsp chia seeds
+                    </li>
+                    <li>
+                        pinch of salt
+                    </li>
         
-            <script>
-                function showRecipe() {
-                  var recipe = document.getElementById("recipeList2");
-                  recipe.innerHTML = `
+                </ol>
+              </div>
+            </div>
+          </td>
+
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/oat11.JPG" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Savory Cheddar & Fried Egg</button>
+              <div class="OatInfo">
+                <ol>
+                    <li>
+                        1/2 cup oats
+                    </li>
+                    <li>
+                        1 cup water
+                    </li>
+                    <li>
+                        2 tbsp of cheddar (add more if you would like)
+                    </li>
+                    <li>
+                        1 tsp coconut oil
+                    </li>
+                    <li>
+                        2 tbsp finely chopped onions
+                    </li>
+                    <li>
+                        pinch of salt and pepper
+                    </li>
+                    <li>
+                      1 large Egg
+                  </li>
                   <li>
+                      <i>To serve:</i>  
+                      <ul class="toServe">
+                          <li>chopped walnuts</li>
+                          <li>sliced green onions</li>
+                          <li>za'atar</li>
+                      </ul>
+                    </li>
+        
+                </ol>
+              </div>
+            </div>
+          </td>
+     
+      </tr>
+
+
+      <tr class="OatsIdeas">
+
+      <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/cocolatte.webp" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Coconut Latte</button>
+          <div class="OatInfo">
+            <ol>
+                <li>
                     1/2 cup oats
                 </li>
                 <li>
-                    1 Banana 
+                    1/4 cup brewed coffee or coldbrew  
                 </li>
                 <li>
-                    3-5 strawberries 
+                    3/4 cup lite cocunut milk
                 </li>
                 <li>
-                    1/2 cup milk
+                    2 tbsp honey/ maple syrup
                 </li>
                 <li>
-                    1/2 tsp cocoa powder
-                </li>
-                <li>
-                    mini chocolate chips 
+                    2 tbsp cinnamon
                 </li>
                 <li>
                     1 tbsp chia seeds
@@ -284,693 +382,462 @@
                 <li>
                     pinch of salt
                 </li>
-                  `;
-                }
-          
-                function hideRecipe() {
-                  var recipe = document.getElementById("recipeList2");
-                  recipe.innerHTML = "";
-                }
-              </script>
-        
-    </ol></td>
+    
+            </ol>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/pb-and-j-oats-5.webp" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Peanut Butter & Jelly</button>
+          <div class="OatInfo">
+            <ol>
+                <li>
+                    1/2 cup oats
+                </li>
+                <li>
+                    1/2 cup of milk  
+                </li>
+                <li>
+                    2 tbsp honey/ maple syrup
+                </li>
+                <li>
+                    1/4 cup blueberries
+                </li>
+                <li>
+                    2 tbsp peanutbutter
+                </li>
+                <li>
+                    1 tbsp chia seeds
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+    
+            </ol>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/oat10.jpg" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Almond Joy</button>
+          <div class="OatInfo">
+            <ol>
+                <li>
+                    1/2 cup oats
+                </li>
+                <li>
+                    1/2 cup of milk  
+                </li>
+                <li>
+                    2 tbsp honey/ maple syrup
+                </li>
+                <li>
+                    1/4 cup blueberries
+                </li>
+                <li>
+                    2 tbsp shredded coconut
+                </li>
+                <li>
+                    1 tbsp chia seeds
+                </li>
+                <li>
+                    1 tbsp mini chocolate chips
+                </li>
+                <li>
+                    1/2 tsp vanilla extract
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+    
+            </ol>
+          </div>
+        </div>
+      </td>
 
 
-
-    <td class="OatInfo"> 
-        <button onmouseover="showRecipe('recipeList3')" onmouseout="hideRecipe('recipeList3')">Honey, Orange & Raspberry</button>
-        <ol id="recipeList3"></ol>
-
-
-        <script>
-            function showRecipe() {
-              var recipe = document.getElementById("recipeList2");
-              recipe.innerHTML = `
-            
-        <li>
-            1/2 cup oats
-        </li>
-        <li>
-            1 cup milk
-        </li>
-        <li>
-            1/2 tbsp vanilla extract
-        </li>
-        <li>
-            1 tbsp of honey/ pure maple syrup
-        </li>
-        <li>
-            1 tbsp ginger
-        </li>
-        <li>
-            1 tbsp orange zest
-        </li>
-        <li>
-            1 orange
-        </li>
-        <li>
-            1/4 cup of raspberries
-        </li>
-        <li>
-            1/4 walnuts
-        </li>
-        <li>
-            1 tbsp chia seeds
-        </li>
-        <li>
-            pinch of salt
-        </li>
-
-              `;
-            }
-      
-            function hideRecipe() {
-              var recipe = document.getElementById("recipeList3");
-              recipe.innerHTML = "";
-            }
-          </script>
-      
-
-
-
-    </ol></td>
-    </tr>
-
-
-
-
-
-
-    <tr class="OatsIdeas">
-        <th class="bfastTitle">Banana & Peanut Butter</th>
-        <th class="bfastTitle">Lemon & Blueberry</th>
-        <th class="bfastTitle">Savory Cheddar and Fried Egg</th>
-      </tr>
-      <tr class="OatsIdeas">
-          <td class="OatInfo"><center> <img class="img3" src="photos/oat1.JPG" alt="breakfast" ></center> </td>
-          <td class="OatInfo"><center> <img class="img3" src="photos/oat2.jpg" alt="breakfast" ></center> </td>
-          <td class="OatInfo"><center> <img class="img3" src="photos/oat11.JPG" alt="breakfast" ></center> </td>
-          
-      </tr>
-      <tr class="OatsIdeas">
-        <td class="OatInfo"> <ol>
-          <li>
-              1/2 cup oats
-          </li>
-          <li>
-              1 Banana 
-          </li>
-          <li>
-              1 tbsp Hemp Seeds
-          </li>
-          <li>
-              1 tbsp peanut butter
-          </li>
-          <li>
-              1 tbsp chia seeds
-          </li>
-          <li>
-              pinch of salt
-          </li>
-      </ol></td>
-        <td class="OatInfo"> <ol>
-          <li>
-              1/2 cup oats
-          </li>
-          <li>
-              1/2 of squeezed lemon  
-          </li>
-          <li>
-              1 tbsp lemon zest
-          </li>
-          <li>
-              1/4 cup blueberries
-          </li>
-          <li>
-              2 tbsp ginger
-          </li>
-          <li>
-              1 tbsp chia seeds
-          </li>
-          <li>
-              pinch of salt
-          </li>
-      </ol></td>
-        <td class="OatInfo"> <ol>
-          <li>
-              1/2 cup oats
-          </li>
-          <li>
-              1 cup water
-          </li>
-          <li>
-              2 tbsp of cheddar (add more if you would like)
-          </li>
-          <li>
-              1 tsp coconut oil
-          </li>
-          <li>
-              2 tbsp finely chopped onions
-          </li>
-          <li>
-              pinch of salt and pepper
-          </li>
-          <li>
-            1 large Egg
-        </li>
-        <li>
-            <i>To serve:</i>  
-            <ul class="toServe">
-                <li>chopped walnuts</li>
-                <li>sliced green onions</li>
-                <li>za'atar</li>
-            </ul>
-          </li>
-      </ol></td>
-      </ol></td>
       </tr>
 
+          </table>
 
 
-    <tr class="OatsIdeas">
-        <th class="bfastTitle">Brown Sugar</th>
-        <th class="bfastTitle">Dates, Cinnamon, & Peanut Butter</th>
-        <th class="bfastTitle">Vanilla Strawberry</th>
-      </tr>
-      <tr class="OatsIdeas">
-
-        <td class="OatInfo"><center> <img class="img3" src="photos/oat4.jpg" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/oats15.png" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/strawberry-vanilla-oats.webp" alt="breakfast" ></center> </td>
-  
-      </tr>
-      <tr class="OatsIdeas">
-        <td class="OatInfo"> <ol>
-            <li>
-                1/2 cup oats
-            </li>
-            <li>
-                1/3 cup cashew butter  
-            </li>
-            <li>
-                2 tbsp pure maple syrup
-            </li>
-            <li>
-                1 tbsp vanilla extract
-            </li>
-            <li>
-                1/4 pecans
-            </li>
-            <li>
-                1 tbsp chia seeds
-            </li>
-            <li>
-                pinch of salt
-            </li>
-            
-        </ol></td>
-          <td class="OatInfo"> <ol>
-
-            <li>
-                1/2 cup oats
-            </li>
-            <li>
-                1/4 dates  
-            </li>
-            <li>
-                1 tbsp brown sugar
-            </li>
-            <li>
-                1 tbsp vanilla extract
-            </li>
-            <li>
-                1 tbsp cinnamon
-            </li>
-            <li>
-                1 tbsp chia seeds
-            </li>
-            <li>
-                pinch of salt
-            </li>
-            
-        </ol></td>
-          <td class="OatInfo"> <ol>
-            <li>
-                1/2 cup oats
-            </li>
-            <li>
-                1 cup greek yogurt
-            </li>
-            <li>
-                1 cup milk
-            </li>
-            <li>
-                1 tbsp vanilla extract
-            </li>
-            <li>
-                1/4 cup strawberries
-            </li>
-             <li>
-                1 tbsp chia seeds
-            </li>
-            <li>
-                pinch of salt
-            </li>
-        </ol></td>
-    </tr>
-    <tr class="OatsIdeas">
-        <th class="bfastTitle">Coconut Latte</th>
-        <th class="bfastTitle">Peanut Butter & Jelly</th>
-        <th class="bfastTitle">Almond Joy</th>
-      </tr>
-      <tr class="OatsIdeas">
-        <td class="OatInfo"><center> <img class="img3" src="photos/cocolatte.webp" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/pb-and-j-oats-5.webp" alt="breakfast" ></center> </td>
-        <td class="OatInfo"><center> <img class="img3" src="photos/oat10.jpg" alt="breakfast" ></center> </td>
-      </tr>
-      <tr class="OatsIdeas">
-        <td class="OatInfo"> <ol>
-            <li>
-                1/2 cup oats
-            </li>
-            <li>
-                1/4 cup brewed coffee or coldbrew  
-            </li>
-            <li>
-                3/4 cup lite cocunut milk
-            </li>
-            <li>
-                2 tbsp honey/ maple syrup
-            </li>
-            <li>
-                2 tbsp cinnamon
-            </li>
-            <li>
-                1 tbsp chia seeds
-            </li>
-            <li>
-                pinch of salt
-            </li>
-        </ol></td>
-        <td class="OatInfo"> <ol>
-            <li>
-                1/2 cup oats
-            </li>
-            <li>
-                1/2 cup of milk  
-            </li>
-            <li>
-                2 tbsp honey/ maple syrup
-            </li>
-            <li>
-                1/4 cup blueberries
-            </li>
-            <li>
-                2 tbsp peanutbutter
-            </li>
-            <li>
-                1 tbsp chia seeds
-            </li>
-            <li>
-                pinch of salt
-            </li>
-        </ol></td>
-        <td class="OatInfo"> <ol>
-            <li>
-                1/2 cup oats
-            </li>
-            <li>
-                1/2 cup of milk  
-            </li>
-            <li>
-                2 tbsp honey/ maple syrup
-            </li>
-            <li>
-                1/4 cup blueberries
-            </li>
-            <li>
-                2 tbsp shredded coconut
-            </li>
-            <li>
-                1 tbsp chia seeds
-            </li>
-            <li>
-                1 tbsp mini chocolate chips
-            </li>
-            <li>
-                1/2 tsp vanilla extract
-            </li>
-            <li>
-                pinch of salt
-            </li>
-        </ol></td>
-    </tr>
-  </table>
 </center>
 
   <center>  <img class="img4" src="photos/panck.jpg" class="d-block w-900" alt="Oats Photo">
     <h3 class="h3R">Pancakes & Waffles
 
     </h3></center>
-
-
     <center>
+
+
 <table id="Pancakes">
 <tr class="OatsIdeas">
-  <th class="bfastTitle">Chai Spiced Pancakes</th>
-  <th class="bfastTitle">Salted Carmel Protein Waffle</th>
-  <th class="bfastTitle">Matcha Pancakes</th>
-  
-</tr>
-<tr class="OatsIdeas">
-    <td class="panInfo"><center> <img class="img3" src="photos/pcake1.jpg" alt="breakfast" ></center> </td>
-    <td class="panInfo"><center> <img class="img3" src="photos/pcake2.jpg" alt="breakfast" ></center> </td>
-    <td class="panInfo"><center> <img class="img3" src="photos/pcake3.jpg" alt="breakfast" ></center> </td>
-  </tr>
-<tr class="OatsIdeas">
-  <td class="OatInfo"> <ol>
-    <li>
-        1/2 cup almond milk
-    </li>
-    <li>
-        1/2 tsp vanilla extract
-    </li>
-    <li>
-        1/2 cup plain flour 
-    </li>
-    <li>
-        3 tsp p Chai powder
-    </li>
-    <li>
-        1/2  tbsp coconut sugar
-    </li>
-    <li>
-        1.5  tsp baking powder
-    </li>
-    <li>
-        pinch of salt
-    </li>
-    <li>
-      <i>*makes 5 pancakes, 5 min prep, 10 min cook</i>  
-    </li>
-    <li>
-        <i>To serve:</i>  
-        <ul class="toServe">
-            <li>Nut Butter</li>
-            <li>Bananas</li>
-            <li>Walnuts</li>
-            <li>Maple Syrup</li>
-        </ul>
-      </li>
+    <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/pcake1.jpg" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Chai Spiced Pancakes</button>
+          <div class="OatInfo">
+            <ol>
+                <li>
+                    1/2 cup almond milk
+                </li>
+                <li>
+                    1/2 tsp vanilla extract
+                </li>
+                <li>
+                    1/2 cup plain flour 
+                </li>
+                <li>
+                    3 tsp p Chai powder
+                </li>
+                <li>
+                    1/2  tbsp coconut sugar
+                </li>
+                <li>
+                    1.5  tsp baking powder
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+                <li>
+                  <i>*makes 5 pancakes</i>  
+                </li>
+                <li>
+                    <i>To serve:</i>  
+                    <ul class="toServe">
+                        <li>Nut Butter</li>
+                        <li>Bananas</li>
+                        <li>Walnuts</li>
+                        <li>Maple Syrup</li>
+                    </ul>
+                  </li>
+            </ol>
+          </div>
+        </div>
+      </td>
 
-</ol></td>
-  <td class="OatInfo"> <ol>
-   <li>
-        1/2 cup almond milk
-    </li>
-    <li>
-        1/2 tbsp olive oil
-    </li>
-    <li>
-        1/3 cup buckwheat flour 
-    </li>
-    <li>
-        2.5 tbsp Protein Salted Caramel 
-    </li>
-    <li>
-        1  tbsp coconut sugar
-    </li>
-    <li>
-        1  tsp baking powder
-    </li>
-    <li>
-        1/2 tsp vanilla powder
-    </li>
-    <li>
-        pinch of salt
-    </li>
-    <li>
-      <i>*makes 5 pancakes, 10 min prep, 5 min cook</i>  
-    </li>
-    <li>
-        <i>To serve:</i>  
-        <ul class="toServe">
-            <li>Nut Butter</li>
-            <li>Bananas</li>
-            <li>Walnuts</li>
-            <li>Maple Syrup</li>
-        </ul>
-      </li>
-</ol></td>
-  <td class="OatInfo"> <ol>
-    <li>
-        1/2 cup plain all-purpose wholewheat flour
-    </li>
-    <li>
-        3 tbsp matcha powder
-    </li>
-    <li>
-        3 cup buckwheat flour 
-    </li>
-    <li>
-        1/2 cup almond milk 
-    </li>
-    <li>
-        1  tbsp coconut sugar
-    </li>
-    <li>
-        1.5  tsp baking powder
-    </li>
-    <li>
-        1/2 tsp vanilla 
-    </li>
-    <li>
-        pinch of salt
-    </li>
-    <li>
-      <i>*makes 5 pancakes, 10 min prep, 5 min cook</i>  
-    </li>
-    <li>
-        <i>To serve:</i>  
-        <ul class="toServe">
-            <li>Nut Butter</li>
-            <li>Berries</li>
-            <li>Chocolate syrup</li>
-        </ul>
-      </li>
-  
-   
-</ol></td>
+      <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/pcake2.jpg" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Salted Carmel Protein Waffle</button>
+          <div class="OatInfo">
+            <ol>
+                <li>
+                    1/2 cup almond milk
+                </li>
+                <li>
+                    1/2 tbsp olive oil
+                </li>
+                <li>
+                    1/3 cup buckwheat flour 
+                </li>
+                <li>
+                    2.5 tbsp Protein Salted Caramel Powder
+                </li>
+                <li>
+                    1  tbsp coconut sugar
+                </li>
+                <li>
+                    1  tsp baking powder
+                </li>
+                <li>
+                    1/2 tsp vanilla powder
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+                <li>
+                  <i>*makes 5 pancakes</i>  
+                </li>
+                <li>
+                    <i>To serve:</i>  
+                    <ul class="toServe">
+                        <li>Nut Butter</li>
+                        <li>Bananas</li>
+                        <li>Walnuts</li>
+                        <li>Maple Syrup</li>
+                    </ul>
+                  </li>
+            </ol>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="bfastContainer">
+          <img class="img4" src="photos/pcake3.jpg" alt="breakfast">
+          <button class="bfastTitle" onclick="toggleOatInfo(this)">Matcha Pancakes</button>
+          <div class="OatInfo">
+            <ol>
+                <li>
+                    1/2 cup plain all-purpose wholewheat flour
+                </li>
+                <li>
+                    3 tbsp matcha powder
+                </li>
+                <li>
+                    3 cup buckwheat flour 
+                </li>
+                <li>
+                    1/2 cup almond milk 
+                </li>
+                <li>
+                    1  tbsp coconut sugar
+                </li>
+                <li>
+                    1.5  tsp baking powder
+                </li>
+                <li>
+                    1/2 tsp vanilla 
+                </li>
+                <li>
+                    pinch of salt
+                </li>
+                <li>
+                  <i>*makes 5 pancakes</i>  
+                </li>
+                <li>
+                    <i>To serve:</i>  
+                    <ul class="toServe">
+                        <li>Nut Butter</li>
+                        <li>Berries</li>
+                        <li>Chocolate syrup</li>
+                    </ul>
+                  </li>
+            </ol>
+          </div>
+        </div>
+      </td>
+    
 </tr>
 </table>
+
+
 </center>
 
 <center>  <img class="img4" src="photos/smoothie.JPG" class="d-block w-900" alt="Oats Photo">
     <h3 class="h3R">Smoothies</h3></center>
-
-
-    <center> 
+    <center>
+        
+        
 <table id="Smoothies">
     <tr class="OatsIdeas">
-      <th class="bfastTitle">Tropical Dragon Fruit Smoothie</th>
-      <th class="bfastTitle">Salted Carmel Chai Smoothie</th>
-      <th class="bfastTitle">Spirulina Smoothie</th>
+              <td>
+                <div class="bfastContainer">
+                  <img class="img4" src="photos/dragon.png" alt="breakfast">
+                  <button class="bfastTitle" onclick="toggleOatInfo(this)">Tropical Dragon Fruit Smoothie</button>
+                  <div class="OatInfo">
+                    <ol>
+                        <li>
+                            1/2 cup frozen pineapple
+                        </li>
+                        <li>
+                            1/2 cup frozen mango
+                        </li>
+                        <li>
+                            2 tsp Dragon Fruit (Pink Pitaya) Powder
+                        </li>
+                        <li>
+                            1 tbsp lemon juice
+                        </li>
+                        <li>
+                            1 cup ice cubes
+                        </li>
+                        <li>
+                            1/2 - 3/4 cup apple juice, as needed
+                        </li>
+                        <li>
+                            1/2 cup ice cubes
+                          </li>
+                    </ol>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="bfastContainer">
+                  <img class="img4" src="photos/chaismothie.png" alt="breakfast">
+                  <button class="bfastTitle" onclick="toggleOatInfo(this)">Salted Carmel Chai Smoothie</button>
+                  <div class="OatInfo">
+                    <ol>
+                        <li>
+                            1 cup non-dairy milk
+                            </li>
+                            <li>
+                                1/2 tsp vanilla paste
+                            </li>
+                            <li>
+                                1 tbsp almond butter
+                            </li>
+                            <li>
+                                1 large frozen banana
+                            </li>
+                            <li>
+                                1  tbsp coconut sugar
+                            </li>
+                            <li>
+                                1/2 tbsp Authentic Chai Powder
+                            </li>
+                            <li>
+                                1 tbsp Lean Protein Salted Caramel
+                            </li>
+                            <li>
+                                1/2 cup ice cubes
+                              </li>
+                            <li>
+                                pinch of salt
+                            </li>
+                    </ol>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="bfastContainer">
+                  <img class="img4" src="photos/spirulinasmoothie.png"alt="breakfast">
+                  <button class="bfastTitle" onclick="toggleOatInfo(this)">Spirulina Smoothie</button>
+                  <div class="OatInfo">
+                    <ol>
+                        <li>
+                            1 frozen banana
+                        </li>
+                        <li>
+                            1 cup frozen pineapple
+                        </li>
+                        <li>
+                            1 tsp Tropeaka Spirulina
+                        </li>
+                        <li>
+                            1/2 cup orange juice 
+                        </li>
+                        <li>
+                            1/2 cup plant-based milk
+                
+                        </li>
+                        <li>
+                            1/2 cup ice cubes
+                          </li>
+                    </ol>
+                  </div>
+                </div>
+              </td>
+            </tr>
       
-    </tr>
-    <tr class="OatsIdeas">
-        <td class="panInfo"><center> <img class="img3" src="photos/dragon.png" alt="breakfast" ></center> </td>
-        <td class="panInfo"><center> <img class="img3" src="photos/chaismothie.png" alt="breakfast" ></center> </td>
-        <td class="panInfo"><center> <img class="img3" src="photos/spirulinasmoothie.png" alt="breakfast" ></center> </td>
-       
-       
-        
-    </tr>
-    <tr class="OatsIdeas">
-      <td class="OatInfo"> <ol>
-        <li>
-            1/2 cup frozen pineapple
-        </li>
-        <li>
-            1/2 cup frozen mango
-        </li>
-        <li>
-            2 tsp Dragon Fruit (Pink Pitaya) Powder
-        </li>
-        <li>
-            1 tbsp lemon juice
-        </li>
-        <li>
-            1 cup ice cubes
-        </li>
-        <li>
-            1/2 - 3/4 cup apple juice, as needed
-        </li>
-        <li>
-            1/2 cup ice cubes
-          </li>
-      
-          </li>
-    
-    </ol></td>
-      <td class="OatInfo"> <ol>
-       <li>
-        1 cup non-dairy milk
-        </li>
-        <li>
-            1/2 tsp vanilla paste
-        </li>
-        <li>
-            1 tbsp almond butter
-        </li>
-        <li>
-            1 large frozen banana
-        </li>
-        <li>
-            1  tbsp coconut sugar
-        </li>
-        <li>
-            1/2 tbsp Authentic Chai Powder
-        </li>
-        <li>
-            1 tbsp Lean Protein Salted Caramel
-        </li>
-        <li>
-            1/2 cup ice cubes
-          </li>
-        <li>
-            pinch of salt
-        </li>
-          </li>
-    </ol></td>
-      <td class="OatInfo"> <ol>
-        <li>
-            1 frozen banana
-        </li>
-        <li>
-            1 cup frozen pineapple
-        </li>
-        <li>
-            1 tsp Tropeaka Spirulina
-        </li>
-        <li>
-            1/2 cup orange juice 
-        </li>
-        <li>
-            1/2 cup plant-based milk
 
-        </li>
-        <li>
-            1/2 cup ice cubes
-          </li>
-       
-          </li>
-    </ol></td>
-
-
-    <tr class="OatsIdeas">
-        <th class="bfastTitle">Chocolate Coconut Smoothie</th>
-        <th class="bfastTitle">Orange Creamsicle Smoothie</th>
-        <th class="bfastTitle">Blueberry Pie Smoothie</th>
-        
-      </tr>
-      <tr class="OatsIdeas">
-          <td class="panInfo"><center> <img class="img3" src="photos/chocCoconutSmoo.png" alt="breakfast" ></center> </td>
-          <td class="panInfo"><center> <img class="img3" src="photos/orangesmoothie.png" alt="breakfast" ></center> </td>
-          <td class="panInfo"><center> <img class="img3" src="photos/bpiesmoothie.png" alt="breakfast" ></center> </td>
-         
-         
-          
-      </tr>
-      <tr class="OatsIdeas">
-        <td class="OatInfo"> <ol>
-          <li>
-            1 large frozen banana
-          </li>
-          <li>
-            1 tbsp shredded coconut
-          </li>
-          <li>
-            1 tbsp nut butter of choice
-          </li>
-          <li>
-            1/2 tbsp MCT Oil Powder
-          </li>
-          <li>
-            1 tsp vanilla extract
-          </li>
-          <li>
-            1 tbsp Cacao Powder
-          </li>
-          <li>
-            1 cup coconut milk
-          </li>
-          <li>
-            1 tbsp rice malt syrup
-          </li>
-          <li>
-            1/2 cup ice cubes
-          </li>
-        
-            </li>
-      
-      </ol></td>
-        <td class="OatInfo"> <ol>
-            <li>
-                1 large frozen banana
-              </li>
-              <li>
-                1 orange, peeled & cut into chunks
-              </li>
-              <li>
-                1 tsp orange zest
-              </li>
-              <li>
-                1 tbsp Protein Vanilla powder
-              </li>
-              <li>
-                1 tsp vanilla extract
-              </li>
-              <li>
-                3/4 cup coconut milk (you can sub half with orange juice for a fruitier smoothie)
-              </li>
-              <li>
-                1/2 cup ice cubes
-              </li>
             
-                </li>
-            </li>
-      </ol></td>
-        <td class="OatInfo"> <ol>
-          <li>
-              1 frozen banana
-          </li>
-          <li>
-            1 cup frozen blueberries
-          </li>
-          <li>
-            1/3 cup vanilla coconut yogurt
-          </li>
-          <li>
-            2 tbsp Protein Vanilla Powder
-          </li>
-          <li>
-              3/4 cup plant-based milk
-          </li>
-          <li>
-            2 tbsp rolled oats
-          </li>
-          <li>
-            1/2 tsp cinnamon
-          </li>
-          <li>
-            1 tbsp nut butter
-          </li>
-          <li>
-            1/2 cup ice cubes
-          </li>
-            </li>
-      </ol></td>
-    
+
+
+
+            <tr class="OatsIdeas">
+                <td>
+                  <div class="bfastContainer">
+                    <img class="img4" src="photos/chocCoconutSmoo.png" alt="breakfast">
+                    <button class="bfastTitle" onclick="toggleOatInfo(this)">Chocolate Coconut Smoothie</button>
+                    <div class="OatInfo">
+                      <ol>
+                        <li>
+                            1 large frozen banana
+                          </li>
+                          <li>
+                            1 tbsp shredded coconut
+                          </li>
+                          <li>
+                            1 tbsp nut butter of choice
+                          </li>
+                          <li>
+                            1/2 tbsp MCT Oil Powder
+                          </li>
+                          <li>
+                            1 tsp vanilla extract
+                          </li>
+                          <li>
+                            1 tbsp Cacao Powder
+                          </li>
+                          <li>
+                            1 cup coconut milk
+                          </li>
+                          <li>
+                            1 tbsp rice malt syrup
+                          </li>
+                          <li>
+                            1/2 cup ice cubes
+                          </li>
+                      </ol>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="bfastContainer">
+                    <img class="img4" src="photos/orangesmoothie.png" alt="breakfast">
+                    <button class="bfastTitle" onclick="toggleOatInfo(this)">Orange Creamsicle Smoothie</button>
+                    <div class="OatInfo">
+                      <ol>
+                        <li>
+                            1 large frozen banana
+                          </li>
+                          <li>
+                            1 orange, peeled & cut into chunks
+                          </li>
+                          <li>
+                            1 tsp orange zest
+                          </li>
+                          <li>
+                            1 tbsp Protein Vanilla powder
+                          </li>
+                          <li>
+                            1 tsp vanilla extract
+                          </li>
+                          <li>
+                            3/4 cup coconut milk (you can sub half with orange juice for a fruitier smoothie)
+                          </li>
+                          <li>
+                            1/2 cup ice cubes
+                          </li>
+                      </ol>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="bfastContainer">
+                    <img class="img4" src="photos/bpiesmoothie.png" alt="breakfast">
+                    <button class="bfastTitle" onclick="toggleOatInfo(this)">Blueberry Pie Smoothie</button>
+                    <div class="OatInfo">
+                      <ol>
+                        <li>
+                            1 frozen banana
+                        </li>
+                        <li>
+                          1 cup frozen blueberries
+                        </li>
+                        <li>
+                          1/3 cup vanilla coconut yogurt
+                        </li>
+                        <li>
+                          2 tbsp Protein Vanilla Powder
+                        </li>
+                        <li>
+                            3/4 cup plant-based milk
+                        </li>
+                        <li>
+                          2 tbsp rolled oats
+                        </li>
+                        <li>
+                          1/2 tsp cinnamon
+                        </li>
+                        <li>
+                          1 tbsp nut butter
+                        </li>
+                        <li>
+                          1/2 cup ice cubes
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
     </table>
 
 </center>
@@ -979,114 +846,70 @@
     <center>  <img class="img4" src="photos/chia.JPG" class="d-block w-900" alt="Oats Photo">
         <h3 class="h3R">Chia Pudding</h3></center>
     
-    
-    <center>
-    <table id="Chia">
-
-        
    
-
-        <tr class="OatsIdeas">
-          <th class="bfastTitle">Turmeric Chia Pudding</th>
-          <th class="bfastTitle">Chocolate Protein Chia Pudding</th>
-          <th class="bfastTitle">Lime Superfood Chia Pudding</th>
-          
-        </tr>
-        <tr class="OatsIdeas">
-            <td class="panInfo"><center> <img class="img3" src="photos/turmericpudding.png" alt="breakfast" ></center> </td>
-            <td class="panInfo"><center> <img class="img3" src="photos/chocpudding.png" alt="breakfast" ></center> </td>
-            <td class="panInfo"><center> <img class="img3" src="photos/superpudding.png" alt="breakfast" ></center> </td>
-           
-            
-        </tr>
-        <tr class="OatsIdeas">
-          <td class="OatInfo"> <ol>
-            <li>
-                1 cup + 2 tbsp coconut milk
-            </li>
-            <li>
-                1/3 cup chia seeds
-            </li>
-            <li>
-                1 tbsp maple syrup 
-            </li>
-            <li>
-                1/2 tsp vanilla extract
-            </li>
-            <li>
-                1 tsp turmeric Powder
-            </li>
-            <li>
-                pinch of salt 
-            </li>
-              
-        
-        </ol></td>
-          <td class="OatInfo"> <ol>
-
-            <li>
-                1 cup + 2 tbsp coconut milk
-            </li>
-            <li>
-                1/3 cup chia seeds
-            </li>
-            <li>
-                1 tbsp maple syrup 
-            </li>
-            <li>
-                1/2 tsp vanilla extract
-            </li>
-            <li>
-                1 tbsp Cacao Powder
-            </li>
-            <li>
-                1 tbsp Protein Chocolate 
-            </li>
-            <li>
-                Dash of cinnamon
-            </li>
-            <li>
-                pinch of salt 
-            </li>
-           
-          
-              </li>
-        </ol></td>
-          <td class="OatInfo"> <ol>
-            <li>
-                1 cup + 2 tbsp coconut milk
-            </li>
-            <li>
-                1/3 cup chia seeds
-            </li>
-            <li>
-                1 tbsp maple syrup 
-            </li>
-            <li>
-                1/2 tsp vanilla extract
-            </li>
-            <li>
-                2 tbsp fresh lime juice
-            </li>
-            <li>
-                Zest of 1 lime
-            </li>
-            <li>
-                1 tsp Superfood Greens + D
-            </li>
-            <li>
-                pinch of salt 
-            </li>
-        </ol></td>
-        
-        </table>
 
 
 
     </center>
+    <table id="Chia">
+        <tr class="OatsIdeas">
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/turmericpudding.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Turmeric Chia Pudding</button>
+              <div class="OatInfo">
+                <ol>
+                  <li>1 cup + 2 tbsp coconut milk</li>
+                  <li>1/3 cup chia seeds</li>
+                  <li>1 tbsp maple syrup</li>
+                  <li>1/2 tsp vanilla extract</li>
+                  <li>1 tsp turmeric Powder</li>
+                  <li>pinch of salt</li>
+                </ol>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/chocpudding.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Chocolate Protein Chia Pudding</button>
+              <div class="OatInfo">
+                <ol>
+                  <li>1 cup + 2 tbsp coconut milk</li>
+                  <li>1/3 cup chia seeds</li>
+                  <li>1 tbsp maple syrup</li>
+                  <li>1/2 tsp vanilla extract</li>
+                  <li>1 tbsp Cacao Powder</li>
+                  <li>1 tbsp Protein Chocolate</li>
+                  <li>Dash of cinnamon</li>
+                  <li>pinch of salt</li>
+                </ol>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="bfastContainer">
+              <img class="img4" src="photos/superpudding.png" alt="breakfast">
+              <button class="bfastTitle" onclick="toggleOatInfo(this)">Lime Superfood Chia Pudding</button>
+              <div class="OatInfo">
+                <ol>
+                  <li>1 cup + 2 tbsp coconut milk</li>
+                  <li>1/3 cup chia seeds</li>
+                  <li>1 tbsp maple syrup</li>
+                  <li>1/2 tsp vanilla extract</li>
+                  <li>2 tbsp fresh lime juice</li>
+                  <li>Zest of 1 lime</li>
+                  <li>1 tsp Superfood Greens + D</li>
+                  <li>pinch of salt</li>
+                </ol>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      
 
-
-
+  
   
 
     <div class="dropdown-divider"></div>
