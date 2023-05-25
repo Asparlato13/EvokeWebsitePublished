@@ -9,43 +9,9 @@
          <style> img { max-width: 100%; } 
         
       
-        
-        .bottomNav {
-            column-count: 5;
-            column-gap: 20px;
-            column-rule-style: solid;
-            column-width: 150px;
-          
-            max-height: max-content;
-            overflow-y: auto;
-            font-size: 15px;
-            white-space: nowrap;
-            page-break-inside: avoid;
-
-            list-style-position: outside;
-            margin-bottom: 0em;
-            padding-top: 15px;
-        
-        }
+    
 
  
-        
-        .recommendations {
-            column-count: 5;
-            column-gap: 20px;
-            column-rule-style: solid;
-            column-width: 150px;
-          
-            max-height: max-content;
-            overflow-y: auto;
-            font-size: 15px;
-            white-space: nowrap;
-            page-break-inside: avoid;
-
-            list-style-position: outside;
-            margin-bottom: 3em;
-        
-        }
 
 
 
@@ -96,9 +62,11 @@
             </script>
             <div class="subnav-content">
               <a href="breakfast.html">Breakfast</a>
+              <a href="Smoothies.html">Smoothies</a>
               <a href="lunch.html">Lunch</a>
               <a href="Snacks.html">Snacks</a>
               <a href="dinners.html">Dinner</a>
+              <a href="desserts.html">Dessert</a>
             </div>
           </div> 
           <div class="subnav">
@@ -124,20 +92,50 @@
 
     </center>
 
-    <aside id="recommendationsTofC">
-      <nav role="navigation" class="table-of-contents">
-        <h2 class="h2">Table of Contents:</h2>
-        <ul>
-          <li><a href="#books">Books</a></li>
-          <li><a href="#Podcasts">Podcasts</a></li>
-          <li><a href="#videos">Videos</a></li>
-          <li><a href="#mentors">Mentors</a></li>
-  
-        </ul>
-      </nav>
-    </aside>
-  
 
+
+
+    <aside id="TofCBfast">
+      <div id="ToCContent">
+        <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
+        <nav role="navigation" class="table-of-contents">
+          <h2 class="h2TOC">Table of Contents:</h2>
+          <ul>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#Podcasts">Podcasts</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+    
+              </ul>
+          </ul>
+        </nav>
+      </div>
+      <button id="showToCButton" class="ToCButton" onclick="displayToC()">&#187;</button>
+    </aside>
+    
+
+    
+    <script>
+    var showToCButton = document.getElementById("showToCButton");
+    var backToButton = document.getElementById("backToButton");
+    var tocContent = document.getElementById("ToCContent");
+    var initialButtonState = showToCButton.outerHTML;
+    
+    function displayToC() {
+      tocContent.style.display = "block";
+      showToCButton.style.display = "none";
+      backToButton.style.display = "inline-block";
+    }
+    
+    function goBackToButton() {
+      tocContent.style.display = "none";
+      showToCButton.style.display = "inline-block";
+      backToButton.style.display = "none";
+    }
+    
+    // Hide the back button initially
+    backToButton.style.display = "none";
+    </script>
 
        
 
@@ -145,13 +143,15 @@
 
 
     <main>
-<section id="Books">
+
+
+<section id="Books" >
 
       <ul>
-        <li> <i font style="font-size: 26px;">What book will you read next?</li></i>
+        <li> <i><h3>What book will you read next?</h3></li></i>
       </ul>
     
-      <div class="Rrow0">
+      <div class="Rrow">
       <div class="Rcolumn">
         <a href="https://www.amazon.com/How-Create-Mind-Thought-Revealed/dp/B09V1YC8FR/ref=sr_1_1?crid=2AIKCLP96N14P&keywords=How+to+Create+a+Mind&qid=1673629840&s=books&sprefix=how+to+create+a+mind%2Cstripbooks%2C150&sr=1-1">
     <center> <img class="img3" src="photos/createmind.jpeg" alt="breakfast" ></center> 

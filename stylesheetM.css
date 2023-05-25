@@ -687,38 +687,54 @@ th {
 
 #Salads .img3 {
   border-radius: 3%;
-  height: 30vw;
-  width: 40vw;
+  width: 300px; /* Adjust this value to your desired fixed width */
+  height: 200px; /* Adjust this value to your desired fixed height */
+  object-fit: cover;
   position: relative;
 }
-
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  max-height: max-content;
+  overflow-y: auto;
+  font-size: 15px;
+  white-space: nowrap;
+  page-break-inside: avoid;
+  list-style-position: outside;
+  margin-bottom: 3em;
+}
 #Books .img3 {
   border-radius: 4.5%;
-  height: 30vw;
-  width: 40vw;
+  width: 400px; /* Adjust this value to your desired fixed width */
+  height: 300px; /* Adjust this value to your desired fixed height */
+  object-fit: cover;
   padding: 1%;
   position: relative;
 }
 
 #Podcasts .img3 {
   border-radius: 4.5%;
-  height: 30vw;
-  width: 40vw;
+  width: 400px; /* Adjust this value to your desired fixed width */
+  height: 300px; /* Adjust this value to your desired fixed height */
+  object-fit: cover;
   padding: 1%;
   position: relative;
 }
 #videos .img3 {
   border-radius: 4.5%;
-  height: 30vw;
-  width: 40vw;
+  width: 400px; /* Adjust this value to your desired fixed width */
+  height: 300px; /* Adjust this value to your desired fixed height */
+  object-fit: cover;
   padding: 1%;
   position: relative;
 }
 
 #mentors .img3 {
   border-radius: 4.5%;
-  height: 30vw;
-  width: 40vw;
+  width: 400px; /* Adjust this value to your desired fixed width */
+  height: 300px; /* Adjust this value to your desired fixed height */
+  object-fit: cover;
   padding: 1%;
   position: relative;
 }
@@ -922,8 +938,8 @@ button:active {
 
 .img41 {
   border-radius: 3%;
-  width: 700px; /* Adjust this value to your desired fixed width */
-  height: 500px; /* Adjust this value to your desired fixed height */
+  width: 600px; /* Adjust this value to your desired fixed width */
+  height: 400px; /* Adjust this value to your desired fixed height */
   object-fit: cover;
 }
 
