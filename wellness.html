@@ -82,27 +82,59 @@
   
         </nav>
 
-      <center><h2 class="h2">Wellness</h2>
+      <center><h2 class="h2">Wellness</h2>     </center>
 
         <img class="imgJournal" src="photos/journaling.png" class="d-block w-900" alt="mind design Photo">
       
-      </center>
+ 
 
    
   
+<aside id="TofCBfast">
+  <div id="ToCContent">
+    <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
+    <nav role="navigation" class="table-of-contents">
+      <h2 class="h2TOC">Table of Contents:</h2>
+      <ul>
+        <li><a href="#h1Wel">Journaling</a></li>
+        <li><a href="#h1WelM">Mediation</a></li>
+        <li><a href="#h1WelH">Habits</a></li>
+        <li><a href="#h1WelS">Skin Care:</a></li>
+      </ul>
+
+    </nav>
+  </div>
+  <button id="showToCButton" class="ToCButton" onclick="displayToC()">&#187;</button>
+</aside>
+
+
+
+<script>
+var showToCButton = document.getElementById("showToCButton");
+var backToButton = document.getElementById("backToButton");
+var tocContent = document.getElementById("ToCContent");
+var initialButtonState = showToCButton.outerHTML;
+
+function displayToC() {
+  tocContent.style.display = "block";
+  showToCButton.style.display = "none";
+  backToButton.style.display = "inline-block";
+}
+
+function goBackToButton() {
+  tocContent.style.display = "none";
+  showToCButton.style.display = "inline-block";
+  backToButton.style.display = "none";
+}
+
+// Hide the back button initially
+backToButton.style.display = "none";
+</script>
+
 
 
     <main>
-      <nav id="TofC" role="navigation" class="table-of-contents">
-        <h2 class="h2">Table of Contents:</h2>
-        <ul>
-          <li><a href="#h1Wel">Journaling</a></li>
-          <li><a href="#h1WelM">Mediation</a></li>
-          <li><a href="#h1WelH">Habits</a></li>
-          <li><a href="#h1WelS">Skin Care:</a></li>
-        </ul>
-      </nav>
-      <h3 id="h1Wel"> Journaling<h3>
+    
         <p class="WelP">
          
 Journaling is a powerful tool for connecting with your inner self and finding alignment. 

@@ -177,33 +177,61 @@
       </script>
 
 
-<aside class="table-of-contents">
-  <nav role="navigation" class="table-of-contents">
-    <h2 class="ToCHeader">Table of Contents:</h2>
-    <ul>
-      <li><a href="#weightloss">How I lost 50+ lbs!</a></li>
-      <li><a href="#walking">Why you Should Walk More.</a></li>
+
+
+<aside id="TofCBfast">
+  <div id="ToCContent">
+    <button id="backToButton" class="ToCButton" onclick="goBackToButton()">&#171;</button>
+    <nav role="navigation" class="table-of-contents">
+      <h2 class="h2TOC">Table of Contents:</h2>
       <ul>
-        <li><a href="#walkingHabit"> <i>How to make walking a habit:</i></a></li>
+        <li><a href="#weightloss">How I lost 50+ lbs!</a></li>
+        <li><a href="#walking">Why you Should Walk More.</a></li>
+        <ul>
+          <li><a href="#walkingHabit"> <i>How to make walking a habit:</i></a></li>
+        </ul>
+        <li><a href="#walkingHabit">Workout routine ideas </a></li>
+        <li><a href="#sources">Sources</a></li>
       </ul>
-      <li><a href="#walkingHabit">Workout routine ideas </a></li>
-      <li><a href="#sources">Sources</a></li>
-    </ul>
-  </nav>
+     
+    </nav>
+  </div>
+  <button id="showToCButton" class="ToCButton" onclick="displayToC()">&#187;</button>
 </aside>
 
 
 
+<script>
+var showToCButton = document.getElementById("showToCButton");
+var backToButton = document.getElementById("backToButton");
+var tocContent = document.getElementById("ToCContent");
+var initialButtonState = showToCButton.outerHTML;
+
+function displayToC() {
+  tocContent.style.display = "block";
+  showToCButton.style.display = "none";
+  backToButton.style.display = "inline-block";
+}
+
+function goBackToButton() {
+  tocContent.style.display = "none";
+  showToCButton.style.display = "inline-block";
+  backToButton.style.display = "none";
+}
+
+// Hide the back button initially
+backToButton.style.display = "none";
+</script>
 
 
   
 
- 
+<center>
 
 <h1 class="h1Fit1">How I lost 50+ lbs!</h1>
 
 
-   <img id="weightloss" class="img6" src="photos/img45.png" >  
+   <img id="weightloss" class="img6" src="photos/img45.png" >  </center>
   
    <section id="lost50">
      <p>These are my top tips most valuable to aiding a healthy lifestyle... I hope something helps you along the way! </p>
@@ -316,8 +344,9 @@
 
 
 <section class="walkMore">
+  <center>
   <h1 id="walking" class="h1Fit">Why You Should Start Walking More:</h1>
-
+</center>
 <!-- 
 <center>
 
