@@ -383,8 +383,29 @@ body {
   opacity: 0.7;
 }
 
+#Books ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Set a fixed height for the parent container */
+#Books ul {
+  height: 300px; /* Adjust this value as needed */
+}
+
+/* Make all img3 elements the same size */
+.img3 {
+  flex: 1 0 33%; /* Adjust this value to control the number of columns */
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
 .Rcolumn {
-  padding: 1%;
+  flex: 0 0 25%; /* Adjust the width as per your requirements */
+  max-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .Rcolumn div {
@@ -412,11 +433,15 @@ body {
 .Rrow {
   display: flex;
   padding-left: 6%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Rrow0 {
   display: flex;
 }
+
+
 .oatRow {
   display: list-item;
 }
@@ -425,6 +450,7 @@ body {
   float: left;
   overflow: scroll;
   width: 45vw;
+  overflow-y: scroll;
 }
 .mindsetP {
   overflow-x: auto;
@@ -444,6 +470,7 @@ body {
   color: rgb(76, 40, 24);
   font-size: 25px;
   padding-top: 2em;
+  overflow: scroll;
 }
 
 .table-of-contents:link {
@@ -704,40 +731,8 @@ th {
   list-style-position: outside;
   margin-bottom: 3em;
 }
-#Books .img3 {
-  border-radius: 4.5%;
-  width: 400px; /* Adjust this value to your desired fixed width */
-  height: 300px; /* Adjust this value to your desired fixed height */
-  object-fit: cover;
-  padding: 1%;
-  position: relative;
-}
 
-#Podcasts .img3 {
-  border-radius: 4.5%;
-  width: 400px; /* Adjust this value to your desired fixed width */
-  height: 300px; /* Adjust this value to your desired fixed height */
-  object-fit: cover;
-  padding: 1%;
-  position: relative;
-}
-#videos .img3 {
-  border-radius: 4.5%;
-  width: 400px; /* Adjust this value to your desired fixed width */
-  height: 300px; /* Adjust this value to your desired fixed height */
-  object-fit: cover;
-  padding: 1%;
-  position: relative;
-}
 
-#mentors .img3 {
-  border-radius: 4.5%;
-  width: 400px; /* Adjust this value to your desired fixed width */
-  height: 300px; /* Adjust this value to your desired fixed height */
-  object-fit: cover;
-  padding: 1%;
-  position: relative;
-}
 
 .CommunityButton {
   background-color: #e9b4b4;
