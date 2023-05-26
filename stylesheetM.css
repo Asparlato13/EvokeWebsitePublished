@@ -390,7 +390,7 @@ body {
 
 /* Set a fixed height for the parent container */
 #Books ul {
-  height: 300px; /* Adjust this value as needed */
+  height: 100px; /* Adjust this value as needed */
 }
 
 /* Make all img3 elements the same size */
@@ -400,6 +400,8 @@ body {
   height: 100%;
   max-width: 100%;
 }
+
+
 .Rcolumn {
   flex: 0 0 25%; /* Adjust the width as per your requirements */
   max-width: 25%;
