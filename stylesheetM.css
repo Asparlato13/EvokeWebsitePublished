@@ -383,19 +383,33 @@ body {
   opacity: 0.7;
 }
 
-#Books ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
 
 /* Set a fixed height for the parent container */
 #Books ul {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between; /* Add this property to prevent overlapping */
+}
+#Podcasts ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   justify-content: space-between; /* Add this property to prevent overlapping */
 }
 
+#videos ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between; /* Add this property to prevent overlapping */
+}
+#mentors ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between; /* Add this property to prevent overlapping */
+}
 .img3 {
   flex: 1 0 calc(33% - 10px);
   object-fit: cover;
