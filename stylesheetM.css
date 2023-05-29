@@ -513,7 +513,6 @@ body {
 
 
 
-
 .table-of-contents ul li a {
   color: rgb(76, 40, 24);
   font-size: 25px;
@@ -1099,8 +1098,9 @@ th, td {
 
 
 
-
-
+#EvokeLogo:hover {
+  text-decoration: none;
+}
 
 
 
